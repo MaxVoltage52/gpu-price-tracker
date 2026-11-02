@@ -48,7 +48,7 @@ def append(path, fields, ts, rows):
         with path.open(newline="") as f:
             keep = [r for r in csv.DictReader(f) if r["ts"] != ts or r["source"] not in fresh]
     with path.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=fields)
+        w = csv.DictWriter(f, fieldnames=fields, lineterminator="\n")
         w.writeheader()
         w.writerows(keep + rows)
 
