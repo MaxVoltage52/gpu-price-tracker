@@ -295,7 +295,7 @@ async function renderOutlook() {
   const seg = path.find(p => p.from >= 180 && p.to <= 365) || path.at(-1);
   k.push(seg && anchor
     ? kpi('Commitments imply', 'var(--ink-2)', fmtPrice(ratioOf(seg)), (seg.ratio - 1) * 100,
-      `average for ${spanText(seg.from, seg.to)} out, from ${Math.max(...fwd.points.map(p => p.n))} sources' commitment prices`)
+      `average for ${spanText(seg.from, seg.to)} out, from ${(n => (n === 1 ? "1 source's" : `${n} sources'`))(Math.max(...fwd.points.map(p => p.n)))} commitment prices`)
     : kpi('Commitments imply', null, 'No commitment prices yet', null, 'appears when sources publish term prices', true));
   const an = out?.analog;
   k.push(an
