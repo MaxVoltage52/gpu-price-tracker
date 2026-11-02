@@ -7,7 +7,9 @@ const PERIODS = ['24h', '7d', '30d'];
 const STOCK = ['none left', 'low', 'medium', 'high'];
 const DAY = 86400e3;
 
-const state = { market: 'spot', range: '7d', trendMode: 'pct', gpu: null };
+const state = { market: 'spot', range: '7d', trendMode: 'pct', heatMode: 'util', gpu: null };
+const RANGE_TEXT = { '1d': '24 hours', '7d': '7 days', '30d': '30 days', '90d': '90 days', '1y': 'year', all: 'all time' };
+const SOURCE_WINDOW = { '1d': '1d', '7d': '7d' };  // per-source sold-out shares exist for 1d / 7d / 30d
 const $ = s => document.querySelector(s);
 const tip = () => $('#tooltip');
 const histCache = new Map();
@@ -120,13 +122,19 @@ function signals(g) {
   const by = Object.entries(d.by_source || {}).sort((a, b) => (b[1].total || 0) - (a[1].total || 0));
   if (by.length) lines.push(['Rented', by.slice(0, 3).map(([s, v]) => `${s} ${fmtUtil(v.util)}${v.total ? ` of ${v.total}` : ''}`).join(' · ') +
     (by.length > 3 ? ` · +${by.length - 3} more` : '')]);
+  if (d.soldout?.of) {
+    const so = d.soldout;
+    lines.push(['Sold out', so.now.length
+      ? `${so.now.length} of ${so.of} sources now (${so.now.slice(0, 3).join(', ')}${so.now.length > 3 ? '…' : ''})`
+      : `available at all ${so.of} sources now`]);
+  }
   if (d.aws) {
     const parts = [];
     if (d.aws.interrupt_pct != null) parts.push(`~${Math.round(d.aws.interrupt_pct)}% interruptions`);
     if (d.aws.spot_discount_pct != null) parts.push(`${Math.round(d.aws.spot_discount_pct)}% below on-demand`);
     lines.push(['AWS spot', parts.join(', ')]);
   }
-  const stock = Object.entries(d.stock || {});
+  const stock = Object.entries(d.stock || {}).filter(([, v]) => v > 0);
   if (stock.length) lines.push(['Stock', stock.map(([s, v]) => `${s} ${STOCK[v]}`).join(' · ')]);
   const inStock = Object.entries(d.in_stock || {});
   if (inStock.length) lines.push(['In stock', inStock.map(([s, v]) => `${Math.round(v)}% of ${s} listings`).join(' · ')]);
@@ -238,25 +246,86 @@ async function renderUtilChart() {
     emptyText: 'No marketplace utilization data for the flagship GPUs yet.' });
 }
 
-const heatColor = v => `var(--seq-${Math.min(7, Math.floor(v / (100 / 7)) + 1)})`;
+const srcWindow = range => SOURCE_WINDOW[range] || '30d';
+const winText = w => ({ '1d': '24 hours', '7d': '7 days', '30d': '30 days' })[w];
+
+function renderSoldoutBars() {
+  const box = $('#soldout-bars');
+  $('#soldout-h').textContent = `Hardest to get, last ${RANGE_TEXT[state.range]}`;
+  const rows = S.gpus.filter(g => g.demand?.soldout?.share?.[state.range] != null)
+    .sort((a, b) => b.demand.soldout.share[state.range] - a.demand.soldout.share[state.range] || b.demand.soldout.now.length - a.demand.soldout.now.length);
+  if (!rows.length) { box.replaceChildren(el('p', 'muted', 'No availability data yet.')); return; }
+  box.replaceChildren(...rows.map(g => {
+    const so = g.demand.soldout, share = so.share[state.range], featured = S.featured.includes(g.gpu);
+    const row = el('div', `bar-row${featured ? ' featured' : ''}`);
+    row.style.setProperty('--c', featured ? colorOf(g.gpu) : 'var(--ink-2)');
+    const track = el('div', 'track');
+    if (share > 0) { const u = el('i', 'used'); u.style.width = `${share}%`; track.append(u); }
+    if (share < 100) track.append(el('i', 'free'));
+    const v = el('span', 'v'); v.append(el('b', null, `${Math.round(share)}%`), ' ', el('small', null, `· ${so.now.length}/${so.of} now`));
+    row.append(el('span', 'n', g.gpu), track, v);
+    const w = srcWindow(state.range);
+    row.addEventListener('pointermove', e => showTip(tip(), e.clientX, e.clientY, `${g.gpu} · sold out, last ${winText(w)}`,
+      Object.entries(so.sources).sort((a, b) => (b[1][w] ?? -1) - (a[1][w] ?? -1))
+        .map(([s, x]) => ({ value: x[w] == null ? '—' : `${Math.round(x[w])}%`, label: `${s}${so.now.includes(s) ? ' · sold out now' : ''}`,
+          color: so.now.includes(s) ? 'var(--series-2)' : null }))));
+    row.addEventListener('pointerleave', () => hideTip(tip()));
+    row.addEventListener('click', () => selectGpu(g.slug, true));
+    return row;
+  }));
+}
+
+async function renderSupply() {
+  const box = $('#supply');
+  const gs = S.featured.map(byName).filter(g => g.demand?.total);
+  if (!gs.length) { box.replaceChildren(el('p', 'muted', 'No marketplace counts for the flagship GPUs yet.')); return; }
+  const cells = gs.map(g => {
+    const cell = el('div', 'mini'); cell.style.setProperty('--c', colorOf(g.gpu));
+    const head = el('div', 'mini-head');
+    head.append(el('b', null, g.gpu), el('span', null, `${g.demand.rented.toLocaleString()} of ${g.demand.total.toLocaleString()} rented`));
+    const chart = el('div', 'chart');
+    cell.append(head, chart);
+    return [g, chart, cell];
+  });
+  box.replaceChildren(...cells.map(c => c[2]));
+  for (const [g, host] of cells) {
+    const h = await loadHist(g.slug);
+    const r = slice(h);
+    const { t, cols: [listed, rented] } = thin(r.t, [r.pick(r.block.listed), r.pick(r.block.rented)], Math.round(host.clientWidth / 3));
+    const top = Math.max(1, ...listed.filter(v => v != null));
+    lineChart(host, { t, compact: true, yDomain: [0, top * 1.1], tip: tip(), tfmt: r.daily ? fmtDay : fmtWhen,
+      fmt: v => Math.round(v).toLocaleString(), ariaLabel: `${g.gpu} listed and rented GPUs`,
+      series: [
+        { name: 'Listed', color: 'var(--line-muted)', values: listed, width: 1.5, noDot: true },
+        { name: 'Rented', color: colorOf(g.gpu), values: rented, area: true },
+      ] });
+  }
+}
+
+const rampColor = (name, v) =>`var(--${name}-${Math.min(7, Math.floor(v / (100 / 7)) + 1)})`;
 function renderHeat() {
+  const sold = state.heatMode === 'soldout';
   const span = tsMs(S.last_ts) - tsMs(S.first_ts);
   const daily = span >= 3 * DAY;
   const t0 = tsMs(daily ? S.heat.day0 : S.heat.hour0);
   const step = daily ? DAY : DAY / 24;
   const fit = Math.max(7, Math.floor(($('#heat').clientWidth - 108) / 14));  // keep cells at least ~14px wide
+  const key = sold ? (daily ? 'sd' : 'sh') : (daily ? 'd' : 'h');
+  const rank = name => (sold ? byName(name)?.demand?.soldout?.share?.[state.range] : byName(name)?.demand?.util) ?? -1;
   const rows = Object.entries(S.heat.rows)
-    .map(([name, v]) => { const vals = daily ? v.d : v.h; return { name, values: vals.slice(-fit), now: byName(name)?.demand?.util ?? -1, n: vals.length }; })
+    .filter(([, v]) => (v[key] || []).some(x => x != null))
+    .map(([name, v]) => ({ name, values: v[key].slice(-fit), now: rank(name), n: v[key].length }))
     .sort((a, b) => b.now - a.now);
   const skip = Math.max(0, (rows[0]?.n || 0) - fit);
   const cols = (rows[0]?.values || []).map((_, i) => t0 + (i + skip) * step);
   const shown = rows[0]?.values.length || 0;
-  $('#heat-h').textContent = daily ? `Utilization by day, last ${shown} days` : `Utilization by hour, last ${shown} hours`;
-  const scale = $('#heat-scale');
+  const what = sold ? 'Share of sources sold out' : 'Utilization';
+  $('#heat-h').textContent = daily ? `${what} by day, last ${shown} days` : `${what} by hour, last ${shown} hours`;
   const ramp = el('span', 'ramp');
-  for (let i = 1; i <= 7; i++) { const c = el('i'); c.style.background = `var(--seq-${i})`; ramp.append(c); }
-  scale.replaceChildren('0%', ramp, '100% rented');
-  heatmap($('#heat'), { rows, cols, color: heatColor, fmt: v => `${v.toFixed(1)}% rented`, valueLabel: '',
+  for (let i = 1; i <= 7; i++) { const c = el('i'); c.style.background = `var(--${sold ? 'hot' : 'seq'}-${i})`; ramp.append(c); }
+  $('#heat-scale').replaceChildren('0%', ramp, sold ? 'all sources sold out' : '100% rented');
+  heatmap($('#heat'), { rows, cols, color: v => rampColor(sold ? 'hot' : 'seq', v),
+    fmt: v => (sold ? `${Math.round(v)}% of sources sold out` : `${v.toFixed(1)}% rented`), valueLabel: '',
     tfmt: daily ? fmtDay : fmtWhen,
     colLabel: ms => daily ? new Date(ms).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })
       : new Date(ms).toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' }),
@@ -329,7 +398,50 @@ async function renderDetail() {
     body.append(tr);
   }
   table.replaceChildren(head, body);
+  renderAvailability(g, r);
 }
+
+function renderAvailability(g, r) {
+  const d = g.demand || {}, so = d.soldout;
+  const box = $('#avail');
+  box.hidden = !d.total && !so;
+  if (box.hidden) return;
+  $('#avail-sub').textContent = [
+    d.total ? `${d.rented.toLocaleString()} of ${d.total.toLocaleString()} listed GPUs rented right now on open marketplaces.` : '',
+    so ? (so.now.length ? `Sold out at ${so.now.length} of ${so.of} sources right now.` : `Available at all ${so.of} sources right now.`) : '',
+  ].join(' ');
+  const host = $('#avail-chart');
+  const { t, cols: [listed, rented] } = thin(r.t, [r.pick(r.block.listed), r.pick(r.block.rented)], Math.round(host.clientWidth / 3));
+  const color = S.featured.includes(g.gpu) ? colorOf(g.gpu) : 'var(--accent)';
+  const series = [
+    { name: 'Listed GPUs', color: 'var(--line-muted)', values: listed, width: 1.5, label: `Listed ${Math.round(lastVal(listed) ?? 0).toLocaleString()}` },
+    { name: 'Rented GPUs', color, values: rented, area: true, label: `Rented ${Math.round(lastVal(rented) ?? 0).toLocaleString()}` },
+  ].filter(s => s.values.some(v => v != null));
+  $('#avail-legend').replaceChildren(...series.map(s => { const sp = el('span'); sp.append(keyEl(s.color), s.name); return sp; }));
+  const top = Math.max(1, ...series.flatMap(s => s.values.filter(v => v != null)));
+  lineChart(host, { t, series, endLabels: true, yDomain: [0, niceTop(top)], fmt: v => Math.round(v).toLocaleString(),
+    tfmt: r.daily ? fmtDay : fmtWhen, tip: tip(), ariaLabel: `${g.gpu} listed and rented GPUs`,
+    emptyText: `No marketplace GPU counts for ${g.gpu} — availability comes only from stock levels.` });
+
+  const table = $('#avail-table');
+  if (!so) { table.replaceChildren(); return; }
+  const head = el('thead'); const hr = el('tr');
+  ['Source', 'Now', 'Sold out 24h', '7d', '30d'].forEach((x, i) => hr.append(el('th', i < 2 ? 'l' : null, x)));
+  head.append(hr);
+  const body = el('tbody');
+  for (const [s, x] of Object.entries(so.sources)) {
+    const tr = el('tr');
+    const now = so.now.includes(s);
+    const bs = d.by_source?.[s];
+    const nowText = now ? 'sold out' : bs?.total ? `${(bs.total - bs.rented).toLocaleString()} of ${bs.total.toLocaleString()} free`
+      : d.stock?.[s] != null ? `${STOCK[d.stock[s]]} stock` : 'available';
+    tr.append(el('td', 'l', s), el('td', `l${now ? '' : ' muted'}`, nowText),
+      ...['1d', '7d', '30d'].map(w => el('td', x[w] ? null : 'muted', x[w] == null ? '—' : `${Math.round(x[w])}%`)));
+    body.append(tr);
+  }
+  table.replaceChildren(head, body);
+}
+const niceTop = v => { const m = 10 ** Math.floor(Math.log10(v)); return Math.ceil((v * 1.08) / m) * m; };
 
 // ---------- secondary table ----------
 function renderAllTable() {
@@ -360,7 +472,10 @@ function renderFooter() {
     'All prices are USD per GPU per hour; multi-GPU instances are divided by their GPU count and EUR prices are converted at the ECB reference rate. ' +
     '"Typical" is the lower median of the sources\' median prices; a source priced below a quarter of the others is treated as a stale listing and ignored. ' +
     'Trends and 24h/7d/30d changes use a chained index: each hour every source is compared with its own previous price, so a provider joining or dropping out never moves the line. ' +
-    '"Rented" is rented ÷ listed GPUs on open marketplaces that publish both. Times are in your local time zone.'));
+    '"Rented" is rented ÷ listed GPUs on open marketplaces that publish both. ' +
+    '"Sold out" means a source had no free GPUs of that model (marketplace counts) or reported no stock (Scaleway shortage); ' +
+    '"hardest to get" is the share of source-hours that were sold out in the range. io.net reports almost everything as hired, so it counts as sold out most of the time. ' +
+    'Times are in your local time zone.'));
 }
 
 // ---------- wiring ----------
@@ -369,10 +484,12 @@ function readHash() {
   if (p.get('market') in MARKET_LABEL) state.market = p.get('market');
   if (p.get('range') in RANGES) state.range = p.get('range');
   if (['pct', 'usd'].includes(p.get('trend'))) state.trendMode = p.get('trend');
+  if (['util', 'soldout'].includes(p.get('heat'))) state.heatMode = p.get('heat');
   if (p.get('gpu')) state.gpu = p.get('gpu');
 }
 function writeHash() {
-  history.replaceState(null, '', '#' + new URLSearchParams({ market: state.market, range: state.range, trend: state.trendMode, gpu: state.gpu }));
+  history.replaceState(null, '', '#' + new URLSearchParams({ market: state.market, range: state.range, trend: state.trendMode,
+    heat: state.heatMode, gpu: state.gpu }));
 }
 function renderSegs() {
   document.querySelectorAll('.seg').forEach(seg => seg.querySelectorAll('button')
@@ -386,6 +503,8 @@ function renderAll() {
   renderTrend();
   renderBars();
   renderUtilChart();
+  renderSoldoutBars();
+  renderSupply();
   renderHeat();
   renderStrip();
   renderDetail();
@@ -404,7 +523,8 @@ document.querySelectorAll('.seg').forEach(seg => seg.addEventListener('click', e
   const b = e.target.closest('button');
   if (!b) return;
   state[seg.dataset.filter] = b.dataset.value;
-  if (seg.dataset.filter === 'trendMode') { renderSegs(); writeHash(); renderTrend(); } else renderAll();
+  const only = { trendMode: renderTrend, heatMode: renderHeat }[seg.dataset.filter];
+  if (only) { renderSegs(); writeHash(); only(); } else renderAll();
 }));
 $('#gpu-pick').addEventListener('change', e => selectGpu(e.target.value, false));
 let resizeTimer, lastW = window.innerWidth;

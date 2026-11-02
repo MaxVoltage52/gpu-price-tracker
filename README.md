@@ -18,7 +18,8 @@ GitHub Actions (hourly cron)
 
 - **Flagship cards**: typical price per GPU-hour, cheapest offer, 24h/7d/30d change, trend, demand.
 - **Price trend**: flagship GPUs on one chart, as % change since the start of the range (or $/hr).
-- **Demand**: share of listed GPUs that are rented right now, utilization over time, and a heatmap.
+- **Demand**: share of listed GPUs that are rented right now, utilization over time, listed vs rented
+  GPU counts, "hardest to get" (share of the time sources were sold out), and a heatmap of either.
 - **Where it's cheapest**: every source's price for every GPU on one log-scale strip plot.
 - **By source**: one GPU's price history at each source.
 
@@ -29,6 +30,9 @@ How the numbers are made:
   failing for an hour therefore never cause jumps.
 - **Utilization** = rented ÷ listed GPUs, summed over marketplaces that publish both counts
   (Vast.ai, Clore.ai, Lium, Akash, io.net, Nosana).
+- **Sold out** = a source had no free GPUs of that model (rented ≥ listed) or reported no stock
+  (Scaleway "shortage"). "Hardest to get" averages this over every source-hour in the range.
+  RunPod only counts when it reports a stock level; it often reports none to anonymous requests.
 - A source priced below a quarter of the other sources' median is treated as a stale listing.
 
 ## Sources

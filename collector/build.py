@@ -29,6 +29,7 @@ HOURLY_WINDOW = 31 * DAY
 HEAT_HOURS = 48
 HEAT_DAYS = 30
 PERIODS = {"24h": DAY, "7d": 7 * DAY, "30d": 30 * DAY}
+WINDOWS = {"1d": DAY, "7d": 7 * DAY, "30d": 30 * DAY, "90d": 90 * DAY, "1y": 365 * DAY, "all": None}  # site ranges
 MARKETS = ["spot", "on_demand"]
 
 FEATURED = ["B300", "B200", "H200", "H100 SXM"]
@@ -175,6 +176,12 @@ def chained_index(per_source, stamps):
     return idx
 
 
+def window_mean(points, now_t, span):
+    """Average of the hourly values in the last `span` seconds (None = all history), rounded."""
+    vals = [v for t, v in points.items() if span is None or t > now_t - span]
+    return round(sum(vals) / len(vals), 1) if vals else None
+
+
 def sane(entries):
     """Drop sources whose median is implausibly far below the others (stale or mislabelled listings)."""
     entries = [(s, v) for s, v in entries if v]
@@ -272,14 +279,47 @@ def build(data_dir, out_dir):
                 d.setdefault("by_source", {})[k[1]] = {"util": round(v, 1)}
             elif k[2] == "in_stock_pct":
                 d.setdefault("in_stock", {})[k[1]] = v
+
+        # sold out: a source has no free GPUs of this model (counts) or reports no stock
+        stock_src = sorted({k[1] for k in dkeys if k[2] == "stock"}, key=lambda s: src_order.get(s, 99))
+
+        def sold_out(s, t, carry=0):
+            if s in util_src:
+                a = latest(demand[(gpu, s, "gpus_total")], t, carry)
+                b = latest(demand.get((gpu, s, "gpus_rented"), {}), t, carry)
+                return None if not a or b is None else b >= a
+            v = latest(demand[(gpu, s, "stock")], t, carry)
+            return None if v is None else v == 0
+
+        avail_src = util_src + stock_src
+        ratio, per_src = {}, {s: {} for s in avail_src}
+        for t in stamps:
+            flags = {s: f for s in avail_src if (f := sold_out(s, t)) is not None}
+            for s, f in flags.items():
+                per_src[s][t] = 100.0 if f else 0.0
+            if flags:
+                ratio[t] = sum(flags.values()) / len(flags) * 100
+        if ratio:
+            now_flags = {s: f for s in avail_src if (f := sold_out(s, now_t, CARRY)) is not None}
+            d["soldout"] = {
+                "now": [s for s, f in now_flags.items() if f], "of": len(now_flags),
+                "share": {w: window_mean(ratio, now_t, span) for w, span in WINDOWS.items()},
+                "full": {w: window_mean({t: 100.0 if r >= 100 else 0.0 for t, r in ratio.items()}, now_t, span)
+                         for w, span in WINDOWS.items()},
+                "sources": {s: {w: window_mean(per_src[s], now_t, WINDOWS[w]) for w in ("1d", "7d", "30d")}
+                            for s in avail_src if per_src[s]},
+            }
         entry["demand"] = d
         gpus_out.append(entry)
 
         util_pct = {t: v[0] for t, v in util.items()}
-        if util_pct:
-            udaily = daily(util_pct)
-            heat[gpu] = {"h": [r4(util_pct.get(t)) for t in range(now_t - (HEAT_HOURS - 1) * HOUR, now_t + 1, HOUR)],
-                         "d": [r4(udaily.get(t)) for t in range(now_t - now_t % DAY - (HEAT_DAYS - 1) * DAY, now_t + 1, DAY)]}
+        listed, rented = {t: v[2] for t, v in util.items()}, {t: v[1] for t, v in util.items()}
+        if util_pct or ratio:
+            udaily, sdaily = daily(util_pct), daily(ratio)
+            hours = range(now_t - (HEAT_HOURS - 1) * HOUR, now_t + 1, HOUR)
+            days = range(now_t - now_t % DAY - (HEAT_DAYS - 1) * DAY, now_t + 1, DAY)
+            heat[gpu] = {"h": [r4(util_pct.get(t)) for t in hours], "d": [r4(udaily.get(t)) for t in days],
+                         "sh": [r4(ratio.get(t)) for t in hours], "sd": [r4(sdaily.get(t)) for t in days]}
 
         def block(ts, pick):
             def col(points):
@@ -290,6 +330,9 @@ def build(data_dir, out_dir):
                 "typical": {m: col(v) for m, v in series["typical"].items()},
                 "cheapest": {m: col(v) for m, v in series["cheapest"].items()},
                 "util": col(util_pct) if util_pct else [],
+                "listed": col(listed) if listed else [],
+                "rented": col(rented) if rented else [],
+                "soldout": col(ratio) if ratio else [],
                 "sources": {k: col(v) for k, v in series["sources"].items()},
             }
         all_days = sorted({t - t % DAY for t in stamps})

@@ -1,7 +1,7 @@
 """RunPod — public GraphQL.
 
 Prices: Community and Secure Cloud list prices.
-Demand: stock level of a single GPU in each cloud (High / Medium / Low, or none left).
+Demand: stock level of a single GPU in each cloud (High / Medium / Low) when RunPod reports one.
 """
 from common import canon, http_json
 
@@ -29,7 +29,8 @@ def fetch():
             if g.get(price_field):
                 prices.append((gpu, source, "on_demand", g[price_field]))
             status = (g.get(stock_field) or {}).get("stockStatus")
-            demand.append((gpu, source, "stock", STOCK.get(status, 0)))
+            if status in STOCK:  # anonymous requests often get no status at all: that is "unknown", not sold out
+                demand.append((gpu, source, "stock", STOCK[status]))
     # several RunPod SKUs can map to one GPU (e.g. PRO 6000 variants): keep the best stock level
     best = {}
     for gpu, source, metric, value in demand:

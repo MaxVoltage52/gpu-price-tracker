@@ -73,8 +73,24 @@
           <div class="chart" id="util-chart"></div>
         </div>
       </div>
+      <div class="demand-grid">
+        <div>
+          <h3 id="soldout-h">Hardest to get</h3>
+          <p class="mini-sub">Share of the time sources had none free, over the selected range</p>
+          <div class="bars soldout" id="soldout-bars"></div>
+        </div>
+        <div>
+          <h3>Listed vs rented GPUs</h3>
+          <p class="mini-sub">GPUs listed on open marketplaces, and how many of them are rented. The gap is free capacity.</p>
+          <div class="multiples" id="supply"></div>
+        </div>
+      </div>
       <div class="heat-head">
         <h3 id="heat-h">Utilization heatmap</h3>
+        <div class="seg small" role="radiogroup" aria-label="Heatmap" data-filter="heatMode">
+          <button role="radio" data-value="util">Rented share</button>
+          <button role="radio" data-value="soldout">Sold out</button>
+        </div>
         <div class="scale" id="heat-scale"></div>
       </div>
       <div id="heat"></div>
@@ -102,6 +118,13 @@
       <div class="legend chips" id="detail-legend"></div>
       <div class="chart tall" id="detail-chart"></div>
       <div class="table-wrap"><table class="grid compact" id="detail-table"></table></div>
+      <div class="avail" id="avail">
+        <h3>Availability</h3>
+        <p class="mini-sub" id="avail-sub"></p>
+        <div class="legend" id="avail-legend"></div>
+        <div class="chart" id="avail-chart"></div>
+        <div class="table-wrap"><table class="grid compact" id="avail-table"></table></div>
+      </div>
     </section>
 
     <details class="panel all">
