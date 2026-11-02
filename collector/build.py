@@ -55,6 +55,7 @@ GENERATIONS = ["Blackwell", "Hopper", "Ampere"]  # NVIDIA data-center tiers in t
 SEGMENT_BY_KIND = {"Marketplace": "market", "Decentralized": "market", "GPU cloud": "neocloud",
                    "Aggregator": "neocloud", "Hyperscaler": "hyperscaler"}
 SEGMENTS = ["neocloud", "market", "hyperscaler"]
+TERM_DAYS = [30, 90, 180, 365, 1095, 1825]  # commitment buckets (term_<days>d markets)
 MOVE_MIN = 0.01          # list-price moves smaller than 1% are ignored in the feed
 MOVE_WINDOW = 90 * DAY   # how far back the feed goes
 
@@ -84,6 +85,7 @@ SOURCES = {
     "Together AI": _src("https://www.together.ai/pricing", "GPU cloud", "plans", "On-demand and preemptible GPU-hour prices from the pricing page."),
     "Crusoe": _src("https://www.crusoe.ai/cloud/pricing", "GPU cloud", "plans", "On-demand GPU-hour prices from the pricing page."),
     "Hyperstack": _src("https://www.hyperstack.cloud/gpu-pricing", "GPU cloud", "plans", "On-demand and spot GPU-hour prices from the pricing page."),
+    "Paperspace": _src("https://www.paperspace.com/pricing", "GPU cloud", "plans", "Archived list prices only (now part of DigitalOcean)."),
     "Verda": _src("https://verda.com/pricing", "GPU cloud", "instance types", "Formerly DataCrunch. Public API, on-demand and spot per instance."),
     "DigitalOcean": _src("https://www.digitalocean.com/pricing/gpu-droplets", "GPU cloud", "plans", "GPU Droplet on-demand prices."),
     "Jarvislabs": _src("https://jarvislabs.ai/pricing", "GPU cloud", "plans", "On-demand and spot GPU-hour prices from the pricing page."),
@@ -174,20 +176,158 @@ def changes(points, now_t, relative=True):
     return out
 
 
-def chained_index(per_source, stamps):
+def chained_index(per_source, stamps, carry=CARRY):
     idx, last, cur = {}, {}, None
     for t in stamps:
         obs = {s: pts[t] for s, pts in per_source.items() if t in pts and pts[t] > 0}
         if not obs:
-            if cur is not None and any(t - lt <= CARRY for lt, _ in last.values()):
-                idx[t] = cur  # every source skipped this hour: hold the level
+            if cur is not None and any(t - lt <= carry for lt, _ in last.values()):
+                idx[t] = cur  # every source skipped this step: hold the level
             continue
-        logs = [math.log(p / last[s][1]) for s, p in obs.items() if s in last and t - last[s][0] <= CARRY]
+        logs = [math.log(p / last[s][1]) for s, p in obs.items() if s in last and t - last[s][0] <= carry]
         cur = 100.0 if cur is None else cur * math.exp(sum(logs) / len(logs)) if logs else cur
         idx[t] = cur
         for s, p in obs.items():
             last[s] = (t, p)
     return idx
+
+
+# ---------------------------------------------------------------------------------------------- #
+# Outlook: market-implied forward prices, short-term trend, and generation age curves
+# ---------------------------------------------------------------------------------------------- #
+def forward_curve(price, gpu, now_t, base):
+    """Commitment prices as a share of each source's own on-demand price, the median across
+    sources per term, and the price path those imply (like forward rates from a yield curve)."""
+    ratios, per_source = defaultdict(list), {}
+    for (g, s, m), pts in price.items():
+        if g != gpu or m != "on_demand":
+            continue
+        od = latest(pts, now_t)
+        for days in TERM_DAYS:
+            tp = latest(price.get((gpu, s, f"term_{days}d"), {}), now_t)
+            if od and tp and od[1]:
+                ratios[days].append(tp[1] / od[1])
+                per_source.setdefault(s, {"on_demand": od[1]})[str(days)] = tp[1]
+    if not ratios:
+        return None
+    points, prev = [], 1.0
+    for days in TERM_DAYS:
+        if days in ratios:
+            r = min(prev, statistics.median(ratios[days]))  # a longer commitment never costs more
+            points.append({"days": days, "ratio": round(r, 4), "price": r4(base * r) if base else None,
+                           "n": len(ratios[days])})
+            prev = r
+    path, a, ra = [], 0, 1.0
+    for p in points:  # average price over (a, b] implied by paying r_a over a days and r_b over b days
+        b, rb = p["days"], p["ratio"]
+        f = min(1.2, max(0.05, (b * rb - a * ra) / (b - a)))
+        path.append({"from": a, "to": b, "ratio": round(f, 4), "price": r4(base * f) if base else None})
+        a, ra = b, rb
+    return {"base": r4(base), "points": points, "path": path, "sources": per_source}
+
+
+def term_ratio_series(price, gpu, stamps, days):
+    """Median over sources of (commitment price / on-demand price) for one term, per hour."""
+    keys = [(g, s) for (g, s, m) in price if g == gpu and m == f"term_{days}d"]
+    out = {}
+    for t in stamps:
+        rs = []
+        for g, s in keys:
+            tp, od = latest(price[(g, s, f"term_{days}d")], t), latest(price.get((g, s, "on_demand"), {}), t)
+            if tp and od and od[1]:
+                rs.append(tp[1] / od[1] * 100)
+        if rs:
+            out[t] = statistics.median(rs)
+    return out
+
+
+def trend(typical, now_t, horizon_days=(7, 14, 30), min_days=14, window=30):
+    """Robust (Theil-Sen) trend of the daily typical price over the last `window` days, projected
+    forward. The band uses the 10th-90th percentile of the pairwise slopes. None until there is
+    `min_days` of history."""
+    days = {d: math.log(v) for d, v in daily(typical).items() if d > now_t - window * DAY and v > 0}
+    if len(days) < min_days:
+        return None
+    pts = sorted(days.items())
+    slopes = sorted((y2 - y1) / ((t2 - t1) / DAY) for i, (t1, y1) in enumerate(pts) for t2, y2 in pts[i + 1:])
+    q = lambda p: slopes[min(len(slopes) - 1, int(p * len(slopes)))]  # noqa: E731
+    mid, lo, hi = q(0.5), q(0.1), q(0.9)
+    now = typical[now_t]
+    return {"days": len(pts), "per_week": round((math.exp(mid * 7) - 1) * 100, 2),
+            "proj": [{"days": h, "mid": r4(now * math.exp(mid * h)), "lo": r4(now * math.exp(lo * h)),
+                      "hi": r4(now * math.exp(hi * h))} for h in horizon_days]}
+
+
+def month_index(ym):
+    y, m = int(ym[:4]), int(ym[5:7])
+    return y * 12 + m - 1
+
+
+def month_label(i):
+    return f"{i // 12:04d}-{i % 12 + 1:02d}"
+
+
+def load_backfill(data_dir):
+    """Archived list prices (data/backfill/*.csv, built by collector/backfill/*): (gpu, source) -> {month: price}."""
+    vals = defaultdict(list)
+    for r in read_csvs(data_dir / "backfill"):
+        if r["gpu"] in CATALOG and r["market"] == "on_demand" and segment_of(r["source"]) == "neocloud":
+            vals[(r["gpu"], r["source"], month_index(r["date"][:7]))].append(float(r["price"]))
+    out = defaultdict(dict)
+    for (g, s, mi), v in vals.items():
+        out[(g, s)][mi] = statistics.median(v)
+    return out
+
+
+def generation_curves(price, backfill, anchors, now_t):
+    """Monthly neocloud on-demand list-price index per GPU (archive + live, chained across sources),
+    anchored to today's neocloud typical price. Returns {gpu: {launch, last, idx, price}}."""
+    # archive and live are separate series even for the same provider: if the archive parser picked a
+    # different configuration than the live scraper, the level gap must not show up as a price move
+    hist = defaultdict(dict)  # gpu -> series -> {month: price}
+    for (g, s), months in backfill.items():
+        hist[g][f"{s} (archive)"] = dict(months)
+    live = defaultdict(lambda: defaultdict(list))
+    for (g, s, m), pts in price.items():
+        if m == "on_demand" and segment_of(s) == "neocloud":
+            for t, v in pts.items():
+                live[(g, s)][month_index(iso(t)[:7])].append(v[1])
+    for (g, s), months in live.items():
+        hist[g][s] = {mi: statistics.median(v) for mi, v in months.items()}
+    out = {}
+    for g, by_src in hist.items():
+        months = sorted({mi for m in by_src.values() for mi in m})
+        idx = chained_index(by_src, months, carry=3)
+        if not idx:
+            continue
+        last = max(idx)
+        scale = anchors.get(g) / idx[last] if anchors.get(g) else None
+        out[g] = {"launch": months[0], "last": last, "idx": idx,
+                  "price": {mi: v * scale for mi, v in idx.items()} if scale else None}
+    return out
+
+
+def analog_projection(curves, gpu, horizon=12):
+    """Project `gpu` forward by following older generations' price paths from the same age."""
+    me = curves.get(gpu)
+    if not me or not me["price"]:
+        return None
+    age = me["last"] - me["launch"]
+    paths = {}
+    for g, c in curves.items():
+        if g == gpu or c["last"] - c["launch"] < age + horizon or c["launch"] + age not in c["idx"]:
+            continue
+        base = c["idx"][c["launch"] + age]
+        steps = [c["idx"].get(c["launch"] + age + k) for k in range(1, horizon + 1)]
+        if all(steps):
+            paths[g] = [v / base for v in steps]
+    if not paths:
+        return None
+    now = me["price"][me["last"]]
+    cols = list(zip(*paths.values()))
+    return {"age": age, "analogs": sorted(paths), "months": [month_label(me["last"] + k) for k in range(1, horizon + 1)],
+            "mid": [r4(now * statistics.median(c)) for c in cols], "lo": [r4(now * min(c)) for c in cols],
+            "hi": [r4(now * max(c)) for c in cols]}
 
 
 def segment_of(source):
@@ -338,6 +478,16 @@ def build(data_dir, out_dir):
                 segs[seg] = {"typical": r4(snow), "chg": changes(sidx, now_t), "n": len(cur)}
             entry["market"][market]["segments"] = segs
 
+        # outlook ingredients: commitment-implied forward curve and short-term trend
+        od = entry["market"].get("on_demand", {})
+        fwd = forward_curve(price, gpu, now_t, od.get("typical"))
+        if fwd:
+            entry["forward"] = fwd
+        trends = {m: tr for m, ser in series["typical"].items() if (tr := trend(ser, now_t))}
+        if trends:
+            entry["trend"] = trends
+        term_ratios = {str(d): r for d in (180, 365) if (r := term_ratio_series(price, gpu, stamps, d))}
+
         # spot discount: how far below its own on-demand price each source sells spot
         disc_src = sorted({k[1] for k in keys if k[2] == "spot"} & {k[1] for k in keys if k[2] == "on_demand"})
         discount = {}
@@ -458,6 +608,7 @@ def build(data_dir, out_dir):
                 "discount": col(discount) if discount else [],
                 "tight": col(tight) if tight else [],
                 "seg": {k: col(v) for k, v in series["seg"].items()},
+                "termratio": {k: col(v) for k, v in term_ratios.items()},
                 "sources": {k: col(v) for k, v in series["sources"].items()},
             }
         all_days = sorted({t - t % DAY for t in stamps})
@@ -479,6 +630,22 @@ def build(data_dir, out_dir):
         "moves": price_moves(price, stamps, now_t),
         "announced": load_announced(data_dir, price, now_t),
     }
+
+    # generation age curves from archived + live neocloud list prices, and analog projections
+    anchors = {g["gpu"]: g["market"].get("on_demand", {}).get("segments", {}).get("neocloud", {}).get("typical")
+               for g in gpus_out}
+    curves = generation_curves(price, load_backfill(data_dir), anchors, now_t)
+    summary["outlook"] = {}
+    for g in summary["featured"]:
+        c = curves.get(g)
+        if not c:
+            continue
+        hist = sorted((c["price"] or {}).items())[-36:]
+        summary["outlook"][g] = {"launch": month_label(c["launch"]), "age": c["last"] - c["launch"],
+                                 "history": [[month_label(mi), r4(v)] for mi, v in hist],
+                                 "analog": analog_projection(curves, g)}
+    summary["vintage"] = {g: [[mi - c["launch"], round(v / c["idx"][c["launch"]] * 100, 1)] for mi, v in sorted(c["idx"].items())]
+                          for g, c in curves.items() if CATALOG[g][1] in GENERATIONS and c["last"] > c["launch"]}
     (out_dir / "summary.json").write_text(json.dumps(summary, separators=(",", ":")))
 
     all_days = sorted({t - t % DAY for t in stamps})

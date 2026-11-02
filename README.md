@@ -17,6 +17,12 @@ GitHub Actions (hourly cron)
 ## What the site shows
 
 - **Flagship cards**: typical price per GPU-hour, cheapest offer, 24h/7d/30d change, trend, demand.
+- **Outlook**: where on-demand prices are heading, from three independent signals:
+  - *market-implied*: commitment prices (1 month … 5 years) turned into the average price they imply
+    for each future period, like forward rates from a yield curve (includes a certainty discount);
+  - *generation analog*: older GPUs' month-by-month list-price path, applied from the same age;
+  - *announced* future price lists, and a *live trend* (robust 30-day trend, after 14 days of data).
+  Plus the commitment curve per source and generation age curves.
 - **Price trend**: flagship GPUs on one chart, as % change since the start of the range (or $/hr).
 - **Neoclouds vs the open market**: separate price indices for neoclouds, marketplaces and
   hyperscalers, and the neocloud premium over the open market (falling = commoditizing).
@@ -95,6 +101,14 @@ python -m http.server 8000 -d site
 GitHub's scheduled runs can be late or skipped when GitHub is busy; gaps show as breaks in the
 charts. On a public repo GitHub may pause schedules after 60 days without activity — re-enable
 the workflow in the Actions tab if that happens.
+
+## Price history from the Internet Archive
+
+`collector/backfill/*_history.py` rebuild years of neocloud list prices from archived snapshots of
+providers' pricing pages (Wayback Machine, one snapshot per month) into `data/backfill/*.csv`
+(`date,gpu,source,market,price,url` — every row links to the snapshot it came from). They run once,
+not hourly; rerun one to refresh it, e.g. `python collector/backfill/lambda_history.py`. The build merges
+this history with the live data for the generation age curves and the analog projection.
 
 ## Adding a source
 

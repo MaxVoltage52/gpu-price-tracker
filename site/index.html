@@ -40,6 +40,33 @@
       <div class="cards" id="cards"></div>
     </section>
 
+    <section class="panel" aria-labelledby="out-h">
+      <div class="panel-head">
+        <div>
+          <h2 id="out-h">Outlook</h2>
+          <p class="sec-sub">Where on-demand prices are heading, from three independent signals: what commitment prices imply, how earlier GPU generations aged, and announced price lists. Projections, not promises.</p>
+        </div>
+        <div class="seg small" role="radiogroup" aria-label="GPU" data-filter="outGpu" id="out-tabs"></div>
+      </div>
+      <div class="kpis" id="out-kpis"></div>
+      <div class="legend" id="out-legend"></div>
+      <div class="chart tall" id="out-chart"></div>
+      <div class="split out-split">
+        <div>
+          <h3>Commitment curve</h3>
+          <p class="mini-sub">Price per GPU-hour when you commit up front, by source (thin lines) and the median across sources (bold). The steeper it falls, the more providers expect prices to drop.</p>
+          <div class="legend chips" id="curve-legend"></div>
+          <div class="chart" id="curve-chart"></div>
+        </div>
+        <div>
+          <h3>Generation age curves</h3>
+          <p class="mini-sub">Neocloud list price as a % of its first listed price, by months since first listed (archived pricing pages plus live data).</p>
+          <div class="legend" id="vin-legend"></div>
+          <div class="chart" id="vin-chart"></div>
+        </div>
+      </div>
+    </section>
+
     <section class="panel" aria-labelledby="trend-h">
       <div class="panel-head">
         <div>

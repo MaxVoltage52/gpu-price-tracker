@@ -1,11 +1,12 @@
 """Together AI — AI cloud, public pricing page (together.ai/pricing).
 
-Prices: the GPU table with Preemptible (= spot) and On-demand columns, already USD per GPU-hour.
-Its reserved columns, and the Dedicated Inference / Post-Training tables, are ignored.
+Prices: the GPU table with Preemptible (= spot) and On-demand columns, already USD per GPU-hour,
+plus its Reserved columns as commitment prices ("31-90 days" -> term_90d).
+The Dedicated Inference / Post-Training tables are ignored.
 """
 import re
 
-from common import canon, http
+from common import canon, http, term_market
 
 NAME = "Together AI"
 URL = "https://www.together.ai/pricing"
@@ -14,7 +15,7 @@ URL = "https://www.together.ai/pricing"
 def _cells(tr, tag):
     """Cell texts of one row, repeated per colspan so indexes line up with the header."""
     out = []
-    for attrs, body in re.findall(r"<%s\b([^>]*)>(.*?)</%s>" % (tag, tag), tr, re.S):
+    for attrs, body in re.findall(r"<(?:%s)\b([^>]*)>(.*?)</(?:%s)>" % (tag, tag), tr, re.S):
         span = re.search(r'colspan="(\d+)"', attrs)
         text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", body)).strip()
         out += [text] * int(span.group(1) if span else 1)
@@ -32,6 +33,13 @@ def fetch():
         if None in idx.values():
             continue
         tables += 1
+        # second header row labels the reserved columns ("3-30 days", ...); the first column spans both rows
+        rows = re.findall(r"<tr\b[^>]*>(.*?)</tr>", table, re.S)
+        sub = _cells(rows[1], "t[hd]") if len(rows) > 1 and "fs-list-element" not in rows[1] else []
+        for j, label in enumerate(sub):
+            m = re.fullmatch(r"(\d+)\s*[-–]\s*(\d+)\s*days", label, re.I)
+            if m:
+                idx[term_market(int(m.group(2)))] = j + len(cols) - len(sub)
         for row in re.findall(r'<tr\b[^>]*fs-list-element="item"[^>]*>(.*?)</tr>', table, re.S):
             cells = _cells(row, "td")
             gpu = canon(cells[0]) if cells else None

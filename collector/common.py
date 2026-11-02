@@ -6,6 +6,8 @@ Every source module exposes NAME and fetch() -> (prices, demand):
   demand: (gpu, source, metric, value)                         see METRICS in build.py
 A module may return a third list, announced future prices:
   (gpu, source, market, usd_per_gpu_hour, "YYYY-MM-DD" effective date)
+Commitment prices use market term_<days>d (see term_market) — the price per GPU-hour when you
+commit to that long up front.
 """
 import gzip
 import json
@@ -41,6 +43,15 @@ def http(url, data=None, method=None, headers=None, timeout=60, tries=5):
 
 def http_json(url, data=None, method=None, headers=None, timeout=60):
     return json.loads(http(url, data, method, headers, timeout))
+
+
+TERM_DAYS = [30, 90, 180, 365, 1095, 1825]  # standard commitment buckets: 1, 3, 6 months; 1, 3, 5 years
+
+
+def term_market(days):
+    """Market name for a commitment of up to `days`, e.g. 31-90 days -> 'term_90d'."""
+    bucket = next((d for d in TERM_DAYS if days <= d * 1.05), TERM_DAYS[-1])
+    return f"term_{bucket}d"
 
 
 _fx = {}

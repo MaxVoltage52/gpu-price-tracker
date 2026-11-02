@@ -1,13 +1,14 @@
 """DigitalOcean — GPU Droplets, public pricing page (Next.js; plan data embedded in the RSC payload).
 
 Prices: on-demand and spot Droplet sizes (1 or 8 GPUs), divided by the GPU count. Only sizes whose
-card is actually shown in the page's On-Demand / Spot section are kept; 12-month commitments are ignored.
+card is actually shown in the page's On-Demand / Spot section are kept. The 12-month commitment
+prices (already per GPU-hour) are recorded as term_365d.
 """
 import html
 import json
 import re
 
-from common import canon, http
+from common import canon, http, term_market
 
 NAME = "DigitalOcean"
 URL = "https://www.digitalocean.com/pricing/gpu-droplets"
@@ -49,4 +50,10 @@ def fetch():
                 prices.append((gpu, NAME, market, round(hourly, 4)))
     if not any(p[2] == "on_demand" for p in prices):
         raise RuntimeError(f"DigitalOcean: no on-demand GPU prices parsed from {URL}")
+    if "commitment of 12 months" in page:  # only trust the commitment list while the page says what it is
+        for c in (data.get("extras") or {}).get("commitment") or []:
+            gpu = canon(re.sub(r"^(NVIDIA|AMD)\s+(HGX\s+)?", "", c.get("title") or ""))
+            hourly = float((c.get("price") or {}).get("hourly") or 0)
+            if gpu and 0.05 <= hourly <= 50:
+                prices.append((gpu, NAME, term_market(365), hourly))
     return prices, []

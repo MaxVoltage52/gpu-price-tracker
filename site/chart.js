@@ -91,13 +91,13 @@ function emptyState(host, msg) {
 
 /**
  * Line / area chart with crosshair tooltip.
- * o: t (ms[]), series [{ name, color, values, key?, area?, fill?: 'solid', tipValues?, width?, label?, noDot? }],
- *    fmt(v, step), tfmt(ms), tip,
+ * o: t (ms[]), series [{ name, color, values, key?, area?, fill?: 'solid', band?: { lo }, connect?, tipValues?,
+ *    width?, label?, noDot?, dotRadius? }], fmt(v, step), tfmt(ms), tip, xTicks? [{ t, label }], marker?, markerLabel?,
  *    yDomain? [lo, hi], ref? (value drawn as a reference line), endLabels?, compact?, emptyText, ariaLabel
  */
 export function lineChart(host, o) {
   host.replaceChildren();
-  const all = o.series.flatMap(s => s.values.filter(v => v != null));
+  const all = o.series.flatMap(s => [...s.values, ...(s.band?.lo || [])].filter(v => v != null));
   if (!o.t.length || !all.length) return emptyState(host, o.emptyText || 'No data for this selection yet.');
   const W = host.clientWidth, H = host.clientHeight;
   const labelW = o.endLabels ? Math.min(140, Math.max(0, ...o.series.map(s => (s.label || '').length * 6.8 + 18))) : 0;
@@ -124,8 +124,15 @@ export function lineChart(host, o) {
       text(axis, o.fmt(v, yt.step), { x: m.l - 8, y: y(v), 'text-anchor': 'end', 'dominant-baseline': 'middle' });
     });
     svg('line', { x1: m.l, x2: m.l + iw, y1: m.t + ih, y2: m.t + ih, stroke: 'var(--axis)', 'shape-rendering': 'crispEdges' }, axis);
-    const xt = timeTicks(t0, t1, Math.max(4, Math.floor(iw / 80)));
-    xt.ticks.forEach(v => text(axis, tickLabel(v, xt.unit), { x: x(v), y: H - 6, 'text-anchor': 'middle' }));
+    if (o.xTicks) o.xTicks.forEach(k => text(axis, k.label, { x: x(k.t), y: H - 6, 'text-anchor': 'middle' }));
+    else {
+      const xt = timeTicks(t0, t1, Math.max(4, Math.floor(iw / 80)));
+      xt.ticks.forEach(v => text(axis, tickLabel(v, xt.unit), { x: x(v), y: H - 6, 'text-anchor': 'middle' }));
+    }
+  }
+  if (o.marker != null && o.marker >= t0 && o.marker <= t1) {  // e.g. "today" on a chart that runs into the future
+    svg('line', { x1: x(o.marker), x2: x(o.marker), y1: m.t, y2: m.t + ih, stroke: 'var(--axis)', 'stroke-width': 1 }, root);
+    if (o.markerLabel) text(root, o.markerLabel, { x: x(o.marker) + 4, y: m.t + 10, class: 'marker-label' });
   }
   if (o.ref != null) svg('line', { x1: m.l, x2: m.l + iw, y1: y(o.ref), y2: y(o.ref), stroke: 'var(--axis)', 'stroke-width': 1.5 }, root);
 
@@ -133,10 +140,19 @@ export function lineChart(host, o) {
   const ends = [];
   for (const s of o.series) {
     const g = svg('g', { 'data-series': s.key || s.name, class: 'series' }, marks);
+    if (s.band) {  // shaded range between band.lo and band.hi (values = hi)
+      const pts = s.values.map((hi, i) => [i, hi, s.band.lo[i]]).filter(p => p[1] != null && p[2] != null);
+      if (pts.length > 1) {
+        const d = pts.map(([i, hi], k) => `${k ? 'L' : 'M'}${x(o.t[i]).toFixed(1)},${y(hi).toFixed(1)}`).join('') +
+          pts.slice().reverse().map(([i, , lo]) => `L${x(o.t[i]).toFixed(1)},${y(lo).toFixed(1)}`).join('') + 'Z';
+        svg('path', { d, fill: s.color, 'fill-opacity': 0.14 }, g);
+      }
+      continue;
+    }
     const runs = [];
     let run = [];
     s.values.forEach((v, i) => {
-      if (v == null) { if (run.length) runs.push(run); run = []; } else run.push([x(o.t[i]), y(v)]);
+      if (v == null) { if (run.length && !s.connect) { runs.push(run); run = []; } } else run.push([x(o.t[i]), y(v)]);
     });
     if (run.length) runs.push(run);
     if (s.fill === 'solid') {  // stacked layers: opaque fill down to the baseline, drawn top layer first
@@ -155,7 +171,8 @@ export function lineChart(host, o) {
       }
     }
     for (const r of runs) {
-      if (r.length === 1) svg('circle', { cx: r[0][0], cy: r[0][1], r: 3, fill: s.color }, g);
+      if (r.length === 1) svg('circle', { cx: r[0][0], cy: r[0][1], r: s.dotRadius || 3, fill: s.color,
+        stroke: s.dotRadius ? 'var(--surface)' : null, 'stroke-width': s.dotRadius ? 2 : null }, g);
       else svg('path', { d: r.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(''), fill: 'none',
         stroke: s.fill === 'solid' ? 'var(--surface)' : s.color, 'stroke-width': s.width || 2,
         'stroke-linejoin': 'round', 'stroke-linecap': 'round' }, g);
@@ -200,13 +217,14 @@ export function lineChart(host, o) {
     const px = x(o.t[i]);
     cross.setAttribute('x1', px); cross.setAttribute('x2', px);
     o.series.forEach((s, k) => {
-      const v = s.values[i];
+      const v = s.band ? null : s.values[i];
       dots[k].setAttribute('display', v == null ? 'none' : 'inline');
       if (v != null) { dots[k].setAttribute('cx', px); dots[k].setAttribute('cy', y(v)); }
     });
     hover.setAttribute('display', 'inline');
-    const rows = o.series.map(s => ({ s, v: (s.tipValues || s.values)[i] })).filter(r => r.v != null).sort((a, b) => b.v - a.v)
-      .map(({ s, v }) => ({ color: s.color, value: o.fmt(v), label: s.name }));
+    const rows = o.series.map(s => ({ s, v: (s.tipValues || s.values)[i], lo: s.band?.lo[i] })).filter(r => r.v != null && (!r.s.band || r.lo != null))
+      .sort((a, b) => b.v - a.v)
+      .map(({ s, v, lo }) => ({ color: s.color, value: s.band ? `${o.fmt(lo)}–${o.fmt(v)}` : o.fmt(v), label: s.name }));
     const box = root.getBoundingClientRect();
     showTip(o.tip, cx ?? box.left + (px / W) * box.width, cy ?? box.top + m.t + ih / 2, o.tfmt(o.t[i]),
       rows.length ? rows : [{ value: '—', label: 'no data' }]);

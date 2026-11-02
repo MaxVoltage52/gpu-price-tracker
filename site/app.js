@@ -7,7 +7,7 @@ const PERIODS = ['24h', '7d', '30d'];
 const STOCK = ['none left', 'low', 'medium', 'high'];
 const DAY = 86400e3;
 
-const state = { market: 'spot', range: '7d', trendMode: 'pct', heatMode: 'util', genMode: 'pflop', tightMode: 'tight', gpu: null };
+const state = { market: 'spot', range: '7d', trendMode: 'pct', heatMode: 'util', genMode: 'pflop', tightMode: 'tight', outGpu: null, gpu: null };
 const SEG_LABEL = { neocloud: 'Neoclouds', market: 'Open market', hyperscaler: 'Hyperscalers' };
 const GEN_COLOR = { Blackwell: 'var(--seq-7)', Hopper: 'var(--seq-5)', Ampere: 'var(--seq-3)' };  // ordinal: newest darkest
 const COMPUTE_GPUS = ['B300', 'B200', 'H200', 'H100 SXM', 'A100 80GB'];
@@ -221,6 +221,144 @@ async function renderTrend() {
     emptyText: 'Waiting for the first snapshots.' });
 }
 
+// ---------- outlook ----------
+const TERM_LABEL = { 0: 'On-demand', 30: '1 mo', 90: '3 mo', 180: '6 mo', 365: '1 yr', 1095: '3 yr', 1825: '5 yr' };
+const TERM_ORDER = [0, 30, 90, 180, 365, 1095, 1825];
+const spanText = (a, b) => `${a ? `${a >= 365 ? `${a / 365} yr` : `${Math.round(a / 30)} mo`}` : 'now'}–${b >= 365 ? `${b / 365} yr` : `${Math.round(b / 30)} mo`}`;
+
+function kpi(label, color, value, pct, sub, off) {
+  const box = el('div', `kpi${off ? ' off' : ''}`);
+  const k = el('div', 'k'); if (color) { const sw = el('span', 'sw'); sw.style.background = color; k.append(sw); } k.append(label);
+  const v = el('div', 'v', value);
+  if (pct != null) { const s = el('small'); s.append(delta(pct, 'today')); v.append(s); }
+  box.append(k, v, el('div', 's', sub));
+  return box;
+}
+
+async function renderOutlook() {
+  const tabs = $('#out-tabs');
+  if (!tabs.children.length) tabs.replaceChildren(...S.featured.map(n => { const b = el('button', null, n); b.setAttribute('role', 'radio'); b.dataset.value = n; return b; }));
+  if (!byName(state.outGpu)) state.outGpu = S.featured.includes('H100 SXM') ? 'H100 SXM' : S.featured[0];
+  renderSegs();
+  const g = byName(state.outGpu), color = colorOf(g.gpu);
+  const out = S.outlook?.[g.gpu], fwd = g.forward, tr = g.trend?.on_demand;
+  const nowMs = tsMs(S.last_ts), nowMonth = S.last_ts.slice(0, 7), endMs = nowMs + 395 * DAY;
+  const anchor = out?.history?.at(-1)?.[1] ?? g.market.on_demand?.segments?.neocloud?.typical ?? g.market.on_demand?.typical;
+  const monthMs = ym => (ym === nowMonth ? nowMs : Date.parse(`${ym}-15T00:00:00Z`));
+  const ann = S.announced.filter(a => a.gpu === g.gpu && a.market === 'on_demand');
+  const path = (fwd?.path || []).filter(p => nowMs + p.from * DAY < endMs);
+  const ratioOf = p => p.ratio * anchor;
+
+  // one shared time grid; every series is drawn with connect so it skips the other series' points
+  const T = new Set([nowMs]);
+  (out?.history || []).forEach(([m]) => T.add(monthMs(m)));
+  (out?.analog?.months || []).forEach(m => T.add(monthMs(m)));
+  path.forEach(p => { T.add(nowMs + p.from * DAY + (p.from ? HOUR_MS : 0)); T.add(Math.min(endMs, nowMs + p.to * DAY)); });
+  ann.forEach(a => T.add(Date.parse(`${a.effective}T00:00:00Z`)));
+  (tr?.proj || []).forEach(p => T.add(nowMs + p.days * DAY));
+  const t = [...T].sort((a, b) => a - b);
+  const col = fill => { const v = t.map(() => null); fill((ms, val) => { const i = t.indexOf(ms); if (i >= 0) v[i] = val; }); return v; };
+
+  const series = [];
+  if (out?.history?.length) series.push({ name: 'History (neocloud list price)', color, width: 2.5, connect: true,
+    values: col(set => { out.history.forEach(([m, p]) => set(monthMs(m), p)); set(nowMs, anchor); }) });
+  else if (anchor) series.push({ name: 'Today (neocloud)', color, values: col(set => set(nowMs, anchor)), dotRadius: 5 });
+  if (out?.analog) {
+    const a = out.analog;
+    series.push({ name: `Generation analog range (${a.analogs.join(', ')})`, color, connect: true,
+      values: col(set => { set(nowMs, anchor); a.months.forEach((m, i) => set(monthMs(m), a.hi[i])); }),
+      band: { lo: col(set => { set(nowMs, anchor); a.months.forEach((m, i) => set(monthMs(m), a.lo[i])); }) } });
+    series.push({ name: 'Generation analog (median)', color: `color-mix(in srgb, ${color} 55%, var(--surface))`, width: 2,
+      connect: true, noDot: true,
+      values: col(set => { set(nowMs, anchor); a.months.forEach((m, i) => set(monthMs(m), a.mid[i])); }) });
+  }
+  if (path.length && anchor) series.push({ name: 'Market-implied (from commitment prices)', color: 'var(--ink-2)', width: 2, connect: true, noDot: true,
+    values: col(set => path.forEach(p => { set(nowMs + p.from * DAY + (p.from ? HOUR_MS : 0), ratioOf(p)); set(Math.min(endMs, nowMs + p.to * DAY), ratioOf(p)); })) });
+  for (const src of [...new Set(ann.map(a => a.source))]) series.push({ name: `Announced (${src})`, color: 'var(--ink)', dotRadius: 5,
+    values: col(set => ann.filter(a => a.source === src).forEach(a => set(Date.parse(`${a.effective}T00:00:00Z`), a.price))) });
+  if (tr) {
+    const base = g.market.on_demand?.typical;
+    series.push({ name: 'Live trend range', color: 'var(--muted)', connect: true,
+      values: col(set => { set(nowMs, base); tr.proj.forEach(p => set(nowMs + p.days * DAY, p.hi)); }),
+      band: { lo: col(set => { set(nowMs, base); tr.proj.forEach(p => set(nowMs + p.days * DAY, p.lo)); }) } });
+  }
+  $('#out-legend').replaceChildren(...series.filter(s => !s.name.startsWith('Generation analog (')).map(s => {
+    const sp = el('span');
+    const k = el('span', s.band ? 'sw' : 'key'); k.style.background = s.color; if (s.band) k.style.opacity = 0.35;
+    sp.append(k, s.name); return sp;
+  }));
+  lineChart($('#out-chart'), { t, series, fmt: fmtPrice, tfmt: ms => (ms > nowMs ? fmtDay(ms) : ms === nowMs ? 'Today' : new Date(ms).toLocaleDateString(undefined, { month: 'short', year: 'numeric' })),
+    tip: tip(), marker: nowMs, markerLabel: 'today', ariaLabel: `${g.gpu} price outlook`, emptyText: `No on-demand prices for ${g.gpu} yet.` });
+
+  // headline numbers
+  const k = [];
+  const seg = path.find(p => p.from >= 180 && p.to <= 365) || path.at(-1);
+  k.push(seg && anchor
+    ? kpi('Commitments imply', 'var(--ink-2)', fmtPrice(ratioOf(seg)), (seg.ratio - 1) * 100,
+      `average for ${spanText(seg.from, seg.to)} out, from ${Math.max(...fwd.points.map(p => p.n))} sources' commitment prices`)
+    : kpi('Commitments imply', null, 'No commitment prices yet', null, 'appears when sources publish term prices', true));
+  const an = out?.analog;
+  k.push(an
+    ? kpi('Older generations suggest', color, fmtPrice(an.mid.at(-1)), (an.mid.at(-1) / anchor - 1) * 100,
+      `in 12 months, if it ages like ${an.analogs.join(' / ')} did from month ${an.age}`)
+    : kpi('Older generations suggest', null, 'Needs archived history', null, 'archived pricing pages fill this in', true));
+  const a0 = ann[0];
+  k.push(a0
+    ? kpi('Announced', 'var(--ink)', `${fmtPrice(a0.price)}`, a0.pct, `${a0.source} from ${fmtDay(Date.parse(`${a0.effective}T00:00:00Z`))}`)
+    : kpi('Announced', null, 'Nothing announced', null, 'future price lists show up here', true));
+  const days = Math.max(0, Math.floor((nowMs - tsMs(S.first_ts)) / DAY));
+  k.push(tr
+    ? kpi('Live trend', 'var(--muted)', `${fmtPct(tr.per_week)}/wk`, null, `30 days: ${fmtPrice(tr.proj.at(-1).mid)} (${fmtPrice(tr.proj.at(-1).lo)}–${fmtPrice(tr.proj.at(-1).hi)})`)
+    : kpi('Live trend', null, `Starts after 14 days`, null, `${days} day${days === 1 ? '' : 's'} of hourly data so far`, true));
+  $('#out-kpis').replaceChildren(...k);
+
+  renderCommitCurve(g, color);
+  renderVintage();
+}
+const HOUR_MS = 3600e3;
+
+function renderCommitCurve(g, color) {
+  const host = $('#curve-chart'), fwd = g.forward;
+  if (!fwd) { $('#curve-legend').replaceChildren(); return lineChart(host, { t: [], series: [], emptyText: `No commitment prices for ${g.gpu} yet.` }); }
+  const pos = TERM_ORDER.filter(d => d === 0 || fwd.points.some(p => p.days === d) || Object.values(fwd.sources).some(s => s[d] != null));
+  const t = pos.map((_, i) => i * DAY);
+  const series = Object.entries(fwd.sources).map(([s, v]) => ({ name: s, key: s, color: 'var(--line-muted)', width: 1.5, connect: true,
+    values: pos.map(d => (d === 0 ? 100 : v[d] != null ? v[d] / v.on_demand * 100 : null)) }));
+  const med = { name: 'Median across sources', key: 'Median', color, width: 2.5, connect: true,
+    values: pos.map(d => (d === 0 ? 100 : (fwd.points.find(p => p.days === d)?.ratio ?? null) * 100 || null)) };
+  med.label = `${Math.round(med.values.filter(v => v != null).at(-1))}%`;
+  series.push(med);
+  const legend = $('#curve-legend');
+  legend.replaceChildren(...series.map(s => {
+    const b = el('button'); b.type = 'button'; b.append(keyEl(s.color), s.name);
+    const on = () => { host.classList.add('hl'); host.querySelector(`.series[data-series="${CSS.escape(s.key)}"]`)?.classList.add('on'); };
+    const off = () => { host.classList.remove('hl'); host.querySelectorAll('.series.on').forEach(n => n.classList.remove('on')); };
+    b.addEventListener('pointerenter', on); b.addEventListener('pointerleave', off); b.addEventListener('focus', on); b.addEventListener('blur', off);
+    return b;
+  }));
+  lineChart(host, { t, series, endLabels: true, ref: 100, fmt: v => `${Math.round(v)}%`, tfmt: ms => TERM_LABEL[pos[Math.round(ms / DAY)]],
+    xTicks: pos.map((d, i) => ({ t: i * DAY, label: TERM_LABEL[d] })), tip: tip(), ariaLabel: `${g.gpu} commitment curve` });
+}
+
+function renderVintage() {
+  const host = $('#vin-chart');
+  const gpus = COMPUTE_GPUS.filter(n => S.vintage?.[n]?.length > 1);
+  if (!gpus.length) { $('#vin-legend').replaceChildren(); return lineChart(host, { t: [], series: [], emptyText: 'Builds from archived pricing pages plus live data — needs at least two months per GPU.' }); }
+  const maxAge = Math.max(...gpus.flatMap(n => S.vintage[n].map(p => p[0])));
+  const ages = Array.from({ length: maxAge + 1 }, (_, i) => i);
+  const series = gpus.map(n => {
+    const m = new Map(S.vintage[n]);
+    const values = ages.map(a => m.get(a) ?? null);
+    return { name: n, color: S.featured.includes(n) ? colorOf(n) : 'var(--muted)', values, connect: true, label: `${n} ${Math.round(values.filter(v => v != null).at(-1))}%` };
+  });
+  $('#vin-legend').replaceChildren(...series.map(s => { const sp = el('span'); sp.append(keyEl(s.color), s.name); return sp; }));
+  const step = maxAge > 36 ? 12 : maxAge > 12 ? 6 : 2;
+  lineChart(host, { t: ages.map(a => a * 30 * DAY), series, endLabels: true, ref: 100, fmt: v => `${Math.round(v)}%`,
+    tfmt: ms => `Month ${Math.round(ms / 30 / DAY)} after first listing`,
+    xTicks: ages.filter(a => a % step === 0).map(a => ({ t: a * 30 * DAY, label: a ? `${a} mo` : 'first listed' })),
+    tip: tip(), ariaLabel: 'Generation age curves' });
+}
+
 // ---------- neoclouds vs open market ----------
 const segKey = (seg) => `${seg}|${state.market}`;
 
@@ -290,7 +428,8 @@ function renderMoves() {
     const li = el('li');
     const what = el('span', 'what');
     if (m.tag) what.append(el('span', `tag ${m.tag[1]}`, m.tag[0]));
-    what.append(el('b', null, m.source), ` · ${m.gpu} · ${MARKET_LABEL[m.market]}`);
+    const mk = MARKET_LABEL[m.market] || (m.market.startsWith('term_') ? `${TERM_LABEL[parseInt(m.market.slice(5), 10)]} commitment` : m.market);
+    what.append(el('b', null, m.source), ` · ${m.gpu} · ${mk}`);
     const px = el('span', 'px');
     if (m.kind === 'added') px.append(`listed at ${fmtPrice(m.to)}`);
     else if (m.kind === 'removed') px.append(`was ${fmtPrice(m.from)}`);
@@ -640,6 +779,9 @@ function renderFooter() {
     'Trends and 24h/7d/30d changes use a chained index: each hour every source is compared with its own previous price, so a provider joining or dropping out never moves the line. ' +
     'Segments: neoclouds = GPU clouds and aggregators, open market = marketplaces and decentralized networks, hyperscalers = AWS, Azure, Oracle; each has its own index. ' +
     'Tightness = average of rented share, share of sources sold out, and 100 − spot discount. Compute prices use dense BF16 PFLOPS from NVIDIA datasheets. ' +
+    'Outlook: "market-implied" turns each source\'s commitment discounts (Together, DigitalOcean, Hyperbolic, Azure reservations) into the average price they imply ' +
+    'for each future period, like forward rates from a yield curve — it includes a discount for certainty, so it leans low. "Generation analog" follows older GPUs\' ' +
+    'month-by-month list-price path (from archived pricing pages) from the same age. The live trend is a robust 30-day trend, shown after 14 days of data. ' +
     '"Rented" is rented ÷ listed GPUs on open marketplaces that publish both. ' +
     '"Sold out" means a source had no free GPUs of that model (marketplace counts) or reported no stock (Scaleway shortage); ' +
     '"hardest to get" is the share of source-hours that were sold out in the range. io.net reports almost everything as hired, so it counts as sold out most of the time. ' +
@@ -655,11 +797,12 @@ function readHash() {
   if (['util', 'soldout'].includes(p.get('heat'))) state.heatMode = p.get('heat');
   if (['pflop', 'rel'].includes(p.get('gen'))) state.genMode = p.get('gen');
   if (['tight', 'discount'].includes(p.get('tight'))) state.tightMode = p.get('tight');
+  if (p.get('out')) state.outGpu = p.get('out');
   if (p.get('gpu')) state.gpu = p.get('gpu');
 }
 function writeHash() {
   history.replaceState(null, '', '#' + new URLSearchParams({ market: state.market, range: state.range, trend: state.trendMode,
-    heat: state.heatMode, gen: state.genMode, tight: state.tightMode, gpu: state.gpu }));
+    heat: state.heatMode, gen: state.genMode, tight: state.tightMode, out: state.outGpu || '', gpu: state.gpu }));
 }
 function renderSegs() {
   document.querySelectorAll('.seg').forEach(seg => seg.querySelectorAll('button')
@@ -670,6 +813,7 @@ function renderAll() {
   renderSegs();
   writeHash();
   renderCards();
+  renderOutlook();
   renderTrend();
   renderSegments();
   renderMoves();
@@ -697,7 +841,8 @@ document.querySelectorAll('.seg').forEach(seg => seg.addEventListener('click', e
   const b = e.target.closest('button');
   if (!b) return;
   state[seg.dataset.filter] = b.dataset.value;
-  const only = { trendMode: renderTrend, heatMode: renderHeat, genMode: renderGeneration, tightMode: renderTightness }[seg.dataset.filter];
+  const only = { trendMode: renderTrend, heatMode: renderHeat, genMode: renderGeneration, tightMode: renderTightness,
+    outGpu: renderOutlook }[seg.dataset.filter];
   if (only) { renderSegs(); writeHash(); only(); } else renderAll();
 }));
 $('#gpu-pick').addEventListener('change', e => selectGpu(e.target.value, false));
