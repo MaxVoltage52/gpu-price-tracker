@@ -4,4 +4,4 @@ __pycache__/
 # local preview config and screenshots
 .claude/
 .playwright-mcp/
-gpu-tracker-*.png
+/*.png
