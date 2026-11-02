@@ -268,11 +268,16 @@ def month_label(i):
 
 
 def load_backfill(data_dir):
-    """Archived list prices (data/backfill/*.csv, built by collector/backfill/*): (gpu, source) -> {month: price}."""
+    """Archived list prices (data/backfill/*.csv, built by collector/backfill/*): (gpu, series) -> {month: price}.
+    Every archived page is its own series: when a provider moves to a new pricing page it often changes what
+    it lists too (CoreWeave went from GPU-only to all-in instance prices in 2025), and that must not read as a
+    price move. Series only chain where they overlap."""
     vals = defaultdict(list)
     for r in read_csvs(data_dir / "backfill"):
         if r["gpu"] in CATALOG and r["market"] == "on_demand" and segment_of(r["source"]) == "neocloud":
-            vals[(r["gpu"], r["source"], month_index(r["date"][:7]))].append(float(r["price"]))
+            page = re.sub(r"^https?://web\.archive\.org/web/\d+[a-z_]*/", "", r["url"])
+            page = re.sub(r"^https?://(www\.)?|[?#].*$|/$", "", page)
+            vals[(r["gpu"], f"{r['source']} (archive: {page})", month_index(r["date"][:7]))].append(float(r["price"]))
     out = defaultdict(dict)
     for (g, s, mi), v in vals.items():
         out[(g, s)][mi] = statistics.median(v)
@@ -285,8 +290,8 @@ def generation_curves(price, backfill, anchors, now_t):
     # archive and live are separate series even for the same provider: if the archive parser picked a
     # different configuration than the live scraper, the level gap must not show up as a price move
     hist = defaultdict(dict)  # gpu -> series -> {month: price}
-    for (g, s), months in backfill.items():
-        hist[g][f"{s} (archive)"] = dict(months)
+    for (g, series), months in backfill.items():
+        hist[g][series] = dict(months)
     live = defaultdict(lambda: defaultdict(list))
     for (g, s, m), pts in price.items():
         if m == "on_demand" and segment_of(s) == "neocloud":
@@ -314,8 +319,10 @@ def analog_projection(curves, gpu, horizon=12):
         return None
     age = me["last"] - me["launch"]
     paths = {}
-    for g, c in curves.items():
-        if g == gpu or c["last"] - c["launch"] < age + horizon or c["launch"] + age not in c["idx"]:
+    for g, c in curves.items():  # only data-center generations age like data-center GPUs
+        if g == gpu or CATALOG[g][1] not in GENERATIONS:
+            continue
+        if c["last"] - c["launch"] < age + horizon or c["launch"] + age not in c["idx"]:
             continue
         base = c["idx"][c["launch"] + age]
         steps = [c["idx"].get(c["launch"] + age + k) for k in range(1, horizon + 1)]

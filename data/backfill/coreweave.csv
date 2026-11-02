@@ -1,0 +1,410 @@
+date,gpu,source,market,price,url
+2021-03-05,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20210305195443/https://docs.coreweave.com/resources/resource-based-pricing
+2021-03-05,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20210305195443/https://docs.coreweave.com/resources/resource-based-pricing
+2021-04-16,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20210416000044/https://docs.coreweave.com/resources/resource-based-pricing
+2021-04-16,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20210416000044/https://docs.coreweave.com/resources/resource-based-pricing
+2021-07-23,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20210723210511/https://docs.coreweave.com/resources/resource-based-pricing
+2021-07-23,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20210723210511/https://docs.coreweave.com/resources/resource-based-pricing
+2021-07-23,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20210723210511/https://docs.coreweave.com/resources/resource-based-pricing
+2021-10-19,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20211019071104/https://docs.coreweave.com/resources/resource-based-pricing
+2021-10-19,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20211019071104/https://docs.coreweave.com/resources/resource-based-pricing
+2021-10-19,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20211019071104/https://docs.coreweave.com/resources/resource-based-pricing
+2021-10-19,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20211019071104/https://docs.coreweave.com/resources/resource-based-pricing
+2022-01-22,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20220122103958/https://docs.coreweave.com/resources/resource-based-pricing
+2022-01-22,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20220122103958/https://docs.coreweave.com/resources/resource-based-pricing
+2022-01-22,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20220122103958/https://docs.coreweave.com/resources/resource-based-pricing
+2022-01-22,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20220122103958/https://docs.coreweave.com/resources/resource-based-pricing
+2022-05-23,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20220523163701/https://docs.coreweave.com/resources/resource-based-pricing
+2022-05-23,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20220523163701/https://docs.coreweave.com/resources/resource-based-pricing
+2022-05-23,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20220523163701/https://docs.coreweave.com/resources/resource-based-pricing
+2022-05-23,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20220523163701/https://docs.coreweave.com/resources/resource-based-pricing
+2022-05-23,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20220523163701/https://docs.coreweave.com/resources/resource-based-pricing
+2022-08-10,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20220810202104/https://coreweave.com/gpu-cloud-pricing
+2022-08-10,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20220810202104/https://coreweave.com/gpu-cloud-pricing
+2022-08-10,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20220810202104/https://coreweave.com/gpu-cloud-pricing
+2022-08-10,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20220810202104/https://coreweave.com/gpu-cloud-pricing
+2022-08-10,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20220810202104/https://coreweave.com/gpu-cloud-pricing
+2022-09-01,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20220901151956/https://www.coreweave.com/gpu-cloud-pricing
+2022-09-01,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20220901151956/https://www.coreweave.com/gpu-cloud-pricing
+2022-09-01,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20220901151956/https://www.coreweave.com/gpu-cloud-pricing
+2022-09-01,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20220901151956/https://www.coreweave.com/gpu-cloud-pricing
+2022-09-01,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20220901151956/https://www.coreweave.com/gpu-cloud-pricing
+2022-10-06,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20221006152243/https://www.coreweave.com/gpu-cloud-pricing
+2022-10-06,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20221006152243/https://www.coreweave.com/gpu-cloud-pricing
+2022-10-06,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20221006152243/https://www.coreweave.com/gpu-cloud-pricing
+2022-10-06,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20221006152243/https://www.coreweave.com/gpu-cloud-pricing
+2022-10-06,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20221006152243/https://www.coreweave.com/gpu-cloud-pricing
+2022-11-20,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20221120163150/https://coreweave.com/gpu-cloud-pricing
+2022-11-20,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20221120163150/https://coreweave.com/gpu-cloud-pricing
+2022-11-20,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20221120163150/https://coreweave.com/gpu-cloud-pricing
+2022-11-20,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20221120163150/https://coreweave.com/gpu-cloud-pricing
+2022-11-20,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20221120163150/https://coreweave.com/gpu-cloud-pricing
+2022-12-01,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20221201061437/https://www.coreweave.com/gpu-cloud-pricing
+2022-12-01,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20221201061437/https://www.coreweave.com/gpu-cloud-pricing
+2022-12-01,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20221201061437/https://www.coreweave.com/gpu-cloud-pricing
+2022-12-01,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20221201061437/https://www.coreweave.com/gpu-cloud-pricing
+2022-12-01,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20221201061437/https://www.coreweave.com/gpu-cloud-pricing
+2023-01-19,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20230119104731/https://www.coreweave.com/gpu-cloud-pricing
+2023-01-19,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20230119104731/https://www.coreweave.com/gpu-cloud-pricing
+2023-01-19,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230119104731/https://www.coreweave.com/gpu-cloud-pricing
+2023-01-19,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20230119104731/https://www.coreweave.com/gpu-cloud-pricing
+2023-01-28,H100 SXM,CoreWeave,on_demand,4.78,https://web.archive.org/web/20230128173550/https://docs.coreweave.com/resources/resource-based-pricing
+2023-01-19,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230119104731/https://www.coreweave.com/gpu-cloud-pricing
+2023-01-19,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20230119104731/https://www.coreweave.com/gpu-cloud-pricing
+2023-02-09,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20230209065958/https://coreweave.com/gpu-cloud-pricing
+2023-02-09,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20230209065958/https://coreweave.com/gpu-cloud-pricing
+2023-02-09,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230209065958/https://coreweave.com/gpu-cloud-pricing
+2023-02-09,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20230209065958/https://coreweave.com/gpu-cloud-pricing
+2023-02-04,H100 SXM,CoreWeave,on_demand,4.78,https://web.archive.org/web/20230204075631/https://docs.coreweave.com/resources/resource-based-pricing
+2023-02-09,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230209065958/https://coreweave.com/gpu-cloud-pricing
+2023-02-09,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20230209065958/https://coreweave.com/gpu-cloud-pricing
+2023-03-14,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20230314174654/https://coreweave.com/gpu-cloud-pricing
+2023-03-14,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20230314174654/https://coreweave.com/gpu-cloud-pricing
+2023-03-14,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230314174654/https://coreweave.com/gpu-cloud-pricing
+2023-03-14,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20230314174654/https://coreweave.com/gpu-cloud-pricing
+2023-03-14,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230314174654/https://coreweave.com/gpu-cloud-pricing
+2023-03-14,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20230314174654/https://coreweave.com/gpu-cloud-pricing
+2023-04-01,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20230401080558/https://coreweave.com/gpu-cloud-pricing
+2023-04-01,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20230401080558/https://coreweave.com/gpu-cloud-pricing
+2023-04-01,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230401080558/https://coreweave.com/gpu-cloud-pricing
+2023-04-01,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20230401080558/https://coreweave.com/gpu-cloud-pricing
+2023-04-01,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20230401080558/https://coreweave.com/gpu-cloud-pricing
+2023-04-01,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230401080558/https://coreweave.com/gpu-cloud-pricing
+2023-04-01,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20230401080558/https://coreweave.com/gpu-cloud-pricing
+2023-05-13,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20230513204518/https://www.coreweave.com/gpu-cloud-pricing
+2023-05-13,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20230513204518/https://www.coreweave.com/gpu-cloud-pricing
+2023-05-13,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230513204518/https://www.coreweave.com/gpu-cloud-pricing
+2023-05-13,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20230513204518/https://www.coreweave.com/gpu-cloud-pricing
+2023-05-13,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20230513204518/https://www.coreweave.com/gpu-cloud-pricing
+2023-05-13,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230513204518/https://www.coreweave.com/gpu-cloud-pricing
+2023-05-13,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20230513204518/https://www.coreweave.com/gpu-cloud-pricing
+2023-06-04,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20230604113924/http://www.coreweave.com/gpu-cloud-pricing
+2023-06-04,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20230604113924/http://www.coreweave.com/gpu-cloud-pricing
+2023-06-04,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230604113924/http://www.coreweave.com/gpu-cloud-pricing
+2023-06-04,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20230604113924/http://www.coreweave.com/gpu-cloud-pricing
+2023-06-04,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20230604113924/http://www.coreweave.com/gpu-cloud-pricing
+2023-06-04,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230604113924/http://www.coreweave.com/gpu-cloud-pricing
+2023-06-04,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20230604113924/http://www.coreweave.com/gpu-cloud-pricing
+2023-07-06,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20230706175917/https://www.coreweave.com/gpu-cloud-pricing
+2023-07-06,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20230706175917/https://www.coreweave.com/gpu-cloud-pricing
+2023-07-06,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230706175917/https://www.coreweave.com/gpu-cloud-pricing
+2023-07-06,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20230706175917/https://www.coreweave.com/gpu-cloud-pricing
+2023-07-06,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20230706175917/https://www.coreweave.com/gpu-cloud-pricing
+2023-07-06,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230706175917/https://www.coreweave.com/gpu-cloud-pricing
+2023-07-06,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20230706175917/https://www.coreweave.com/gpu-cloud-pricing
+2023-08-23,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20230823150618/https://www.coreweave.com/gpu-cloud-pricing
+2023-08-23,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20230823150618/https://www.coreweave.com/gpu-cloud-pricing
+2023-08-23,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230823150618/https://www.coreweave.com/gpu-cloud-pricing
+2023-08-23,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20230823150618/https://www.coreweave.com/gpu-cloud-pricing
+2023-08-23,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20230823150618/https://www.coreweave.com/gpu-cloud-pricing
+2023-08-23,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230823150618/https://www.coreweave.com/gpu-cloud-pricing
+2023-08-23,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20230823150618/https://www.coreweave.com/gpu-cloud-pricing
+2023-09-21,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20230921184312/https://www.coreweave.com/gpu-cloud-pricing
+2023-09-21,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20230921184312/https://www.coreweave.com/gpu-cloud-pricing
+2023-09-21,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230921184312/https://www.coreweave.com/gpu-cloud-pricing
+2023-09-21,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20230921184312/https://www.coreweave.com/gpu-cloud-pricing
+2023-09-21,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20230921184312/https://www.coreweave.com/gpu-cloud-pricing
+2023-09-21,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20230921184312/https://www.coreweave.com/gpu-cloud-pricing
+2023-09-21,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20230921184312/https://www.coreweave.com/gpu-cloud-pricing
+2023-11-26,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20231126215533/https://coreweave.com/gpu-cloud-pricing
+2023-11-26,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20231126215533/https://coreweave.com/gpu-cloud-pricing
+2023-11-26,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20231126215533/https://coreweave.com/gpu-cloud-pricing
+2023-11-26,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20231126215533/https://coreweave.com/gpu-cloud-pricing
+2023-11-26,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20231126215533/https://coreweave.com/gpu-cloud-pricing
+2023-11-26,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20231126215533/https://coreweave.com/gpu-cloud-pricing
+2023-11-26,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20231126215533/https://coreweave.com/gpu-cloud-pricing
+2023-12-13,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20231213134534/https://www.coreweave.com/gpu-cloud-pricing
+2023-12-13,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20231213134534/https://www.coreweave.com/gpu-cloud-pricing
+2023-12-13,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20231213134534/https://www.coreweave.com/gpu-cloud-pricing
+2023-12-13,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20231213134534/https://www.coreweave.com/gpu-cloud-pricing
+2023-12-13,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20231213134534/https://www.coreweave.com/gpu-cloud-pricing
+2023-12-13,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20231213134534/https://www.coreweave.com/gpu-cloud-pricing
+2023-12-13,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20231213134534/https://www.coreweave.com/gpu-cloud-pricing
+2024-01-08,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20240108002155/https://www.coreweave.com/gpu-cloud-pricing
+2024-01-08,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20240108002155/https://www.coreweave.com/gpu-cloud-pricing
+2024-01-08,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240108002155/https://www.coreweave.com/gpu-cloud-pricing
+2024-01-08,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20240108002155/https://www.coreweave.com/gpu-cloud-pricing
+2024-01-08,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20240108002155/https://www.coreweave.com/gpu-cloud-pricing
+2024-01-08,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240108002155/https://www.coreweave.com/gpu-cloud-pricing
+2024-01-08,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20240108002155/https://www.coreweave.com/gpu-cloud-pricing
+2024-02-05,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20240205004831/https://www.coreweave.com/gpu-cloud-pricing
+2024-02-05,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20240205004831/https://www.coreweave.com/gpu-cloud-pricing
+2024-02-05,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240205004831/https://www.coreweave.com/gpu-cloud-pricing
+2024-02-05,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20240205004831/https://www.coreweave.com/gpu-cloud-pricing
+2024-02-05,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20240205004831/https://www.coreweave.com/gpu-cloud-pricing
+2024-02-05,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240205004831/https://www.coreweave.com/gpu-cloud-pricing
+2024-02-05,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20240205004831/https://www.coreweave.com/gpu-cloud-pricing
+2024-03-14,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20240314134731/https://www.coreweave.com/gpu-cloud-pricing
+2024-03-14,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20240314134731/https://www.coreweave.com/gpu-cloud-pricing
+2024-03-14,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240314134731/https://www.coreweave.com/gpu-cloud-pricing
+2024-03-14,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20240314134731/https://www.coreweave.com/gpu-cloud-pricing
+2024-03-14,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20240314134731/https://www.coreweave.com/gpu-cloud-pricing
+2024-03-14,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240314134731/https://www.coreweave.com/gpu-cloud-pricing
+2024-03-14,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20240314134731/https://www.coreweave.com/gpu-cloud-pricing
+2024-04-13,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20240413012946/https://coreweave.com/gpu-cloud-pricing
+2024-04-13,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20240413012946/https://coreweave.com/gpu-cloud-pricing
+2024-04-13,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240413012946/https://coreweave.com/gpu-cloud-pricing
+2024-04-13,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20240413012946/https://coreweave.com/gpu-cloud-pricing
+2024-04-13,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20240413012946/https://coreweave.com/gpu-cloud-pricing
+2024-04-13,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240413012946/https://coreweave.com/gpu-cloud-pricing
+2024-04-13,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20240413012946/https://coreweave.com/gpu-cloud-pricing
+2024-05-04,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20240504090418/https://coreweave.com/gpu-cloud-pricing
+2024-05-04,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20240504090418/https://coreweave.com/gpu-cloud-pricing
+2024-05-04,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240504090418/https://coreweave.com/gpu-cloud-pricing
+2024-05-04,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20240504090418/https://coreweave.com/gpu-cloud-pricing
+2024-05-04,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20240504090418/https://coreweave.com/gpu-cloud-pricing
+2024-05-04,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240504090418/https://coreweave.com/gpu-cloud-pricing
+2024-05-04,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20240504090418/https://coreweave.com/gpu-cloud-pricing
+2024-06-18,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20240618205634/https://www.coreweave.com/gpu-cloud-pricing
+2024-06-18,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20240618205634/https://www.coreweave.com/gpu-cloud-pricing
+2024-06-18,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240618205634/https://www.coreweave.com/gpu-cloud-pricing
+2024-06-18,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20240618205634/https://www.coreweave.com/gpu-cloud-pricing
+2024-06-18,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20240618205634/https://www.coreweave.com/gpu-cloud-pricing
+2024-06-18,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240618205634/https://www.coreweave.com/gpu-cloud-pricing
+2024-06-18,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20240618205634/https://www.coreweave.com/gpu-cloud-pricing
+2024-07-18,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20240718045701/https://www.coreweave.com/gpu-cloud-pricing
+2024-07-18,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20240718045701/https://www.coreweave.com/gpu-cloud-pricing
+2024-07-18,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240718045701/https://www.coreweave.com/gpu-cloud-pricing
+2024-07-18,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20240718045701/https://www.coreweave.com/gpu-cloud-pricing
+2024-07-18,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20240718045701/https://www.coreweave.com/gpu-cloud-pricing
+2024-07-18,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240718045701/https://www.coreweave.com/gpu-cloud-pricing
+2024-07-18,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20240718045701/https://www.coreweave.com/gpu-cloud-pricing
+2024-08-06,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20240806202622/https://coreweave.com/gpu-cloud-pricing
+2024-08-06,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20240806202622/https://coreweave.com/gpu-cloud-pricing
+2024-08-06,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240806202622/https://coreweave.com/gpu-cloud-pricing
+2024-08-06,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20240806202622/https://coreweave.com/gpu-cloud-pricing
+2024-08-06,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20240806202622/https://coreweave.com/gpu-cloud-pricing
+2024-08-06,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240806202622/https://coreweave.com/gpu-cloud-pricing
+2024-08-06,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20240806202622/https://coreweave.com/gpu-cloud-pricing
+2024-09-01,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20240901110600/https://coreweave.com/gpu-cloud-pricing
+2024-09-01,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20240901110600/https://coreweave.com/gpu-cloud-pricing
+2024-09-01,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240901110600/https://coreweave.com/gpu-cloud-pricing
+2024-09-01,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20240901110600/https://coreweave.com/gpu-cloud-pricing
+2024-09-01,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20240901110600/https://coreweave.com/gpu-cloud-pricing
+2024-09-01,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20240901110600/https://coreweave.com/gpu-cloud-pricing
+2024-09-01,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20240901110600/https://coreweave.com/gpu-cloud-pricing
+2024-10-04,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20241004113315/https://www.coreweave.com/gpu-cloud-pricing
+2024-10-04,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20241004113315/https://www.coreweave.com/gpu-cloud-pricing
+2024-10-04,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20241004113315/https://www.coreweave.com/gpu-cloud-pricing
+2024-10-04,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20241004113315/https://www.coreweave.com/gpu-cloud-pricing
+2024-10-04,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20241004113315/https://www.coreweave.com/gpu-cloud-pricing
+2024-10-04,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20241004113315/https://www.coreweave.com/gpu-cloud-pricing
+2024-10-04,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20241004113315/https://www.coreweave.com/gpu-cloud-pricing
+2024-11-12,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20241112201740/http://www.coreweave.com/gpu-cloud-pricing
+2024-11-12,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20241112201740/http://www.coreweave.com/gpu-cloud-pricing
+2024-11-12,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20241112201740/http://www.coreweave.com/gpu-cloud-pricing
+2024-11-12,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20241112201740/http://www.coreweave.com/gpu-cloud-pricing
+2024-11-12,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20241112201740/http://www.coreweave.com/gpu-cloud-pricing
+2024-11-12,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20241112201740/http://www.coreweave.com/gpu-cloud-pricing
+2024-11-12,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20241112201740/http://www.coreweave.com/gpu-cloud-pricing
+2024-12-06,A100 40GB,CoreWeave,on_demand,2.06,https://web.archive.org/web/20241206151408/https://coreweave.com/gpu-cloud-pricing
+2024-12-06,A100 80GB,CoreWeave,on_demand,2.21,https://web.archive.org/web/20241206151408/https://coreweave.com/gpu-cloud-pricing
+2024-12-06,A40,CoreWeave,on_demand,1.28,https://web.archive.org/web/20241206151408/https://coreweave.com/gpu-cloud-pricing
+2024-12-06,H100 PCIe,CoreWeave,on_demand,4.25,https://web.archive.org/web/20241206151408/https://coreweave.com/gpu-cloud-pricing
+2024-12-06,H100 SXM,CoreWeave,on_demand,4.76,https://web.archive.org/web/20241206151408/https://coreweave.com/gpu-cloud-pricing
+2024-12-06,RTX A6000,CoreWeave,on_demand,1.28,https://web.archive.org/web/20241206151408/https://coreweave.com/gpu-cloud-pricing
+2024-12-06,V100,CoreWeave,on_demand,0.8,https://web.archive.org/web/20241206151408/https://coreweave.com/gpu-cloud-pricing
+2025-01-01,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20250101002525/https://www.coreweave.com/pricing
+2025-01-01,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20250101002525/https://www.coreweave.com/pricing
+2025-01-01,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20250101002525/https://www.coreweave.com/pricing
+2025-01-01,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20250101002525/https://www.coreweave.com/pricing
+2025-02-09,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20250209162626/https://www.coreweave.com/pricing
+2025-02-09,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20250209162626/https://www.coreweave.com/pricing
+2025-02-09,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20250209162626/https://www.coreweave.com/pricing
+2025-02-09,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20250209162626/https://www.coreweave.com/pricing
+2025-03-05,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20250305013810/https://www.coreweave.com/pricing
+2025-03-05,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20250305013810/https://www.coreweave.com/pricing
+2025-03-05,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20250305013810/https://www.coreweave.com/pricing
+2025-03-05,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20250305013810/https://www.coreweave.com/pricing
+2025-04-16,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20250416205610/https://coreweave.com/pricing
+2025-04-16,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20250416205610/https://coreweave.com/pricing
+2025-04-16,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20250416205610/https://coreweave.com/pricing
+2025-04-16,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20250416205610/https://coreweave.com/pricing
+2025-05-11,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20250511175459/https://coreweave.com/pricing
+2025-05-11,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20250511175459/https://coreweave.com/pricing
+2025-05-11,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20250511175459/https://coreweave.com/pricing
+2025-05-11,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20250511175459/https://coreweave.com/pricing
+2025-05-11,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20250511175459/https://coreweave.com/pricing
+2025-06-09,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20250609162833/https://coreweave.com/pricing
+2025-06-09,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20250609162833/https://coreweave.com/pricing
+2025-06-09,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20250609162833/https://coreweave.com/pricing
+2025-06-09,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20250609162833/https://coreweave.com/pricing
+2025-06-09,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20250609162833/https://coreweave.com/pricing
+2025-06-09,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20250609162833/https://coreweave.com/pricing
+2025-07-18,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20250718045748/https://www.coreweave.com/pricing
+2025-07-18,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20250718045748/https://www.coreweave.com/pricing
+2025-07-18,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20250718045748/https://www.coreweave.com/pricing
+2025-07-18,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20250718045748/https://www.coreweave.com/pricing
+2025-07-18,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20250718045748/https://www.coreweave.com/pricing
+2025-07-18,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20250718045748/https://www.coreweave.com/pricing
+2025-07-18,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20250718045748/https://www.coreweave.com/pricing
+2025-08-07,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20250807194512/https://coreweave.com/pricing
+2025-08-07,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20250807194512/https://coreweave.com/pricing
+2025-08-07,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20250807194512/https://coreweave.com/pricing
+2025-08-07,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20250807194512/https://coreweave.com/pricing
+2025-08-07,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20250807194512/https://coreweave.com/pricing
+2025-08-07,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20250807194512/https://coreweave.com/pricing
+2025-08-07,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20250807194512/https://coreweave.com/pricing
+2025-09-03,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20250903111658/https://www.coreweave.com/pricing
+2025-09-03,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20250903111658/https://www.coreweave.com/pricing
+2025-09-03,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20250903111658/https://www.coreweave.com/pricing
+2025-09-03,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20250903111658/https://www.coreweave.com/pricing
+2025-09-03,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20250903111658/https://www.coreweave.com/pricing
+2025-09-03,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20250903111658/https://www.coreweave.com/pricing
+2025-09-03,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20250903111658/https://www.coreweave.com/pricing
+2025-10-03,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20251003103002/https://www.coreweave.com/pricing
+2025-10-03,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20251003103002/https://www.coreweave.com/pricing
+2025-10-03,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20251003103002/https://www.coreweave.com/pricing
+2025-10-03,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20251003103002/https://www.coreweave.com/pricing
+2025-10-03,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20251003103002/https://www.coreweave.com/pricing
+2025-10-03,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20251003103002/https://www.coreweave.com/pricing
+2025-10-03,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20251003103002/https://www.coreweave.com/pricing
+2025-11-01,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20251101141755/https://www.coreweave.com/pricing
+2025-11-01,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20251101141755/https://www.coreweave.com/pricing
+2025-11-01,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20251101141755/https://www.coreweave.com/pricing
+2025-11-01,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20251101141755/https://www.coreweave.com/pricing
+2025-11-01,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20251101141755/https://www.coreweave.com/pricing
+2025-11-01,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20251101141755/https://www.coreweave.com/pricing
+2025-11-01,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20251101141755/https://www.coreweave.com/pricing
+2025-12-16,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20251216064621/https://coreweave.com/pricing
+2025-12-16,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20251216064621/https://coreweave.com/pricing
+2025-12-16,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20251216064621/https://coreweave.com/pricing
+2025-12-16,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20251216064621/https://coreweave.com/pricing
+2025-12-16,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20251216064621/https://coreweave.com/pricing
+2025-12-16,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20251216064621/https://coreweave.com/pricing
+2025-12-16,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20251216064621/https://coreweave.com/pricing
+2026-01-06,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20260106014605/https://www.coreweave.com/pricing
+2026-01-06,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20260106014605/https://www.coreweave.com/pricing
+2026-01-06,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20260106014605/https://www.coreweave.com/pricing
+2026-01-06,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20260106014605/https://www.coreweave.com/pricing
+2026-01-06,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20260106014605/https://www.coreweave.com/pricing
+2026-01-06,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20260106014605/https://www.coreweave.com/pricing
+2026-01-06,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20260106014605/https://www.coreweave.com/pricing
+2026-02-25,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20260225001139/https://www.coreweave.com/pricing
+2026-02-25,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20260225001139/https://www.coreweave.com/pricing
+2026-02-25,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20260225001139/https://www.coreweave.com/pricing
+2026-02-25,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20260225001139/https://www.coreweave.com/pricing
+2026-02-25,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20260225001139/https://www.coreweave.com/pricing
+2026-02-25,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20260225001139/https://www.coreweave.com/pricing
+2026-02-25,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20260225001139/https://www.coreweave.com/pricing
+2026-03-13,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20260313081744/https://coreweave.com/pricing
+2026-03-13,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20260313081744/https://coreweave.com/pricing
+2026-03-13,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20260313081744/https://coreweave.com/pricing
+2026-03-13,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20260313081744/https://coreweave.com/pricing
+2026-03-13,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20260313081744/https://coreweave.com/pricing
+2026-03-13,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20260313081744/https://coreweave.com/pricing
+2026-03-13,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20260313081744/https://coreweave.com/pricing
+2026-03-13,RTX PRO 6000,CoreWeave,spot,1.155,https://web.archive.org/web/20260313081744/https://coreweave.com/pricing
+2026-04-15,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20260415105017/https://coreweave.com/pricing
+2026-04-15,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20260415105017/https://coreweave.com/pricing
+2026-04-15,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20260415105017/https://coreweave.com/pricing
+2026-04-15,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20260415105017/https://coreweave.com/pricing
+2026-04-15,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20260415105017/https://coreweave.com/pricing
+2026-04-15,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20260415105017/https://coreweave.com/pricing
+2026-04-15,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20260415105017/https://coreweave.com/pricing
+2026-04-15,RTX PRO 6000,CoreWeave,spot,1.155,https://web.archive.org/web/20260415105017/https://coreweave.com/pricing
+2026-05-10,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-05-10,A100 80GB,CoreWeave,spot,1.2063,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-05-10,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-05-10,B200,CoreWeave,spot,4.2637,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-05-10,B300,CoreWeave,spot,4.48,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-05-10,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-05-10,H100 SXM,CoreWeave,spot,2.4638,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-05-10,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-05-10,H200,CoreWeave,spot,2.6162,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-05-10,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-05-10,L40,CoreWeave,spot,0.7837,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-05-10,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-05-10,L40S,CoreWeave,spot,0.985,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-05-10,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-05-10,RTX PRO 6000,CoreWeave,spot,1.3862,https://web.archive.org/web/20260510055757/https://coreweave.com/pricing
+2026-06-05,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-06-05,A100 80GB,CoreWeave,spot,1.2063,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-06-05,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-06-05,B200,CoreWeave,spot,4.2637,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-06-05,B300,CoreWeave,spot,4.48,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-06-05,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-06-05,H100 SXM,CoreWeave,spot,2.4638,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-06-05,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-06-05,H200,CoreWeave,spot,2.6162,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-06-05,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-06-05,L40,CoreWeave,spot,0.7837,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-06-05,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-06-05,L40S,CoreWeave,spot,0.985,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-06-05,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-06-05,RTX PRO 6000,CoreWeave,spot,1.3862,https://web.archive.org/web/20260605195952/https://www.coreweave.com/pricing
+2026-07-11,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-07-11,A100 80GB,CoreWeave,spot,1.2063,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-07-11,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-07-11,B200,CoreWeave,spot,4.2637,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-07-11,B300,CoreWeave,spot,4.48,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-07-11,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-07-11,H100 SXM,CoreWeave,spot,2.4638,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-07-11,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-07-11,H200,CoreWeave,spot,2.6162,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-07-11,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-07-11,L40,CoreWeave,spot,0.7837,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-07-11,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-07-11,L40S,CoreWeave,spot,0.985,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-07-11,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-07-11,RTX PRO 6000,CoreWeave,spot,1.3862,https://web.archive.org/web/20260711021026/https://www.coreweave.com/pricing
+2026-08-03,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-08-03,A100 80GB,CoreWeave,spot,1.2063,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-08-03,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-08-03,B200,CoreWeave,spot,4.2637,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-08-03,B300,CoreWeave,spot,4.48,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-08-03,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-08-03,H100 SXM,CoreWeave,spot,2.4638,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-08-03,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-08-03,H200,CoreWeave,spot,2.6162,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-08-03,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-08-03,L40,CoreWeave,spot,0.7837,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-08-03,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-08-03,L40S,CoreWeave,spot,0.985,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-08-03,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-08-03,RTX PRO 6000,CoreWeave,spot,1.3862,https://web.archive.org/web/20260803103255/https://www.coreweave.com/pricing
+2026-09-04,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-09-04,A100 80GB,CoreWeave,spot,1.2063,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-09-04,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-09-04,B200,CoreWeave,spot,4.2637,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-09-04,B300,CoreWeave,spot,4.48,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-09-04,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-09-04,H100 SXM,CoreWeave,spot,2.4638,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-09-04,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-09-04,H200,CoreWeave,spot,2.6162,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-09-04,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-09-04,L40,CoreWeave,spot,0.7837,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-09-04,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-09-04,L40S,CoreWeave,spot,0.985,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-09-04,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-09-04,RTX PRO 6000,CoreWeave,spot,1.3862,https://web.archive.org/web/20260904032932/https://www.coreweave.com/pricing
+2026-10-01,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-10-01,A100 80GB,CoreWeave,spot,1.2063,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-10-01,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-10-01,B200,CoreWeave,spot,4.2637,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-10-01,B300,CoreWeave,spot,4.48,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-10-01,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-10-01,H100 SXM,CoreWeave,spot,2.4638,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-10-01,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-10-01,H200,CoreWeave,spot,2.6162,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-10-01,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-10-01,L40,CoreWeave,spot,0.7837,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-10-01,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-10-01,L40S,CoreWeave,spot,0.985,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-10-01,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-10-01,RTX PRO 6000,CoreWeave,spot,1.3862,https://web.archive.org/web/20261001003124/https://www.coreweave.com/pricing
+2026-11-02,A100 80GB,CoreWeave,on_demand,2.7,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing
+2026-11-02,A100 80GB,CoreWeave,spot,1.2063,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing
+2026-11-02,B200,CoreWeave,on_demand,8.6,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing
+2026-11-02,B200,CoreWeave,spot,4.2637,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing
+2026-11-02,B300,CoreWeave,spot,4.48,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing
+2026-11-02,H100 SXM,CoreWeave,on_demand,6.155,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing
+2026-11-02,H100 SXM,CoreWeave,spot,2.4638,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing
+2026-11-02,H200,CoreWeave,on_demand,6.305,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing
+2026-11-02,H200,CoreWeave,spot,2.6162,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing
+2026-11-02,L40,CoreWeave,on_demand,1.25,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing
+2026-11-02,L40,CoreWeave,spot,0.7837,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing
+2026-11-02,L40S,CoreWeave,on_demand,2.25,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing
+2026-11-02,L40S,CoreWeave,spot,0.985,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing
+2026-11-02,RTX PRO 6000,CoreWeave,on_demand,2.5,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing
+2026-11-02,RTX PRO 6000,CoreWeave,spot,1.3862,https://web.archive.org/web/20261102074948/https://www.coreweave.com/pricing

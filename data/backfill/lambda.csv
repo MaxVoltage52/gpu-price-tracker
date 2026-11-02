@@ -1,0 +1,366 @@
+date,gpu,source,market,price,url
+2020-05-17,V100,Lambda,on_demand,1.5,https://web.archive.org/web/20200517135702/https://lambdalabs.com/service/gpu-cloud
+2020-06-11,V100,Lambda,on_demand,1.5,https://web.archive.org/web/20200611063415/https://lambdalabs.com/service/gpu-cloud
+2020-07-18,V100,Lambda,on_demand,1.5,https://web.archive.org/web/20200718054028/https://lambdalabs.com/service/gpu-cloud
+2020-08-14,V100,Lambda,on_demand,1.5,https://web.archive.org/web/20200814140707/https://lambdalabs.com/service/gpu-cloud
+2020-09-16,V100,Lambda,on_demand,1.5,https://web.archive.org/web/20200916213745/https://lambdalabs.com/service/gpu-cloud
+2020-10-23,V100,Lambda,on_demand,1.5,https://web.archive.org/web/20201023053305/https://lambdalabs.com/service/gpu-cloud
+2020-11-01,V100,Lambda,on_demand,1.5,https://web.archive.org/web/20201101020050/https://lambdalabs.com/service/gpu-cloud
+2021-01-21,V100,Lambda,on_demand,1.5,https://web.archive.org/web/20210121210121/https://lambdalabs.com/service/gpu-cloud
+2021-02-06,V100,Lambda,on_demand,1.5,https://web.archive.org/web/20210206050148/https://lambdalabs.com/service/gpu-cloud
+2021-04-17,V100,Lambda,on_demand,1.5,https://web.archive.org/web/20210417233615/https://lambdalabs.com/service/gpu-cloud
+2021-05-06,RTX A6000,Lambda,on_demand,2.25,https://web.archive.org/web/20210506071040/https://lambdalabs.com/service/gpu-cloud/pricing
+2021-05-06,V100,Lambda,on_demand,1.5,https://web.archive.org/web/20210506071040/https://lambdalabs.com/service/gpu-cloud/pricing
+2021-08-03,RTX A6000,Lambda,on_demand,2.25,https://web.archive.org/web/20210803212741/https://lambdalabs.com/service/gpu-cloud/pricing
+2021-08-03,V100,Lambda,on_demand,1.5,https://web.archive.org/web/20210803212741/https://lambdalabs.com/service/gpu-cloud/pricing
+2021-10-16,RTX A6000,Lambda,on_demand,2.25,https://web.archive.org/web/20211016031047/https://lambdalabs.com/service/gpu-cloud/pricing
+2021-10-16,V100,Lambda,on_demand,1.5,https://web.archive.org/web/20211016031047/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-01-28,RTX A6000,Lambda,on_demand,2.25,https://web.archive.org/web/20220128090007/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-01-28,V100,Lambda,on_demand,1.5,https://web.archive.org/web/20220128090007/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-05-07,RTX A6000,Lambda,on_demand,1.45,https://web.archive.org/web/20220507191434/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-05-07,V100,Lambda,on_demand,0.85,https://web.archive.org/web/20220507191434/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-06-13,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20220613014840/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-06-13,RTX A6000,Lambda,on_demand,1.0,https://web.archive.org/web/20220613014840/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-06-13,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20220613014840/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-07-01,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20220701112242/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-07-01,RTX A6000,Lambda,on_demand,1.0,https://web.archive.org/web/20220701112242/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-07-01,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20220701112242/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-08-17,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20220817195352/https://lambdalabs.com/service/gpu-cloud
+2022-08-17,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20220817195352/https://lambdalabs.com/service/gpu-cloud
+2022-08-17,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20220817195352/https://lambdalabs.com/service/gpu-cloud
+2022-09-07,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20220907013632/https://lambdalabs.com/service/gpu-cloud
+2022-09-07,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20220907013632/https://lambdalabs.com/service/gpu-cloud
+2022-09-07,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20220907013632/https://lambdalabs.com/service/gpu-cloud
+2022-10-05,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20221005022727/https://lambdalabs.com/service/gpu-cloud
+2022-10-05,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20221005022727/https://lambdalabs.com/service/gpu-cloud
+2022-10-05,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20221005022727/https://lambdalabs.com/service/gpu-cloud
+2022-11-29,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20221129212646/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-11-29,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20221129212646/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-11-29,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20221129212646/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-12-05,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20221205115507/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-12-05,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20221205115507/https://lambdalabs.com/service/gpu-cloud/pricing
+2022-12-05,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20221205115507/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-01-02,A10,Lambda,on_demand,0.6,https://web.archive.org/web/20230102213232/https://lambdalabs.com/service/gpu-cloud
+2023-01-02,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20230102213232/https://lambdalabs.com/service/gpu-cloud
+2023-01-02,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20230102213232/https://lambdalabs.com/service/gpu-cloud
+2023-01-02,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20230102213232/https://lambdalabs.com/service/gpu-cloud
+2023-02-13,A10,Lambda,on_demand,0.6,https://web.archive.org/web/20230213073306/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-02-13,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20230213073306/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-02-13,A100 80GB,Lambda,on_demand,1.5,https://web.archive.org/web/20230213073306/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-02-13,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20230213073306/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-02-13,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20230213073306/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-03-15,A10,Lambda,on_demand,0.6,https://web.archive.org/web/20230315021423/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-03-15,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20230315021423/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-03-15,A100 80GB,Lambda,on_demand,1.5,https://web.archive.org/web/20230315021423/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-03-15,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20230315021423/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-03-15,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20230315021423/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-04-09,A10,Lambda,on_demand,0.6,https://web.archive.org/web/20230409220333/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-04-09,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20230409220333/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-04-09,A100 80GB,Lambda,on_demand,1.5,https://web.archive.org/web/20230409220333/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-04-09,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20230409220333/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-04-09,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20230409220333/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-05-02,A10,Lambda,on_demand,0.6,https://web.archive.org/web/20230502124242/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-05-02,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20230502124242/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-05-02,A100 80GB,Lambda,on_demand,1.5,https://web.archive.org/web/20230502124242/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-05-02,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20230502124242/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-05-02,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20230502124242/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-06-04,A10,Lambda,on_demand,0.6,https://web.archive.org/web/20230604031238/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-06-04,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20230604031238/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-06-04,A100 80GB,Lambda,on_demand,1.5,https://web.archive.org/web/20230604031238/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-06-04,H100 PCIe,Lambda,on_demand,2.4,https://web.archive.org/web/20230604031238/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-06-04,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20230604031238/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-06-04,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20230604031238/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-07-06,A10,Lambda,on_demand,0.6,https://web.archive.org/web/20230706175916/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-07-06,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20230706175916/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-07-06,A100 80GB,Lambda,on_demand,1.5,https://web.archive.org/web/20230706175916/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-07-06,H100 PCIe,Lambda,on_demand,1.99,https://web.archive.org/web/20230706175916/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-07-06,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20230706175916/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-07-06,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20230706175916/https://lambdalabs.com/service/gpu-cloud/pricing
+2023-08-10,A10,Lambda,on_demand,0.6,https://web.archive.org/web/20230810060752/https://lambdalabs.com/service/gpu-cloud
+2023-08-10,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20230810060752/https://lambdalabs.com/service/gpu-cloud
+2023-08-10,A100 80GB,Lambda,on_demand,1.5,https://web.archive.org/web/20230810060752/https://lambdalabs.com/service/gpu-cloud
+2023-08-10,H100 PCIe,Lambda,on_demand,1.99,https://web.archive.org/web/20230810060752/https://lambdalabs.com/service/gpu-cloud
+2023-08-10,H100 SXM,Lambda,on_demand,2.59,https://web.archive.org/web/20230810060752/https://lambdalabs.com/service/gpu-cloud
+2023-08-10,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20230810060752/https://lambdalabs.com/service/gpu-cloud
+2023-08-10,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20230810060752/https://lambdalabs.com/service/gpu-cloud
+2023-09-09,A10,Lambda,on_demand,0.6,https://web.archive.org/web/20230909194011/https://lambdalabs.com/service/gpu-cloud
+2023-09-09,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20230909194011/https://lambdalabs.com/service/gpu-cloud
+2023-09-09,A100 80GB,Lambda,on_demand,1.5,https://web.archive.org/web/20230909194011/https://lambdalabs.com/service/gpu-cloud
+2023-09-09,H100 PCIe,Lambda,on_demand,1.99,https://web.archive.org/web/20230909194011/https://lambdalabs.com/service/gpu-cloud
+2023-09-09,H100 SXM,Lambda,on_demand,2.59,https://web.archive.org/web/20230909194011/https://lambdalabs.com/service/gpu-cloud
+2023-09-09,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20230909194011/https://lambdalabs.com/service/gpu-cloud
+2023-09-09,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20230909194011/https://lambdalabs.com/service/gpu-cloud
+2023-10-02,A10,Lambda,on_demand,0.6,https://web.archive.org/web/20231002085913/https://lambdalabs.com/service/gpu-cloud
+2023-10-02,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20231002085913/https://lambdalabs.com/service/gpu-cloud
+2023-10-02,A100 80GB,Lambda,on_demand,1.5,https://web.archive.org/web/20231002085913/https://lambdalabs.com/service/gpu-cloud
+2023-10-02,H100 PCIe,Lambda,on_demand,1.99,https://web.archive.org/web/20231002085913/https://lambdalabs.com/service/gpu-cloud
+2023-10-02,H100 SXM,Lambda,on_demand,2.59,https://web.archive.org/web/20231002085913/https://lambdalabs.com/service/gpu-cloud
+2023-10-02,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20231002085913/https://lambdalabs.com/service/gpu-cloud
+2023-10-02,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20231002085913/https://lambdalabs.com/service/gpu-cloud
+2023-11-02,A10,Lambda,on_demand,0.6,https://web.archive.org/web/20231102014927/https://lambdalabs.com/service/gpu-cloud
+2023-11-02,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20231102014927/https://lambdalabs.com/service/gpu-cloud
+2023-11-02,A100 80GB,Lambda,on_demand,1.5,https://web.archive.org/web/20231102014927/https://lambdalabs.com/service/gpu-cloud
+2023-11-02,H100 PCIe,Lambda,on_demand,1.99,https://web.archive.org/web/20231102014927/https://lambdalabs.com/service/gpu-cloud
+2023-11-02,H100 SXM,Lambda,on_demand,2.59,https://web.archive.org/web/20231102014927/https://lambdalabs.com/service/gpu-cloud
+2023-11-02,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20231102014927/https://lambdalabs.com/service/gpu-cloud
+2023-11-02,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20231102014927/https://lambdalabs.com/service/gpu-cloud
+2023-12-03,A10,Lambda,on_demand,0.6,https://web.archive.org/web/20231203205050/https://lambdalabs.com/service/gpu-cloud
+2023-12-03,A100 40GB,Lambda,on_demand,1.1,https://web.archive.org/web/20231203205050/https://lambdalabs.com/service/gpu-cloud
+2023-12-03,A100 80GB,Lambda,on_demand,1.5,https://web.archive.org/web/20231203205050/https://lambdalabs.com/service/gpu-cloud
+2023-12-03,H100 PCIe,Lambda,on_demand,1.99,https://web.archive.org/web/20231203205050/https://lambdalabs.com/service/gpu-cloud
+2023-12-03,H100 SXM,Lambda,on_demand,2.59,https://web.archive.org/web/20231203205050/https://lambdalabs.com/service/gpu-cloud
+2023-12-03,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20231203205050/https://lambdalabs.com/service/gpu-cloud
+2023-12-03,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20231203205050/https://lambdalabs.com/service/gpu-cloud
+2024-01-03,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20240103190130/https://lambdalabs.com/service/gpu-cloud
+2024-01-03,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20240103190130/https://lambdalabs.com/service/gpu-cloud
+2024-01-03,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20240103190130/https://lambdalabs.com/service/gpu-cloud
+2024-01-03,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20240103190130/https://lambdalabs.com/service/gpu-cloud
+2024-01-03,H100 SXM,Lambda,on_demand,3.49,https://web.archive.org/web/20240103190130/https://lambdalabs.com/service/gpu-cloud
+2024-01-03,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20240103190130/https://lambdalabs.com/service/gpu-cloud
+2024-01-03,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20240103190130/https://lambdalabs.com/service/gpu-cloud
+2024-02-26,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20240226155153/https://lambdalabs.com/service/gpu-cloud
+2024-02-26,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20240226155153/https://lambdalabs.com/service/gpu-cloud
+2024-02-26,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20240226155153/https://lambdalabs.com/service/gpu-cloud
+2024-02-26,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20240226155153/https://lambdalabs.com/service/gpu-cloud
+2024-02-26,H100 SXM,Lambda,on_demand,3.49,https://web.archive.org/web/20240226155153/https://lambdalabs.com/service/gpu-cloud
+2024-02-26,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20240226155153/https://lambdalabs.com/service/gpu-cloud
+2024-02-26,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20240226155153/https://lambdalabs.com/service/gpu-cloud
+2024-03-04,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20240304172245/https://lambdalabs.com/service/gpu-cloud
+2024-03-04,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20240304172245/https://lambdalabs.com/service/gpu-cloud
+2024-03-04,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20240304172245/https://lambdalabs.com/service/gpu-cloud
+2024-03-04,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20240304172245/https://lambdalabs.com/service/gpu-cloud
+2024-03-04,H100 SXM,Lambda,on_demand,3.49,https://web.archive.org/web/20240304172245/https://lambdalabs.com/service/gpu-cloud
+2024-03-04,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20240304172245/https://lambdalabs.com/service/gpu-cloud
+2024-03-04,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20240304172245/https://lambdalabs.com/service/gpu-cloud
+2024-04-01,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20240401123621/https://lambdalabs.com/service/gpu-cloud
+2024-04-01,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20240401123621/https://lambdalabs.com/service/gpu-cloud
+2024-04-01,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20240401123621/https://lambdalabs.com/service/gpu-cloud
+2024-04-01,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20240401123621/https://lambdalabs.com/service/gpu-cloud
+2024-04-01,H100 SXM,Lambda,on_demand,3.49,https://web.archive.org/web/20240401123621/https://lambdalabs.com/service/gpu-cloud
+2024-04-01,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20240401123621/https://lambdalabs.com/service/gpu-cloud
+2024-04-01,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20240401123621/https://lambdalabs.com/service/gpu-cloud
+2024-05-13,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20240513150455/https://lambdalabs.com/service/gpu-cloud
+2024-05-13,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20240513150455/https://lambdalabs.com/service/gpu-cloud
+2024-05-13,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20240513150455/https://lambdalabs.com/service/gpu-cloud
+2024-05-13,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20240513150455/https://lambdalabs.com/service/gpu-cloud
+2024-05-13,H100 SXM,Lambda,on_demand,3.49,https://web.archive.org/web/20240513150455/https://lambdalabs.com/service/gpu-cloud
+2024-05-13,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20240513150455/https://lambdalabs.com/service/gpu-cloud
+2024-05-13,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20240513150455/https://lambdalabs.com/service/gpu-cloud
+2024-07-11,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20240711213314/https://lambdalabs.com/service/gpu-cloud
+2024-07-11,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20240711213314/https://lambdalabs.com/service/gpu-cloud
+2024-07-11,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20240711213314/https://lambdalabs.com/service/gpu-cloud
+2024-07-11,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20240711213314/https://lambdalabs.com/service/gpu-cloud
+2024-07-11,H100 SXM,Lambda,on_demand,3.49,https://web.archive.org/web/20240711213314/https://lambdalabs.com/service/gpu-cloud
+2024-07-11,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20240711213314/https://lambdalabs.com/service/gpu-cloud
+2024-07-11,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20240711213314/https://lambdalabs.com/service/gpu-cloud
+2024-08-15,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20240815145430/https://lambdalabs.com/service/gpu-cloud
+2024-08-15,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20240815145430/https://lambdalabs.com/service/gpu-cloud
+2024-08-15,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20240815145430/https://lambdalabs.com/service/gpu-cloud
+2024-08-15,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20240815145430/https://lambdalabs.com/service/gpu-cloud
+2024-08-15,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20240815145430/https://lambdalabs.com/service/gpu-cloud
+2024-08-15,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20240815145430/https://lambdalabs.com/service/gpu-cloud
+2024-08-15,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20240815145430/https://lambdalabs.com/service/gpu-cloud
+2024-09-01,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20240901231348/https://lambdalabs.com/service/gpu-cloud
+2024-09-01,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20240901231348/https://lambdalabs.com/service/gpu-cloud
+2024-09-01,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20240901231348/https://lambdalabs.com/service/gpu-cloud
+2024-09-01,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20240901231348/https://lambdalabs.com/service/gpu-cloud
+2024-09-01,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20240901231348/https://lambdalabs.com/service/gpu-cloud
+2024-09-01,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20240901231348/https://lambdalabs.com/service/gpu-cloud
+2024-09-01,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20240901231348/https://lambdalabs.com/service/gpu-cloud
+2024-10-07,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20241007220259/https://lambdalabs.com/service/gpu-cloud
+2024-10-07,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20241007220259/https://lambdalabs.com/service/gpu-cloud
+2024-10-07,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20241007220259/https://lambdalabs.com/service/gpu-cloud
+2024-10-07,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20241007220259/https://lambdalabs.com/service/gpu-cloud
+2024-10-07,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20241007220259/https://lambdalabs.com/service/gpu-cloud
+2024-10-07,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20241007220259/https://lambdalabs.com/service/gpu-cloud
+2024-10-07,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20241007220259/https://lambdalabs.com/service/gpu-cloud
+2024-11-03,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20241103180910/https://lambdalabs.com/service/gpu-cloud
+2024-11-03,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20241103180910/https://lambdalabs.com/service/gpu-cloud
+2024-11-03,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20241103180910/https://lambdalabs.com/service/gpu-cloud
+2024-11-03,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20241103180910/https://lambdalabs.com/service/gpu-cloud
+2024-11-03,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20241103180910/https://lambdalabs.com/service/gpu-cloud
+2024-11-03,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20241103180910/https://lambdalabs.com/service/gpu-cloud
+2024-11-03,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20241103180910/https://lambdalabs.com/service/gpu-cloud
+2024-12-04,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20241204052806/https://lambdalabs.com/service/gpu-cloud
+2024-12-04,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20241204052806/https://lambdalabs.com/service/gpu-cloud
+2024-12-04,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20241204052806/https://lambdalabs.com/service/gpu-cloud
+2024-12-04,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20241204052806/https://lambdalabs.com/service/gpu-cloud
+2024-12-04,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20241204052806/https://lambdalabs.com/service/gpu-cloud
+2024-12-04,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20241204052806/https://lambdalabs.com/service/gpu-cloud
+2024-12-04,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20241204052806/https://lambdalabs.com/service/gpu-cloud
+2025-01-01,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20250101080209/https://lambdalabs.com/service/gpu-cloud
+2025-01-01,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20250101080209/https://lambdalabs.com/service/gpu-cloud
+2025-01-01,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20250101080209/https://lambdalabs.com/service/gpu-cloud
+2025-01-01,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20250101080209/https://lambdalabs.com/service/gpu-cloud
+2025-01-01,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20250101080209/https://lambdalabs.com/service/gpu-cloud
+2025-01-01,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20250101080209/https://lambdalabs.com/service/gpu-cloud
+2025-01-01,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20250101080209/https://lambdalabs.com/service/gpu-cloud
+2025-02-05,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20250205150624/https://lambdalabs.com/service/gpu-cloud
+2025-02-05,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20250205150624/https://lambdalabs.com/service/gpu-cloud
+2025-02-05,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20250205150624/https://lambdalabs.com/service/gpu-cloud
+2025-02-05,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20250205150624/https://lambdalabs.com/service/gpu-cloud
+2025-02-05,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20250205150624/https://lambdalabs.com/service/gpu-cloud
+2025-02-05,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20250205150624/https://lambdalabs.com/service/gpu-cloud
+2025-02-05,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20250205150624/https://lambdalabs.com/service/gpu-cloud
+2025-03-28,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20250328114330/https://lambda.ai/service/gpu-cloud
+2025-03-28,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20250328114330/https://lambda.ai/service/gpu-cloud
+2025-03-28,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20250328114330/https://lambda.ai/service/gpu-cloud
+2025-03-28,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20250328114330/https://lambda.ai/service/gpu-cloud
+2025-03-28,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20250328114330/https://lambda.ai/service/gpu-cloud
+2025-03-28,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20250328114330/https://lambda.ai/service/gpu-cloud
+2025-03-28,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20250328114330/https://lambda.ai/service/gpu-cloud
+2025-04-07,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20250407203919/https://lambda.ai/service/gpu-cloud
+2025-04-07,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20250407203919/https://lambda.ai/service/gpu-cloud
+2025-04-07,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20250407203919/https://lambda.ai/service/gpu-cloud
+2025-04-07,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20250407203919/https://lambda.ai/service/gpu-cloud
+2025-04-07,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20250407203919/https://lambda.ai/service/gpu-cloud
+2025-04-07,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20250407203919/https://lambda.ai/service/gpu-cloud
+2025-04-07,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20250407203919/https://lambda.ai/service/gpu-cloud
+2025-05-05,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20250505010805/https://lambda.ai/service/gpu-cloud
+2025-05-05,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20250505010805/https://lambda.ai/service/gpu-cloud
+2025-05-05,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20250505010805/https://lambda.ai/service/gpu-cloud
+2025-05-05,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20250505010805/https://lambda.ai/service/gpu-cloud
+2025-05-05,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20250505010805/https://lambda.ai/service/gpu-cloud
+2025-05-05,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20250505010805/https://lambda.ai/service/gpu-cloud
+2025-05-05,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20250505010805/https://lambda.ai/service/gpu-cloud
+2025-06-04,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20250604191644/https://lambda.ai/pricing
+2025-06-04,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20250604191644/https://lambda.ai/pricing
+2025-06-04,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20250604191644/https://lambda.ai/pricing
+2025-06-04,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20250604191644/https://lambda.ai/pricing
+2025-06-04,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20250604191644/https://lambda.ai/pricing
+2025-06-04,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20250604191644/https://lambda.ai/pricing
+2025-06-04,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20250604191644/https://lambda.ai/pricing
+2025-07-12,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20250712004630/https://lambda.ai/pricing
+2025-07-12,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20250712004630/https://lambda.ai/pricing
+2025-07-12,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20250712004630/https://lambda.ai/pricing
+2025-07-12,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20250712004630/https://lambda.ai/pricing
+2025-07-12,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20250712004630/https://lambda.ai/pricing
+2025-07-12,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20250712004630/https://lambda.ai/pricing
+2025-07-12,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20250712004630/https://lambda.ai/pricing
+2025-08-12,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20250812162642/https://lambda.ai/pricing
+2025-08-12,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20250812162642/https://lambda.ai/pricing
+2025-08-12,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20250812162642/https://lambda.ai/pricing
+2025-08-12,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20250812162642/https://lambda.ai/pricing
+2025-08-12,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20250812162642/https://lambda.ai/pricing
+2025-08-12,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20250812162642/https://lambda.ai/pricing
+2025-08-12,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20250812162642/https://lambda.ai/pricing
+2025-09-11,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20250911191244/https://lambda.ai/pricing
+2025-09-11,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20250911191244/https://lambda.ai/pricing
+2025-09-11,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20250911191244/https://lambda.ai/pricing
+2025-09-11,B200,Lambda,on_demand,4.99,https://web.archive.org/web/20250911191244/https://lambda.ai/pricing
+2025-09-11,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20250911191244/https://lambda.ai/pricing
+2025-09-11,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20250911191244/https://lambda.ai/pricing
+2025-09-11,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20250911191244/https://lambda.ai/pricing
+2025-09-11,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20250911191244/https://lambda.ai/pricing
+2025-10-10,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20251010223149/https://lambda.ai/pricing
+2025-10-10,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20251010223149/https://lambda.ai/pricing
+2025-10-10,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20251010223149/https://lambda.ai/pricing
+2025-10-10,B200,Lambda,on_demand,4.99,https://web.archive.org/web/20251010223149/https://lambda.ai/pricing
+2025-10-10,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20251010223149/https://lambda.ai/pricing
+2025-10-10,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20251010223149/https://lambda.ai/pricing
+2025-10-10,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20251010223149/https://lambda.ai/pricing
+2025-10-10,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20251010223149/https://lambda.ai/pricing
+2025-11-05,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20251105190524/https://lambda.ai/pricing
+2025-11-05,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20251105190524/https://lambda.ai/pricing
+2025-11-05,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20251105190524/https://lambda.ai/pricing
+2025-11-05,B200,Lambda,on_demand,4.99,https://web.archive.org/web/20251105190524/https://lambda.ai/pricing
+2025-11-05,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20251105190524/https://lambda.ai/pricing
+2025-11-05,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20251105190524/https://lambda.ai/pricing
+2025-11-05,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20251105190524/https://lambda.ai/pricing
+2025-11-05,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20251105190524/https://lambda.ai/pricing
+2025-12-05,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20251205232122/https://lambda.ai/pricing
+2025-12-05,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20251205232122/https://lambda.ai/pricing
+2025-12-05,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20251205232122/https://lambda.ai/pricing
+2025-12-05,B200,Lambda,on_demand,4.99,https://web.archive.org/web/20251205232122/https://lambda.ai/pricing
+2025-12-05,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20251205232122/https://lambda.ai/pricing
+2025-12-05,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20251205232122/https://lambda.ai/pricing
+2025-12-05,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20251205232122/https://lambda.ai/pricing
+2025-12-05,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20251205232122/https://lambda.ai/pricing
+2026-01-09,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20260109103934/https://lambda.ai/pricing
+2026-01-09,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20260109103934/https://lambda.ai/pricing
+2026-01-09,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20260109103934/https://lambda.ai/pricing
+2026-01-09,B200,Lambda,on_demand,4.99,https://web.archive.org/web/20260109103934/https://lambda.ai/pricing
+2026-01-09,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20260109103934/https://lambda.ai/pricing
+2026-01-09,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20260109103934/https://lambda.ai/pricing
+2026-01-09,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20260109103934/https://lambda.ai/pricing
+2026-01-09,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20260109103934/https://lambda.ai/pricing
+2026-02-03,A10,Lambda,on_demand,0.75,https://web.archive.org/web/20260203015539/https://lambda.ai/pricing
+2026-02-03,A100 40GB,Lambda,on_demand,1.29,https://web.archive.org/web/20260203015539/https://lambda.ai/pricing
+2026-02-03,A100 80GB,Lambda,on_demand,1.79,https://web.archive.org/web/20260203015539/https://lambda.ai/pricing
+2026-02-03,B200,Lambda,on_demand,4.99,https://web.archive.org/web/20260203015539/https://lambda.ai/pricing
+2026-02-03,H100 PCIe,Lambda,on_demand,2.49,https://web.archive.org/web/20260203015539/https://lambda.ai/pricing
+2026-02-03,H100 SXM,Lambda,on_demand,2.99,https://web.archive.org/web/20260203015539/https://lambda.ai/pricing
+2026-02-03,RTX A6000,Lambda,on_demand,0.8,https://web.archive.org/web/20260203015539/https://lambda.ai/pricing
+2026-02-03,V100,Lambda,on_demand,0.55,https://web.archive.org/web/20260203015539/https://lambda.ai/pricing
+2026-03-10,A10,Lambda,on_demand,0.86,https://web.archive.org/web/20260310143253/https://lambda.ai/pricing
+2026-03-10,A100 40GB,Lambda,on_demand,1.48,https://web.archive.org/web/20260310143253/https://lambda.ai/pricing
+2026-03-10,A100 80GB,Lambda,on_demand,2.06,https://web.archive.org/web/20260310143253/https://lambda.ai/pricing
+2026-03-10,B200,Lambda,on_demand,5.74,https://web.archive.org/web/20260310143253/https://lambda.ai/pricing
+2026-03-10,H100 PCIe,Lambda,on_demand,2.86,https://web.archive.org/web/20260310143253/https://lambda.ai/pricing
+2026-03-10,H100 SXM,Lambda,on_demand,3.44,https://web.archive.org/web/20260310143253/https://lambda.ai/pricing
+2026-03-10,RTX A6000,Lambda,on_demand,0.92,https://web.archive.org/web/20260310143253/https://lambda.ai/pricing
+2026-03-10,V100,Lambda,on_demand,0.63,https://web.archive.org/web/20260310143253/https://lambda.ai/pricing
+2026-04-01,A10,Lambda,on_demand,1.29,https://web.archive.org/web/20260401163040/https://lambda.ai/pricing
+2026-04-01,A100 40GB,Lambda,on_demand,1.99,https://web.archive.org/web/20260401163040/https://lambda.ai/pricing
+2026-04-01,A100 80GB,Lambda,on_demand,2.79,https://web.archive.org/web/20260401163040/https://lambda.ai/pricing
+2026-04-01,B200,Lambda,on_demand,6.69,https://web.archive.org/web/20260401163040/https://lambda.ai/pricing
+2026-04-01,H100 PCIe,Lambda,on_demand,3.29,https://web.archive.org/web/20260401163040/https://lambda.ai/pricing
+2026-04-01,H100 SXM,Lambda,on_demand,3.99,https://web.archive.org/web/20260401163040/https://lambda.ai/pricing
+2026-04-01,RTX A6000,Lambda,on_demand,1.09,https://web.archive.org/web/20260401163040/https://lambda.ai/pricing
+2026-04-01,V100,Lambda,on_demand,0.79,https://web.archive.org/web/20260401163040/https://lambda.ai/pricing
+2026-05-16,A10,Lambda,on_demand,1.29,https://web.archive.org/web/20260516025341/https://lambda.ai/pricing
+2026-05-16,A100 40GB,Lambda,on_demand,1.99,https://web.archive.org/web/20260516025341/https://lambda.ai/pricing
+2026-05-16,A100 80GB,Lambda,on_demand,2.79,https://web.archive.org/web/20260516025341/https://lambda.ai/pricing
+2026-05-16,B200,Lambda,on_demand,6.69,https://web.archive.org/web/20260516025341/https://lambda.ai/pricing
+2026-05-16,H100 PCIe,Lambda,on_demand,3.29,https://web.archive.org/web/20260516025341/https://lambda.ai/pricing
+2026-05-16,H100 SXM,Lambda,on_demand,3.99,https://web.archive.org/web/20260516025341/https://lambda.ai/pricing
+2026-05-16,RTX A6000,Lambda,on_demand,1.09,https://web.archive.org/web/20260516025341/https://lambda.ai/pricing
+2026-05-16,V100,Lambda,on_demand,0.79,https://web.archive.org/web/20260516025341/https://lambda.ai/pricing
+2026-06-09,A10,Lambda,on_demand,1.29,https://web.archive.org/web/20260609001655/https://lambda.ai/pricing
+2026-06-09,A100 40GB,Lambda,on_demand,1.99,https://web.archive.org/web/20260609001655/https://lambda.ai/pricing
+2026-06-09,A100 80GB,Lambda,on_demand,2.79,https://web.archive.org/web/20260609001655/https://lambda.ai/pricing
+2026-06-09,B200,Lambda,on_demand,6.69,https://web.archive.org/web/20260609001655/https://lambda.ai/pricing
+2026-06-09,H100 PCIe,Lambda,on_demand,3.29,https://web.archive.org/web/20260609001655/https://lambda.ai/pricing
+2026-06-09,H100 SXM,Lambda,on_demand,3.99,https://web.archive.org/web/20260609001655/https://lambda.ai/pricing
+2026-06-09,RTX A6000,Lambda,on_demand,1.09,https://web.archive.org/web/20260609001655/https://lambda.ai/pricing
+2026-06-09,V100,Lambda,on_demand,0.79,https://web.archive.org/web/20260609001655/https://lambda.ai/pricing
+2026-07-06,A10,Lambda,on_demand,1.29,https://web.archive.org/web/20260706151751/https://lambda.ai/pricing
+2026-07-06,A100 40GB,Lambda,on_demand,1.99,https://web.archive.org/web/20260706151751/https://lambda.ai/pricing
+2026-07-06,A100 80GB,Lambda,on_demand,2.79,https://web.archive.org/web/20260706151751/https://lambda.ai/pricing
+2026-07-06,B200,Lambda,on_demand,6.69,https://web.archive.org/web/20260706151751/https://lambda.ai/pricing
+2026-07-06,H100 PCIe,Lambda,on_demand,3.29,https://web.archive.org/web/20260706151751/https://lambda.ai/pricing
+2026-07-06,H100 SXM,Lambda,on_demand,3.99,https://web.archive.org/web/20260706151751/https://lambda.ai/pricing
+2026-07-06,RTX A6000,Lambda,on_demand,1.09,https://web.archive.org/web/20260706151751/https://lambda.ai/pricing
+2026-07-06,V100,Lambda,on_demand,0.79,https://web.archive.org/web/20260706151751/https://lambda.ai/pricing
+2026-08-01,A10,Lambda,on_demand,1.29,https://web.archive.org/web/20260801090859/https://lambda.ai/pricing
+2026-08-01,A100 40GB,Lambda,on_demand,1.99,https://web.archive.org/web/20260801090859/https://lambda.ai/pricing
+2026-08-01,A100 80GB,Lambda,on_demand,2.79,https://web.archive.org/web/20260801090859/https://lambda.ai/pricing
+2026-08-01,B200,Lambda,on_demand,6.69,https://web.archive.org/web/20260801090859/https://lambda.ai/pricing
+2026-08-01,H100 PCIe,Lambda,on_demand,3.29,https://web.archive.org/web/20260801090859/https://lambda.ai/pricing
+2026-08-01,H100 SXM,Lambda,on_demand,3.99,https://web.archive.org/web/20260801090859/https://lambda.ai/pricing
+2026-08-01,RTX A6000,Lambda,on_demand,1.09,https://web.archive.org/web/20260801090859/https://lambda.ai/pricing
+2026-08-01,V100,Lambda,on_demand,0.79,https://web.archive.org/web/20260801090859/https://lambda.ai/pricing
+2026-09-01,A10,Lambda,on_demand,1.29,https://web.archive.org/web/20260901102422/https://lambda.ai/pricing
+2026-09-01,A100 40GB,Lambda,on_demand,1.99,https://web.archive.org/web/20260901102422/https://lambda.ai/pricing
+2026-09-01,A100 80GB,Lambda,on_demand,2.79,https://web.archive.org/web/20260901102422/https://lambda.ai/pricing
+2026-09-01,B200,Lambda,on_demand,6.69,https://web.archive.org/web/20260901102422/https://lambda.ai/pricing
+2026-09-01,H100 PCIe,Lambda,on_demand,3.29,https://web.archive.org/web/20260901102422/https://lambda.ai/pricing
+2026-09-01,H100 SXM,Lambda,on_demand,3.99,https://web.archive.org/web/20260901102422/https://lambda.ai/pricing
+2026-09-01,RTX A6000,Lambda,on_demand,1.09,https://web.archive.org/web/20260901102422/https://lambda.ai/pricing
+2026-09-01,V100,Lambda,on_demand,0.79,https://web.archive.org/web/20260901102422/https://lambda.ai/pricing
+2026-10-01,A10,Lambda,on_demand,1.29,https://web.archive.org/web/20261001114850/https://lambda.ai/pricing
+2026-10-01,A100 40GB,Lambda,on_demand,1.99,https://web.archive.org/web/20261001114850/https://lambda.ai/pricing
+2026-10-01,A100 80GB,Lambda,on_demand,2.79,https://web.archive.org/web/20261001114850/https://lambda.ai/pricing
+2026-10-01,B200,Lambda,on_demand,6.69,https://web.archive.org/web/20261001114850/https://lambda.ai/pricing
+2026-10-01,H100 PCIe,Lambda,on_demand,3.29,https://web.archive.org/web/20261001114850/https://lambda.ai/pricing
+2026-10-01,H100 SXM,Lambda,on_demand,3.99,https://web.archive.org/web/20261001114850/https://lambda.ai/pricing
+2026-10-01,RTX A6000,Lambda,on_demand,1.09,https://web.archive.org/web/20261001114850/https://lambda.ai/pricing
+2026-10-01,V100,Lambda,on_demand,0.79,https://web.archive.org/web/20261001114850/https://lambda.ai/pricing
+2026-11-01,A10,Lambda,on_demand,1.29,https://web.archive.org/web/20261101120500/https://lambda.ai/pricing
+2026-11-01,A100 40GB,Lambda,on_demand,1.99,https://web.archive.org/web/20261101120500/https://lambda.ai/pricing
+2026-11-01,A100 80GB,Lambda,on_demand,2.79,https://web.archive.org/web/20261101120500/https://lambda.ai/pricing
+2026-11-01,B200,Lambda,on_demand,6.69,https://web.archive.org/web/20261101120500/https://lambda.ai/pricing
+2026-11-01,H100 PCIe,Lambda,on_demand,3.29,https://web.archive.org/web/20261101120500/https://lambda.ai/pricing
+2026-11-01,H100 SXM,Lambda,on_demand,3.99,https://web.archive.org/web/20261101120500/https://lambda.ai/pricing
+2026-11-01,RTX A6000,Lambda,on_demand,1.09,https://web.archive.org/web/20261101120500/https://lambda.ai/pricing
+2026-11-01,V100,Lambda,on_demand,0.79,https://web.archive.org/web/20261101120500/https://lambda.ai/pricing

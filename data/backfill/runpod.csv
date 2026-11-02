@@ -1,0 +1,1221 @@
+date,gpu,source,market,price,url
+2022-10-19,A100 80GB,RunPod Secure,on_demand,2.02,https://web.archive.org/web/20221019191456/https://www.runpod.io/gpu-instance/pricing
+2022-10-19,A40,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20221019191456/https://www.runpod.io/gpu-instance/pricing
+2022-10-19,RTX 3090,RunPod Community,on_demand,0.36,https://web.archive.org/web/20221019191456/https://www.runpod.io/gpu-instance/pricing
+2022-10-19,RTX A6000,RunPod Community,on_demand,0.64,https://web.archive.org/web/20221019191456/https://www.runpod.io/gpu-instance/pricing
+2022-10-19,RTX A6000,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20221019191456/https://www.runpod.io/gpu-instance/pricing
+2022-10-19,V100,RunPod Community,on_demand,0.28,https://web.archive.org/web/20221019191456/https://www.runpod.io/gpu-instance/pricing
+2022-11-29,A100 80GB,RunPod Community,on_demand,2.04,https://web.archive.org/web/20221129111429/https://www.runpod.io/gpu-instance/pricing
+2022-11-29,A100 80GB,RunPod Secure,on_demand,2.09,https://web.archive.org/web/20221129111429/https://www.runpod.io/gpu-instance/pricing
+2022-11-29,A40,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20221129111429/https://www.runpod.io/gpu-instance/pricing
+2022-11-29,RTX 3090,RunPod Community,on_demand,0.39,https://web.archive.org/web/20221129111429/https://www.runpod.io/gpu-instance/pricing
+2022-11-29,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20221129111429/https://www.runpod.io/gpu-instance/pricing
+2022-11-29,RTX A6000,RunPod Community,on_demand,0.74,https://web.archive.org/web/20221129111429/https://www.runpod.io/gpu-instance/pricing
+2022-11-29,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20221129111429/https://www.runpod.io/gpu-instance/pricing
+2022-11-29,V100,RunPod Community,on_demand,0.28,https://web.archive.org/web/20221129111429/https://www.runpod.io/gpu-instance/pricing
+2022-12-12,A100 80GB,RunPod Community,on_demand,2.04,https://web.archive.org/web/20221212022820/https://www.runpod.io/gpu-instance/pricing
+2022-12-12,A100 80GB,RunPod Secure,on_demand,2.09,https://web.archive.org/web/20221212022820/https://www.runpod.io/gpu-instance/pricing
+2022-12-12,A40,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20221212022820/https://www.runpod.io/gpu-instance/pricing
+2022-12-12,RTX 3090,RunPod Community,on_demand,0.39,https://web.archive.org/web/20221212022820/https://www.runpod.io/gpu-instance/pricing
+2022-12-12,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20221212022820/https://www.runpod.io/gpu-instance/pricing
+2022-12-12,RTX 4090,RunPod Community,on_demand,0.75,https://web.archive.org/web/20221212022820/https://www.runpod.io/gpu-instance/pricing
+2022-12-12,RTX A6000,RunPod Community,on_demand,0.74,https://web.archive.org/web/20221212022820/https://www.runpod.io/gpu-instance/pricing
+2022-12-12,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20221212022820/https://www.runpod.io/gpu-instance/pricing
+2022-12-12,V100,RunPod Community,on_demand,0.28,https://web.archive.org/web/20221212022820/https://www.runpod.io/gpu-instance/pricing
+2023-02-27,A100 40GB,RunPod Community,on_demand,0.89,https://web.archive.org/web/20230227153559/https://www.runpod.io/gpu-instance/pricing
+2023-02-27,A100 80GB,RunPod Community,on_demand,1.89,https://web.archive.org/web/20230227153559/https://www.runpod.io/gpu-instance/pricing
+2023-02-27,A100 80GB,RunPod Secure,on_demand,2.09,https://web.archive.org/web/20230227153559/https://www.runpod.io/gpu-instance/pricing
+2023-02-27,A40,RunPod Community,on_demand,0.74,https://web.archive.org/web/20230227153559/https://www.runpod.io/gpu-instance/pricing
+2023-02-27,A40,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20230227153559/https://www.runpod.io/gpu-instance/pricing
+2023-02-27,RTX 3090,RunPod Community,on_demand,0.35,https://web.archive.org/web/20230227153559/https://www.runpod.io/gpu-instance/pricing
+2023-02-27,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20230227153559/https://www.runpod.io/gpu-instance/pricing
+2023-02-27,RTX 4090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20230227153559/https://www.runpod.io/gpu-instance/pricing
+2023-02-27,RTX 4090,RunPod Secure,on_demand,0.74,https://web.archive.org/web/20230227153559/https://www.runpod.io/gpu-instance/pricing
+2023-02-27,RTX A6000,RunPod Community,on_demand,0.74,https://web.archive.org/web/20230227153559/https://www.runpod.io/gpu-instance/pricing
+2023-02-27,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20230227153559/https://www.runpod.io/gpu-instance/pricing
+2023-02-27,V100,RunPod Community,on_demand,0.28,https://web.archive.org/web/20230227153559/https://www.runpod.io/gpu-instance/pricing
+2023-03-18,A100 40GB,RunPod Community,on_demand,0.89,https://web.archive.org/web/20230318164740/https://www.runpod.io/gpu-instance/pricing
+2023-03-18,A100 80GB,RunPod Community,on_demand,1.89,https://web.archive.org/web/20230318164740/https://www.runpod.io/gpu-instance/pricing
+2023-03-18,A100 80GB,RunPod Secure,on_demand,2.09,https://web.archive.org/web/20230318164740/https://www.runpod.io/gpu-instance/pricing
+2023-03-18,A40,RunPod Community,on_demand,0.74,https://web.archive.org/web/20230318164740/https://www.runpod.io/gpu-instance/pricing
+2023-03-18,A40,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20230318164740/https://www.runpod.io/gpu-instance/pricing
+2023-03-18,RTX 3090,RunPod Community,on_demand,0.29,https://web.archive.org/web/20230318164740/https://www.runpod.io/gpu-instance/pricing
+2023-03-18,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20230318164740/https://www.runpod.io/gpu-instance/pricing
+2023-03-18,RTX 4090,RunPod Community,on_demand,0.64,https://web.archive.org/web/20230318164740/https://www.runpod.io/gpu-instance/pricing
+2023-03-18,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20230318164740/https://www.runpod.io/gpu-instance/pricing
+2023-03-18,RTX A6000,RunPod Community,on_demand,0.74,https://web.archive.org/web/20230318164740/https://www.runpod.io/gpu-instance/pricing
+2023-03-18,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20230318164740/https://www.runpod.io/gpu-instance/pricing
+2023-03-18,V100,RunPod Community,on_demand,0.28,https://web.archive.org/web/20230318164740/https://www.runpod.io/gpu-instance/pricing
+2023-04-01,A100 80GB,RunPod Community,on_demand,1.89,https://web.archive.org/web/20230401105311/https://www.runpod.io/gpu-instance/pricing
+2023-04-01,A100 80GB,RunPod Secure,on_demand,2.09,https://web.archive.org/web/20230401105311/https://www.runpod.io/gpu-instance/pricing
+2023-04-01,A40,RunPod Community,on_demand,0.74,https://web.archive.org/web/20230401105311/https://www.runpod.io/gpu-instance/pricing
+2023-04-01,A40,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20230401105311/https://www.runpod.io/gpu-instance/pricing
+2023-04-01,RTX 3090,RunPod Community,on_demand,0.29,https://web.archive.org/web/20230401105311/https://www.runpod.io/gpu-instance/pricing
+2023-04-01,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20230401105311/https://www.runpod.io/gpu-instance/pricing
+2023-04-01,RTX 4090,RunPod Community,on_demand,0.64,https://web.archive.org/web/20230401105311/https://www.runpod.io/gpu-instance/pricing
+2023-04-01,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20230401105311/https://www.runpod.io/gpu-instance/pricing
+2023-04-01,RTX A6000,RunPod Community,on_demand,0.74,https://web.archive.org/web/20230401105311/https://www.runpod.io/gpu-instance/pricing
+2023-04-01,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20230401105311/https://www.runpod.io/gpu-instance/pricing
+2023-04-01,V100,RunPod Community,on_demand,0.28,https://web.archive.org/web/20230401105311/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,A100 40GB,RunPod Community,on_demand,0.79,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,A100 80GB,RunPod Community,on_demand,1.69,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,A100 80GB,RunPod Secure,on_demand,1.79,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,A40,RunPod Community,on_demand,0.59,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,A40,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,H100 SXM,RunPod Community,on_demand,4.49,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,L40,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,RTX 3090,RunPod Community,on_demand,0.29,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,RTX 4090,RunPod Community,on_demand,0.49,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,RTX 6000 Ada,RunPod Community,on_demand,0.99,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,RTX 6000 Ada,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,RTX A6000,RunPod Community,on_demand,0.59,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-07-09,V100,RunPod Community,on_demand,0.28,https://web.archive.org/web/20230709173002/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,A100 40GB,RunPod Community,on_demand,0.79,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,A100 40GB,RunPod Community,spot,0.49,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,A100 80GB,RunPod Community,on_demand,1.69,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,A100 80GB,RunPod Community,spot,0.89,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,A100 80GB,RunPod Secure,on_demand,1.79,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,A40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,A40,RunPod Community,spot,0.34,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,A40,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,H100 PCIe,RunPod Community,on_demand,3.99,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,H100 PCIe,RunPod Community,spot,2.49,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,H100 SXM,RunPod Community,on_demand,4.49,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,H100 SXM,RunPod Community,spot,2.49,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,L40,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,L40,RunPod Secure,spot,0.69,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,RTX 3090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,RTX 3090,RunPod Community,spot,0.19,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,RTX 4090,RunPod Community,on_demand,0.64,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,RTX 4090,RunPod Community,spot,0.29,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,RTX 4090,RunPod Secure,on_demand,0.74,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,RTX 4090,RunPod Secure,spot,0.39,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,RTX 6000 Ada,RunPod Community,on_demand,0.99,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,RTX 6000 Ada,RunPod Community,spot,0.69,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,RTX 6000 Ada,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,RTX A6000,RunPod Community,on_demand,0.69,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,RTX A6000,RunPod Community,spot,0.34,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,RTX A6000,RunPod Secure,spot,0.49,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,V100,RunPod Community,on_demand,0.28,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-08-20,V100,RunPod Community,spot,0.19,https://web.archive.org/web/20230820013141/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,A100 40GB,RunPod Community,on_demand,0.79,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,A100 40GB,RunPod Community,spot,0.49,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,A100 80GB,RunPod Community,on_demand,1.69,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,A100 80GB,RunPod Community,spot,0.89,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,A100 80GB,RunPod Secure,on_demand,1.99,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,A40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,A40,RunPod Community,spot,0.34,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,A40,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,H100 PCIe,RunPod Community,on_demand,3.99,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,H100 PCIe,RunPod Community,spot,2.49,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,H100 PCIe,RunPod Secure,on_demand,4.29,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,H100 SXM,RunPod Community,on_demand,4.49,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,H100 SXM,RunPod Community,spot,2.49,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,H100 SXM,RunPod Secure,on_demand,4.49,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,L4,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,L40,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,L40,RunPod Secure,spot,0.69,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,RTX 3090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,RTX 3090,RunPod Community,spot,0.19,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,RTX 4090,RunPod Community,on_demand,0.64,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,RTX 4090,RunPod Community,spot,0.39,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,RTX 4090,RunPod Secure,on_demand,0.74,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,RTX 4090,RunPod Secure,spot,0.49,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,RTX 6000 Ada,RunPod Community,on_demand,0.99,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,RTX 6000 Ada,RunPod Community,spot,0.69,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,RTX 6000 Ada,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,RTX A6000,RunPod Community,on_demand,0.69,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,RTX A6000,RunPod Community,spot,0.34,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,RTX A6000,RunPod Secure,spot,0.49,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,V100,RunPod Community,on_demand,0.28,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-09-24,V100,RunPod Community,spot,0.19,https://web.archive.org/web/20230924195056/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,A100 40GB,RunPod Community,on_demand,0.79,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,A100 40GB,RunPod Community,spot,0.49,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,A100 80GB,RunPod Community,on_demand,1.69,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,A100 80GB,RunPod Community,spot,0.89,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,A100 80GB,RunPod Secure,on_demand,1.99,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,A40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,A40,RunPod Community,spot,0.34,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,A40,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,H100 PCIe,RunPod Community,on_demand,3.99,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,H100 PCIe,RunPod Community,spot,2.49,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,H100 PCIe,RunPod Secure,on_demand,4.29,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,H100 SXM,RunPod Community,on_demand,4.09,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,H100 SXM,RunPod Community,spot,2.49,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,H100 SXM,RunPod Secure,on_demand,4.49,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,L4,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,L40,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,L40,RunPod Secure,spot,0.69,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,RTX 3090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,RTX 3090,RunPod Community,spot,0.19,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,RTX 4090,RunPod Community,on_demand,0.64,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,RTX 4090,RunPod Community,spot,0.39,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,RTX 4090,RunPod Secure,on_demand,0.74,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,RTX 4090,RunPod Secure,spot,0.49,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,RTX 6000 Ada,RunPod Community,on_demand,0.99,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,RTX 6000 Ada,RunPod Community,spot,0.69,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,RTX 6000 Ada,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,RTX A6000,RunPod Community,on_demand,0.69,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,RTX A6000,RunPod Community,spot,0.34,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,RTX A6000,RunPod Secure,spot,0.49,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,V100,RunPod Community,on_demand,0.28,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-10-01,V100,RunPod Community,spot,0.19,https://web.archive.org/web/20231001140201/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,A100 80GB,RunPod Community,on_demand,1.69,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,A100 80GB,RunPod Community,spot,0.89,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,A100 80GB,RunPod Secure,on_demand,1.99,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,A40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,A40,RunPod Community,spot,0.34,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,A40,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,A40,RunPod Secure,spot,0.49,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,H100 PCIe,RunPod Community,on_demand,3.99,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,H100 PCIe,RunPod Community,spot,2.49,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,H100 PCIe,RunPod Secure,on_demand,4.49,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,H100 SXM,RunPod Community,on_demand,4.09,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,H100 SXM,RunPod Community,spot,2.49,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,H100 SXM,RunPod Secure,on_demand,4.69,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,L4,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,L40,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,L40,RunPod Secure,spot,0.69,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,RTX 3090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,RTX 3090,RunPod Community,spot,0.19,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,RTX 4090,RunPod Community,on_demand,0.59,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,RTX 4090,RunPod Community,spot,0.39,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,RTX 4090,RunPod Secure,on_demand,0.74,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,RTX 4090,RunPod Secure,spot,0.49,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,RTX 6000 Ada,RunPod Community,on_demand,0.99,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,RTX 6000 Ada,RunPod Community,spot,0.69,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,RTX 6000 Ada,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,RTX A6000,RunPod Community,on_demand,0.69,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,RTX A6000,RunPod Community,spot,0.34,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,RTX A6000,RunPod Secure,spot,0.49,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,V100,RunPod Community,on_demand,0.28,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-11-18,V100,RunPod Community,spot,0.19,https://web.archive.org/web/20231118071323/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,A100 80GB,RunPod Community,on_demand,1.69,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,A100 80GB,RunPod Community,spot,0.89,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,A100 80GB,RunPod Secure,on_demand,1.99,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,A40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,A40,RunPod Community,spot,0.34,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,A40,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,A40,RunPod Secure,spot,0.49,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,H100 PCIe,RunPod Community,on_demand,3.69,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,H100 PCIe,RunPod Community,spot,2.49,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,H100 PCIe,RunPod Secure,on_demand,4.49,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,H100 SXM,RunPod Community,on_demand,3.89,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,H100 SXM,RunPod Community,spot,2.49,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,H100 SXM,RunPod Secure,on_demand,4.69,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,L4,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,L40,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,L40,RunPod Secure,spot,0.69,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,RTX 3090,RunPod Community,on_demand,0.29,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,RTX 3090,RunPod Community,spot,0.19,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,RTX 4090,RunPod Community,on_demand,0.59,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,RTX 4090,RunPod Community,spot,0.39,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,RTX 4090,RunPod Secure,on_demand,0.74,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,RTX 4090,RunPod Secure,spot,0.49,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,RTX 6000 Ada,RunPod Community,on_demand,0.99,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,RTX 6000 Ada,RunPod Community,spot,0.69,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,RTX 6000 Ada,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,RTX A6000,RunPod Community,on_demand,0.69,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,RTX A6000,RunPod Community,spot,0.34,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,RTX A6000,RunPod Secure,spot,0.49,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,V100,RunPod Community,on_demand,0.28,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2023-12-28,V100,RunPod Community,spot,0.15,https://web.archive.org/web/20231228125142/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,A100 80GB,RunPod Community,on_demand,1.69,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,A100 80GB,RunPod Community,spot,0.89,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,A100 80GB,RunPod Secure,on_demand,1.99,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,A40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,A40,RunPod Community,spot,0.34,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,A40,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,A40,RunPod Secure,spot,0.49,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,H100 PCIe,RunPod Community,on_demand,3.69,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,H100 PCIe,RunPod Community,spot,2.49,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,H100 PCIe,RunPod Secure,on_demand,4.49,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,H100 SXM,RunPod Community,on_demand,3.89,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,H100 SXM,RunPod Community,spot,2.49,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,H100 SXM,RunPod Secure,on_demand,4.69,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,L4,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,L40,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,L40,RunPod Secure,spot,0.69,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,RTX 3090,RunPod Community,on_demand,0.29,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,RTX 3090,RunPod Community,spot,0.19,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,RTX 4090,RunPod Community,on_demand,0.59,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,RTX 4090,RunPod Community,spot,0.39,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,RTX 4090,RunPod Secure,on_demand,0.74,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,RTX 4090,RunPod Secure,spot,0.49,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,RTX 6000 Ada,RunPod Community,on_demand,0.99,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,RTX 6000 Ada,RunPod Community,spot,0.69,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,RTX 6000 Ada,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,RTX A6000,RunPod Community,on_demand,0.69,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,RTX A6000,RunPod Community,spot,0.34,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,RTX A6000,RunPod Secure,spot,0.49,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,V100,RunPod Community,on_demand,0.28,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-01-01,V100,RunPod Community,spot,0.15,https://web.archive.org/web/20240101225009/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,A100 40GB,RunPod Community,on_demand,1.0,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,A100 80GB,RunPod Community,on_demand,1.59,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,A100 80GB,RunPod Community,spot,0.89,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,A100 80GB,RunPod Secure,on_demand,1.89,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,A40,RunPod Community,on_demand,0.67,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,A40,RunPod Community,spot,0.34,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,A40,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,A40,RunPod Secure,spot,0.49,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,H100 PCIe,RunPod Community,on_demand,3.39,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,H100 PCIe,RunPod Community,spot,2.49,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,H100 PCIe,RunPod Secure,on_demand,3.89,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,H100 SXM,RunPod Community,on_demand,3.89,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,H100 SXM,RunPod Community,spot,2.49,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,H100 SXM,RunPod Secure,on_demand,4.69,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,L4,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,L40,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,L40,RunPod Secure,spot,0.69,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,L40S,RunPod Community,on_demand,0.5,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,L40S,RunPod Secure,on_demand,1.49,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,RTX 3090,RunPod Community,on_demand,0.26,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,RTX 3090,RunPod Community,spot,0.19,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,RTX 4090,RunPod Community,on_demand,0.54,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,RTX 4090,RunPod Community,spot,0.39,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,RTX 4090,RunPod Secure,on_demand,0.74,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,RTX 4090,RunPod Secure,spot,0.49,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,RTX 6000 Ada,RunPod Community,on_demand,0.99,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,RTX 6000 Ada,RunPod Community,spot,0.69,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,RTX 6000 Ada,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,RTX A6000,RunPod Community,on_demand,0.69,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,RTX A6000,RunPod Community,spot,0.34,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,RTX A6000,RunPod Secure,spot,0.49,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,V100,RunPod Community,on_demand,0.24,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-03-09,V100,RunPod Community,spot,0.15,https://web.archive.org/web/20240309193702/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,A100 80GB,RunPod Community,on_demand,1.59,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,A100 80GB,RunPod Community,spot,0.89,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,A100 80GB,RunPod Secure,on_demand,1.89,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,A40,RunPod Community,on_demand,0.67,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,A40,RunPod Community,spot,0.34,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,A40,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,A40,RunPod Secure,spot,0.49,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,H100 PCIe,RunPod Community,on_demand,3.39,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,H100 PCIe,RunPod Community,spot,2.49,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,H100 PCIe,RunPod Secure,on_demand,3.89,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,H100 SXM,RunPod Community,on_demand,3.89,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,H100 SXM,RunPod Community,spot,2.49,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,H100 SXM,RunPod Secure,on_demand,4.69,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,L4,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,L40,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,L40,RunPod Secure,spot,0.69,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,L40S,RunPod Community,on_demand,0.5,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,L40S,RunPod Secure,on_demand,1.49,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,RTX 3090,RunPod Community,on_demand,0.26,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,RTX 3090,RunPod Community,spot,0.19,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,RTX 4090,RunPod Community,on_demand,0.54,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,RTX 4090,RunPod Community,spot,0.39,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,RTX 4090,RunPod Secure,on_demand,0.74,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,RTX 4090,RunPod Secure,spot,0.49,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,RTX 6000 Ada,RunPod Community,on_demand,0.99,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,RTX 6000 Ada,RunPod Community,spot,0.69,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,RTX 6000 Ada,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,RTX A6000,RunPod Community,on_demand,0.69,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,RTX A6000,RunPod Community,spot,0.34,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,RTX A6000,RunPod Secure,spot,0.49,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,V100,RunPod Community,on_demand,0.24,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-04-19,V100,RunPod Community,spot,0.15,https://web.archive.org/web/20240419184216/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,A100 80GB,RunPod Community,on_demand,1.59,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,A100 80GB,RunPod Secure,on_demand,1.89,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,A40,RunPod Community,on_demand,0.67,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,A40,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,H100 PCIe,RunPod Community,on_demand,3.39,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,H100 PCIe,RunPod Secure,on_demand,3.89,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,H100 SXM,RunPod Community,on_demand,3.89,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,H100 SXM,RunPod Secure,on_demand,4.69,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,L4,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,L40,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,L40S,RunPod Community,on_demand,1.19,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,L40S,RunPod Secure,on_demand,1.49,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,RTX 3090,RunPod Community,on_demand,0.26,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,RTX 4090,RunPod Community,on_demand,0.54,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,RTX 4090,RunPod Secure,on_demand,0.74,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,RTX 6000 Ada,RunPod Community,on_demand,0.99,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,RTX 6000 Ada,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,RTX A6000,RunPod Community,on_demand,0.69,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-05-15,V100,RunPod Community,on_demand,0.24,https://web.archive.org/web/20240515072705/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,A100 80GB,RunPod Community,on_demand,1.59,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,A100 80GB,RunPod Secure,on_demand,1.89,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,A40,RunPod Community,on_demand,0.67,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,A40,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,H100 NVL,RunPod Secure,on_demand,4.39,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,H100 PCIe,RunPod Community,on_demand,3.39,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,H100 PCIe,RunPod Secure,on_demand,3.89,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,H100 SXM,RunPod Community,on_demand,3.89,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,H100 SXM,RunPod Secure,on_demand,4.69,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,L4,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,L40,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,L40S,RunPod Community,on_demand,1.09,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,L40S,RunPod Secure,on_demand,1.34,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,MI300X,RunPod Secure,on_demand,4.89,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,RTX 3090,RunPod Community,on_demand,0.26,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,RTX 3090,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,RTX 4090,RunPod Community,on_demand,0.54,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,RTX 4090,RunPod Secure,on_demand,0.74,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,RTX 6000 Ada,RunPod Community,on_demand,0.99,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,RTX 6000 Ada,RunPod Secure,on_demand,1.14,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,RTX A6000,RunPod Community,on_demand,0.69,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,RTX A6000,RunPod Secure,on_demand,0.79,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-06-13,V100,RunPod Community,on_demand,0.24,https://web.archive.org/web/20240613104312/https://www.runpod.io/gpu-instance/pricing
+2024-07-27,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,A100 80GB,RunPod Secure,on_demand,1.69,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,A40,RunPod Community,on_demand,0.47,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,A40,RunPod Secure,on_demand,0.35,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,H100 NVL,RunPod Community,on_demand,2.79,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,H100 NVL,RunPod Secure,on_demand,3.69,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,H100 PCIe,RunPod Community,on_demand,2.69,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,H100 PCIe,RunPod Secure,on_demand,3.29,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,H100 SXM,RunPod Community,on_demand,2.99,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,H100 SXM,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,L4,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,L40S,RunPod Community,on_demand,0.89,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,L40S,RunPod Secure,on_demand,1.19,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,MI300X,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,RTX 3090,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,RTX 4090,RunPod Community,on_demand,0.44,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,RTX 6000 Ada,RunPod Community,on_demand,0.79,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,RTX 6000 Ada,RunPod Secure,on_demand,1.03,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,RTX A6000,RunPod Community,on_demand,0.49,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,RTX A6000,RunPod Secure,on_demand,0.76,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-07-27,V100,RunPod Community,on_demand,0.19,https://web.archive.org/web/20240727085500/https://www.runpod.io/pricing
+2024-08-13,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,A100 80GB,RunPod Secure,on_demand,1.69,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,A40,RunPod Community,on_demand,0.47,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,A40,RunPod Secure,on_demand,0.35,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,H100 NVL,RunPod Community,on_demand,2.79,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,H100 NVL,RunPod Secure,on_demand,3.69,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,H100 PCIe,RunPod Community,on_demand,2.69,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,H100 PCIe,RunPod Secure,on_demand,3.29,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,H100 SXM,RunPod Community,on_demand,2.99,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,H100 SXM,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,L4,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,L40S,RunPod Community,on_demand,0.89,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,L40S,RunPod Secure,on_demand,1.19,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,MI300X,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,RTX 3090,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,RTX 4090,RunPod Community,on_demand,0.44,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,RTX 6000 Ada,RunPod Community,on_demand,0.79,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,RTX 6000 Ada,RunPod Secure,on_demand,1.03,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,RTX A6000,RunPod Community,on_demand,0.49,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,RTX A6000,RunPod Secure,on_demand,0.76,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-08-13,V100,RunPod Community,on_demand,0.23,https://web.archive.org/web/20240813184416/https://www.runpod.io/pricing
+2024-09-12,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,A40,RunPod Community,on_demand,0.47,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,A40,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,H100 NVL,RunPod Community,on_demand,2.79,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,H100 NVL,RunPod Secure,on_demand,3.29,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,H100 PCIe,RunPod Community,on_demand,2.69,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,H100 PCIe,RunPod Secure,on_demand,2.89,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,H100 SXM,RunPod Community,on_demand,2.99,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,H100 SXM,RunPod Secure,on_demand,3.49,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,L4,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,L40S,RunPod Secure,on_demand,1.03,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,MI300X,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,RTX 3090,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,RTX 4090,RunPod Community,on_demand,0.44,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,RTX 6000 Ada,RunPod Community,on_demand,0.79,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,RTX 6000 Ada,RunPod Secure,on_demand,1.03,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,RTX A6000,RunPod Community,on_demand,0.49,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,RTX A6000,RunPod Secure,on_demand,0.76,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-09-12,V100,RunPod Community,on_demand,0.19,https://web.archive.org/web/20240912125246/https://www.runpod.io/pricing
+2024-10-07,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,A40,RunPod Community,on_demand,0.47,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,A40,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,H100 NVL,RunPod Community,on_demand,2.79,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,H100 NVL,RunPod Secure,on_demand,2.79,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,H100 PCIe,RunPod Community,on_demand,2.69,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,H100 PCIe,RunPod Secure,on_demand,2.69,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,H100 SXM,RunPod Community,on_demand,2.99,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,H100 SXM,RunPod Secure,on_demand,2.99,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,L4,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,L40S,RunPod Secure,on_demand,1.03,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,MI300X,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,RTX 3090,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,RTX 4090,RunPod Community,on_demand,0.44,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,RTX 6000 Ada,RunPod Community,on_demand,0.79,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,RTX 6000 Ada,RunPod Secure,on_demand,1.03,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,RTX A6000,RunPod Community,on_demand,0.49,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,RTX A6000,RunPod Secure,on_demand,0.76,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-10-07,V100,RunPod Community,on_demand,0.19,https://web.archive.org/web/20241007102221/https://www.runpod.io/pricing
+2024-11-06,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,A40,RunPod Community,on_demand,0.47,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,A40,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,H100 NVL,RunPod Community,on_demand,2.79,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,H100 NVL,RunPod Secure,on_demand,2.79,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,H100 PCIe,RunPod Community,on_demand,2.69,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,H100 PCIe,RunPod Secure,on_demand,2.69,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,H100 SXM,RunPod Community,on_demand,2.99,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,H100 SXM,RunPod Secure,on_demand,2.99,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,H200,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,L4,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,L40S,RunPod Secure,on_demand,1.03,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,MI300X,RunPod Secure,on_demand,3.49,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,RTX 3090,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,RTX 4090,RunPod Community,on_demand,0.44,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,RTX 6000 Ada,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,RTX A6000,RunPod Community,on_demand,0.49,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,RTX A6000,RunPod Secure,on_demand,0.76,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-11-06,V100,RunPod Community,on_demand,0.19,https://web.archive.org/web/20241106084030/https://www.runpod.io/pricing
+2024-12-01,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,A40,RunPod Community,on_demand,0.47,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,A40,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,H100 NVL,RunPod Secure,on_demand,2.79,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,H100 PCIe,RunPod Community,on_demand,2.49,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,H100 PCIe,RunPod Secure,on_demand,2.69,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,H100 SXM,RunPod Secure,on_demand,2.99,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,H200,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,L4,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,L40S,RunPod Secure,on_demand,1.03,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,MI300X,RunPod Secure,on_demand,2.99,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,RTX 3090,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,RTX 6000 Ada,RunPod Secure,on_demand,0.88,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,RTX A6000,RunPod Community,on_demand,0.44,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,RTX A6000,RunPod Secure,on_demand,0.76,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2024-12-01,V100,RunPod Community,on_demand,0.19,https://web.archive.org/web/20241201142322/https://www.runpod.io/pricing
+2025-01-05,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,A40,RunPod Community,on_demand,0.47,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,A40,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,H100 NVL,RunPod Secure,on_demand,2.79,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,H100 PCIe,RunPod Community,on_demand,2.49,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,H100 PCIe,RunPod Secure,on_demand,2.69,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,H100 SXM,RunPod Secure,on_demand,2.99,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,H200,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,L4,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,L40S,RunPod Secure,on_demand,1.03,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,MI300X,RunPod Secure,on_demand,2.99,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,RTX 3090,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,RTX 6000 Ada,RunPod Secure,on_demand,0.88,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,RTX A6000,RunPod Community,on_demand,0.44,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,RTX A6000,RunPod Secure,on_demand,0.76,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-01-05,V100,RunPod Community,on_demand,0.19,https://web.archive.org/web/20250105052136/https://www.runpod.io/pricing
+2025-02-03,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,A40,RunPod Community,on_demand,0.47,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,A40,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,H100 NVL,RunPod Secure,on_demand,2.79,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,H100 SXM,RunPod Secure,on_demand,2.99,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,H200,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,L4,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,MI300X,RunPod Secure,on_demand,2.49,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,RTX 3090,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,RTX A6000,RunPod Community,on_demand,0.44,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,RTX A6000,RunPod Secure,on_demand,0.76,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-02-03,V100,RunPod Community,on_demand,0.19,https://web.archive.org/web/20250203222908/https://www.runpod.io/pricing
+2025-03-03,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,A40,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,H100 NVL,RunPod Secure,on_demand,2.79,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,H100 SXM,RunPod Secure,on_demand,2.99,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,H200,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,L4,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,MI300X,RunPod Secure,on_demand,2.49,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,RTX 3090,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,RTX A6000,RunPod Community,on_demand,0.44,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,RTX A6000,RunPod Secure,on_demand,0.76,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-03-03,V100,RunPod Community,on_demand,0.19,https://web.archive.org/web/20250303172225/https://www.runpod.io/pricing
+2025-04-05,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,A40,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,B200,RunPod Secure,on_demand,7.99,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,H100 NVL,RunPod Secure,on_demand,2.79,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,H100 SXM,RunPod Secure,on_demand,2.99,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,H200,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,L4,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,MI300X,RunPod Secure,on_demand,2.49,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,RTX 3090,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,RTX A6000,RunPod Secure,on_demand,0.59,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-04-05,V100,RunPod Community,on_demand,0.19,https://web.archive.org/web/20250405144116/https://www.runpod.io/pricing
+2025-05-02,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,A40,RunPod Secure,on_demand,0.4,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,B200,RunPod Secure,on_demand,7.99,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,H100 NVL,RunPod Secure,on_demand,2.79,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,H100 SXM,RunPod Secure,on_demand,2.99,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,H200,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,L4,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,MI300X,RunPod Secure,on_demand,2.49,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,RTX 3090,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,RTX 5090,RunPod Secure,on_demand,0.89,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-05-02,V100,RunPod Community,on_demand,0.19,https://web.archive.org/web/20250502180710/https://www.runpod.io/pricing
+2025-06-09,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,A40,RunPod Secure,on_demand,0.4,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,B200,RunPod Secure,on_demand,6.39,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,H100 NVL,RunPod Secure,on_demand,2.79,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,H100 SXM,RunPod Secure,on_demand,2.99,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,H200,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,L4,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,MI300X,RunPod Secure,on_demand,2.49,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,RTX 3090,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,RTX 5090,RunPod Secure,on_demand,0.89,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,RTX PRO 6000,RunPod Secure,on_demand,1.79,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-06-09,V100,RunPod Community,on_demand,0.19,https://web.archive.org/web/20250609041325/https://www.runpod.io/pricing
+2025-07-01,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,A40,RunPod Secure,on_demand,0.4,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,B200,RunPod Secure,on_demand,6.39,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,H100 NVL,RunPod Secure,on_demand,2.79,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,H100 PCIe,RunPod Secure,on_demand,2.19,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,H100 SXM,RunPod Secure,on_demand,2.99,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,H200,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,L4,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,RTX 3090,RunPod Secure,on_demand,0.46,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,RTX 5090,RunPod Secure,on_demand,0.89,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-07-01,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20250701222317/https://www.runpod.io/pricing
+2025-08-02,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,A40,RunPod Secure,on_demand,0.4,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,B200,RunPod Secure,on_demand,5.99,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,H100 NVL,RunPod Secure,on_demand,2.79,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,H100 SXM,RunPod Secure,on_demand,2.69,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,H200,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,L4,RunPod Secure,on_demand,0.43,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,RTX 3090,RunPod Secure,on_demand,0.46,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,RTX 5090,RunPod Secure,on_demand,0.94,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-08-02,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20250802164952/https://www.runpod.io/pricing
+2025-09-09,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,A40,RunPod Secure,on_demand,0.4,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,B200,RunPod Community,on_demand,5.98,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,B200,RunPod Secure,on_demand,5.99,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,H100 NVL,RunPod Secure,on_demand,2.79,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,H100 SXM,RunPod Secure,on_demand,2.69,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,H200,RunPod Secure,on_demand,3.79,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,L4,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,L40,RunPod Secure,on_demand,0.89,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,RTX 3090,RunPod Secure,on_demand,0.46,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,RTX 5090,RunPod Secure,on_demand,0.89,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-09-09,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20250909131230/https://www.runpod.io/pricing
+2025-10-10,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,A40,RunPod Community,on_demand,0.35,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,A40,RunPod Secure,on_demand,0.4,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,B200,RunPod Community,on_demand,5.98,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,B200,RunPod Secure,on_demand,5.69,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,H100 NVL,RunPod Secure,on_demand,3.07,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,H100 SXM,RunPod Secure,on_demand,2.69,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,H200,RunPod Secure,on_demand,3.59,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,L4,RunPod Community,on_demand,0.44,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,L4,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,L40,RunPod Secure,on_demand,1.07,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,RTX 3090,RunPod Secure,on_demand,0.46,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,RTX 4090,RunPod Secure,on_demand,0.59,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,RTX 5090,RunPod Secure,on_demand,0.89,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-10-10,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20251010063808/https://www.runpod.io/pricing
+2025-11-12,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,A100 80GB,RunPod Secure,on_demand,1.64,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,A40,RunPod Community,on_demand,0.35,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,A40,RunPod Secure,on_demand,0.4,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,B200,RunPod Community,on_demand,5.98,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,B200,RunPod Secure,on_demand,5.69,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,H100 NVL,RunPod Secure,on_demand,3.07,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,H100 SXM,RunPod Secure,on_demand,2.69,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,H200,RunPod Secure,on_demand,3.59,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,L4,RunPod Community,on_demand,0.44,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,L4,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,L40,RunPod Secure,on_demand,1.07,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,RTX 3090,RunPod Secure,on_demand,0.46,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,RTX 4090,RunPod Secure,on_demand,0.59,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,RTX 5090,RunPod Secure,on_demand,0.89,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-11-12,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20251112184053/https://www.runpod.io/pricing
+2025-12-07,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,A100 80GB,RunPod Secure,on_demand,1.39,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,A40,RunPod Community,on_demand,0.35,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,A40,RunPod Secure,on_demand,0.4,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,B200,RunPod Community,on_demand,5.98,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,B200,RunPod Secure,on_demand,5.19,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,H100 NVL,RunPod Secure,on_demand,3.07,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,H100 SXM,RunPod Secure,on_demand,2.69,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,H200,RunPod Secure,on_demand,3.59,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,L4,RunPod Community,on_demand,0.44,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,L4,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,RTX 3090,RunPod Secure,on_demand,0.46,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,RTX 4090,RunPod Secure,on_demand,0.59,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,RTX 5090,RunPod Secure,on_demand,0.89,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,RTX PRO 6000,RunPod Community,on_demand,1.7,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2025-12-07,RTX PRO 6000,RunPod Secure,on_demand,1.84,https://web.archive.org/web/20251207140114/https://www.runpod.io/pricing
+2026-01-12,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,A100 80GB,RunPod Secure,on_demand,1.39,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,A40,RunPod Community,on_demand,0.35,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,A40,RunPod Secure,on_demand,0.4,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,B200,RunPod Community,on_demand,5.98,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,B200,RunPod Secure,on_demand,5.19,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,H100 NVL,RunPod Secure,on_demand,3.07,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,H100 SXM,RunPod Secure,on_demand,2.69,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,H200,RunPod Secure,on_demand,3.59,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,L4,RunPod Community,on_demand,0.44,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,L4,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,RTX 3090,RunPod Secure,on_demand,0.46,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,RTX 4090,RunPod Secure,on_demand,0.59,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,RTX 5090,RunPod Secure,on_demand,0.89,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,RTX PRO 6000,RunPod Community,on_demand,1.69,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-01-12,RTX PRO 6000,RunPod Secure,on_demand,2.09,https://web.archive.org/web/20260112162804/https://www.runpod.io/pricing
+2026-02-08,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,A100 80GB,RunPod Secure,on_demand,1.39,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,A40,RunPod Community,on_demand,0.35,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,A40,RunPod Secure,on_demand,0.4,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,B200,RunPod Community,on_demand,5.98,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,B200,RunPod Secure,on_demand,4.99,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,H100 NVL,RunPod Secure,on_demand,3.07,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,H100 SXM,RunPod Secure,on_demand,2.69,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,H200,RunPod Secure,on_demand,3.59,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,L4,RunPod Community,on_demand,0.44,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,L4,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,RTX 3090,RunPod Secure,on_demand,0.46,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,RTX 4090,RunPod Secure,on_demand,0.59,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,RTX 5090,RunPod Secure,on_demand,0.89,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,RTX PRO 6000,RunPod Community,on_demand,1.69,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-02-08,RTX PRO 6000,RunPod Secure,on_demand,1.89,https://web.archive.org/web/20260208082330/https://www.runpod.io/pricing
+2026-03-13,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,A100 80GB,RunPod Secure,on_demand,1.39,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,A40,RunPod Community,on_demand,0.35,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,A40,RunPod Secure,on_demand,0.4,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,B200,RunPod Community,on_demand,5.98,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,B200,RunPod Secure,on_demand,4.99,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,H100 NVL,RunPod Secure,on_demand,3.07,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,H100 SXM,RunPod Secure,on_demand,2.69,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,H200,RunPod Secure,on_demand,3.59,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,L4,RunPod Community,on_demand,0.44,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,L4,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,RTX 3090,RunPod Secure,on_demand,0.46,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,RTX 4090,RunPod Secure,on_demand,0.59,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,RTX 5090,RunPod Secure,on_demand,0.89,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,RTX PRO 6000,RunPod Community,on_demand,1.69,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-03-13,RTX PRO 6000,RunPod Secure,on_demand,1.69,https://web.archive.org/web/20260313111731/https://www.runpod.io/pricing
+2026-04-02,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,A100 80GB,RunPod Secure,on_demand,1.39,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,A40,RunPod Community,on_demand,0.35,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,A40,RunPod Secure,on_demand,0.4,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,B200,RunPod Community,on_demand,5.98,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,B200,RunPod Secure,on_demand,4.99,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,H100 NVL,RunPod Secure,on_demand,3.07,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,H100 SXM,RunPod Secure,on_demand,2.69,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,H200,RunPod Secure,on_demand,3.59,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,L4,RunPod Community,on_demand,0.44,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,L4,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,RTX 3090,RunPod Secure,on_demand,0.46,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,RTX 4090,RunPod Secure,on_demand,0.59,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,RTX 5090,RunPod Secure,on_demand,0.89,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,RTX PRO 6000,RunPod Community,on_demand,1.69,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-04-02,RTX PRO 6000,RunPod Secure,on_demand,1.89,https://web.archive.org/web/20260402173747/https://www.runpod.io/pricing
+2026-05-09,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,A100 80GB,RunPod Secure,on_demand,1.39,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,A40,RunPod Community,on_demand,0.35,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,A40,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,B200,RunPod Community,on_demand,5.98,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,B200,RunPod Secure,on_demand,5.49,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,H100 NVL,RunPod Secure,on_demand,3.07,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,H100 PCIe,RunPod Secure,on_demand,2.39,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,H100 SXM,RunPod Secure,on_demand,2.99,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,H200,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,L4,RunPod Community,on_demand,0.44,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,L4,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,RTX 3090,RunPod Secure,on_demand,0.46,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,RTX 5090,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,RTX PRO 6000,RunPod Community,on_demand,1.69,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-05-09,RTX PRO 6000,RunPod Secure,on_demand,1.89,https://web.archive.org/web/20260509224042/https://www.runpod.io/pricing
+2026-06-11,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,A100 80GB,RunPod Secure,on_demand,1.39,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,A40,RunPod Community,on_demand,0.35,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,A40,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,B200,RunPod Community,on_demand,5.89,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,B200,RunPod Secure,on_demand,5.89,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,H100 NVL,RunPod Secure,on_demand,3.19,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,H100 PCIe,RunPod Secure,on_demand,2.89,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,H100 SXM,RunPod Secure,on_demand,3.29,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,H200,RunPod Secure,on_demand,4.39,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,L4,RunPod Community,on_demand,0.44,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,L4,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,L40,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,L40S,RunPod Secure,on_demand,0.86,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,RTX 3090,RunPod Secure,on_demand,0.46,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,RTX 5090,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,RTX PRO 6000,RunPod Community,on_demand,1.69,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-06-11,RTX PRO 6000,RunPod Secure,on_demand,2.09,https://web.archive.org/web/20260611044548/https://www.runpod.io/pricing
+2026-07-02,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,A100 80GB,RunPod Secure,on_demand,1.39,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,A40,RunPod Community,on_demand,0.35,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,A40,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,B200,RunPod Community,on_demand,5.89,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,B200,RunPod Secure,on_demand,5.89,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,B300,RunPod Community,on_demand,7.39,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,B300,RunPod Secure,on_demand,7.39,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,H100 NVL,RunPod Secure,on_demand,3.19,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,H100 PCIe,RunPod Secure,on_demand,2.89,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,H100 SXM,RunPod Secure,on_demand,3.29,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,H200,RunPod Secure,on_demand,4.39,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,L4,RunPod Community,on_demand,0.44,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,L4,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,L40,RunPod Secure,on_demand,0.82,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,L40S,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,RTX 3090,RunPod Secure,on_demand,0.46,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,RTX 5090,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,RTX 6000 Ada,RunPod Secure,on_demand,0.77,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,RTX A6000,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,RTX PRO 6000,RunPod Community,on_demand,1.69,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-07-02,RTX PRO 6000,RunPod Secure,on_demand,2.09,https://web.archive.org/web/20260702131609/https://www.runpod.io/pricing
+2026-08-03,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,A100 80GB,RunPod Secure,on_demand,1.39,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,A40,RunPod Community,on_demand,0.35,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,A40,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,B200,RunPod Community,on_demand,5.98,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,B200,RunPod Secure,on_demand,5.89,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,B300,RunPod Community,on_demand,6.94,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,B300,RunPod Secure,on_demand,7.39,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,H100 NVL,RunPod Secure,on_demand,3.19,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,H100 PCIe,RunPod Secure,on_demand,2.89,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,H100 SXM,RunPod Secure,on_demand,2.99,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,H200,RunPod Secure,on_demand,4.39,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,L4,RunPod Community,on_demand,0.44,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,L4,RunPod Secure,on_demand,0.39,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,L40,RunPod Secure,on_demand,0.82,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,L40S,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,RTX 3090,RunPod Secure,on_demand,0.5,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,RTX 4090,RunPod Secure,on_demand,0.69,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,RTX 5090,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,RTX 6000 Ada,RunPod Secure,on_demand,0.84,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,RTX A6000,RunPod Secure,on_demand,0.53,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,RTX PRO 6000,RunPod Community,on_demand,1.69,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-08-03,RTX PRO 6000,RunPod Secure,on_demand,1.99,https://web.archive.org/web/20260803074336/https://www.runpod.io/pricing
+2026-09-02,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,A100 80GB,RunPod Secure,on_demand,1.39,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,A40,RunPod Community,on_demand,0.35,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,A40,RunPod Secure,on_demand,0.44,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,B200,RunPod Community,on_demand,5.98,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,B200,RunPod Secure,on_demand,6.79,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,B300,RunPod Community,on_demand,6.94,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,B300,RunPod Secure,on_demand,7.89,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,H100 NVL,RunPod Secure,on_demand,3.19,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,H100 PCIe,RunPod Secure,on_demand,2.89,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,H100 SXM,RunPod Secure,on_demand,3.29,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,H200,RunPod Secure,on_demand,4.59,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,L4,RunPod Community,on_demand,0.44,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,L4,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,L40,RunPod Secure,on_demand,0.82,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,L40S,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,RTX 3090,RunPod Secure,on_demand,0.5,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,RTX 4090,RunPod Secure,on_demand,0.74,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,RTX 5090,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,RTX 6000 Ada,RunPod Secure,on_demand,0.84,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,RTX A6000,RunPod Secure,on_demand,0.53,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,RTX PRO 6000,RunPod Community,on_demand,1.69,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-09-02,RTX PRO 6000,RunPod Secure,on_demand,2.09,https://web.archive.org/web/20260902122713/https://www.runpod.io/pricing
+2026-10-03,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,A100 80GB,RunPod Secure,on_demand,1.59,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,A40,RunPod Community,on_demand,0.35,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,A40,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,B200,RunPod Community,on_demand,5.98,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,B200,RunPod Secure,on_demand,6.79,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,B300,RunPod Community,on_demand,6.94,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,B300,RunPod Secure,on_demand,7.89,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,H100 NVL,RunPod Secure,on_demand,3.19,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,H100 PCIe,RunPod Secure,on_demand,2.89,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,H100 SXM,RunPod Secure,on_demand,3.49,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,H200,RunPod Secure,on_demand,4.59,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,L4,RunPod Community,on_demand,0.44,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,L4,RunPod Secure,on_demand,0.49,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,L40,RunPod Secure,on_demand,0.82,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,L40S,RunPod Secure,on_demand,1.09,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,RTX 3090,RunPod Secure,on_demand,0.5,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,RTX 4090,RunPod Secure,on_demand,0.74,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,RTX 5090,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,RTX 6000 Ada,RunPod Secure,on_demand,0.84,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,RTX A6000,RunPod Secure,on_demand,0.53,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,RTX PRO 6000,RunPod Community,on_demand,1.69,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-10-03,RTX PRO 6000,RunPod Secure,on_demand,2.09,https://web.archive.org/web/20261003070257/https://www.runpod.io/pricing
+2026-11-02,A100 80GB,RunPod Community,on_demand,1.19,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,A100 80GB,RunPod Secure,on_demand,1.79,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,A40,RunPod Community,on_demand,0.35,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,A40,RunPod Secure,on_demand,0.59,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,B200,RunPod Community,on_demand,5.98,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,B200,RunPod Secure,on_demand,7.99,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,B300,RunPod Community,on_demand,6.94,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,B300,RunPod Secure,on_demand,8.99,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,H100 NVL,RunPod Community,on_demand,2.59,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,H100 NVL,RunPod Secure,on_demand,3.19,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,H100 PCIe,RunPod Community,on_demand,1.99,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,H100 PCIe,RunPod Secure,on_demand,2.89,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,H100 SXM,RunPod Community,on_demand,2.69,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,H100 SXM,RunPod Secure,on_demand,3.99,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,H200,RunPod Community,on_demand,3.59,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,H200,RunPod Secure,on_demand,5.29,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,L4,RunPod Community,on_demand,0.44,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,L4,RunPod Secure,on_demand,0.59,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,L40,RunPod Community,on_demand,0.69,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,L40,RunPod Secure,on_demand,0.82,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,L40S,RunPod Community,on_demand,0.79,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,L40S,RunPod Secure,on_demand,1.09,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,RTX 3090,RunPod Community,on_demand,0.22,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,RTX 3090,RunPod Secure,on_demand,0.5,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,RTX 4090,RunPod Community,on_demand,0.34,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,RTX 4090,RunPod Secure,on_demand,0.89,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,RTX 5090,RunPod Community,on_demand,0.69,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,RTX 5090,RunPod Secure,on_demand,1.19,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,RTX 6000 Ada,RunPod Community,on_demand,0.74,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,RTX 6000 Ada,RunPod Secure,on_demand,0.99,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,RTX A6000,RunPod Community,on_demand,0.33,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,RTX A6000,RunPod Secure,on_demand,0.59,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,RTX PRO 6000,RunPod Community,on_demand,1.69,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing
+2026-11-02,RTX PRO 6000,RunPod Secure,on_demand,2.49,https://web.archive.org/web/20261102075030/https://www.runpod.io/pricing

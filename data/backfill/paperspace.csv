@@ -1,0 +1,155 @@
+date,gpu,source,market,price,url
+2020-04-06,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20200406134246/https://www.paperspace.com/pricing
+2020-05-30,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20200530004252/https://www.paperspace.com/pricing
+2020-08-09,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20200809200121/https://www.paperspace.com/pricing
+2020-09-18,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20200918132556/https://www.paperspace.com/pricing
+2020-11-12,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20201112032210/https://www.paperspace.com/pricing
+2021-01-22,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20210122122226/https://www.paperspace.com/pricing
+2021-04-17,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20210417081150/https://www.paperspace.com/pricing
+2021-06-21,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20210621034300/https://www.paperspace.com/pricing
+2021-07-27,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20210727135846/https://www.paperspace.com/pricing
+2021-08-05,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20210805104739/https://www.paperspace.com/pricing
+2021-09-16,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20210916015836/https://www.paperspace.com/pricing
+2021-10-02,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20211002230640/https://www.paperspace.com/pricing
+2021-12-06,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20211206144027/https://www.paperspace.com/pricing
+2021-12-06,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20211206144027/https://www.paperspace.com/pricing
+2021-12-06,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20211206144027/https://www.paperspace.com/pricing
+2022-01-27,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20220127042757/https://www.paperspace.com/pricing
+2022-01-27,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20220127042757/https://www.paperspace.com/pricing
+2022-01-27,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20220127042757/https://www.paperspace.com/pricing
+2022-05-16,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20220516082412/https://www.paperspace.com/pricing
+2022-05-16,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20220516082412/https://www.paperspace.com/pricing
+2022-05-16,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20220516082412/https://www.paperspace.com/pricing
+2022-06-02,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20220602093755/https://www.paperspace.com/pricing
+2022-06-02,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20220602093755/https://www.paperspace.com/pricing
+2022-06-02,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20220602093755/https://www.paperspace.com/pricing
+2022-07-20,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20220720132530/https://www.paperspace.com/pricing
+2022-07-20,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20220720132530/https://www.paperspace.com/pricing
+2022-07-20,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20220720132530/https://www.paperspace.com/pricing
+2022-08-09,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20220809190536/https://www.paperspace.com/pricing
+2022-08-09,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20220809190536/https://www.paperspace.com/pricing
+2022-08-09,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20220809190536/https://www.paperspace.com/pricing
+2022-09-16,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20220916184153/https://www.paperspace.com/pricing
+2022-09-16,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20220916184153/https://www.paperspace.com/pricing
+2022-09-16,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20220916184153/https://www.paperspace.com/pricing
+2022-10-05,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20221005084315/https://www.paperspace.com/pricing
+2022-10-05,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20221005084315/https://www.paperspace.com/pricing
+2022-10-05,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20221005084315/https://www.paperspace.com/pricing
+2022-11-12,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20221112231840/https://www.paperspace.com/pricing
+2022-11-12,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20221112231840/https://www.paperspace.com/pricing
+2022-11-12,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20221112231840/https://www.paperspace.com/pricing
+2022-12-06,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20221206102323/https://www.paperspace.com/pricing
+2022-12-06,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20221206102323/https://www.paperspace.com/pricing
+2022-12-06,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20221206102323/https://www.paperspace.com/pricing
+2023-02-03,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20230203064304/https://www.paperspace.com/pricing
+2023-02-03,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20230203064304/https://www.paperspace.com/pricing
+2023-02-03,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20230203064304/https://www.paperspace.com/pricing
+2023-03-21,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20230321222653/https://www.paperspace.com/pricing
+2023-03-21,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20230321222653/https://www.paperspace.com/pricing
+2023-03-21,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20230321222653/https://www.paperspace.com/pricing
+2023-04-15,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20230415154200/https://www.paperspace.com/pricing
+2023-04-15,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20230415154200/https://www.paperspace.com/pricing
+2023-04-15,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20230415154200/https://www.paperspace.com/pricing
+2023-05-16,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20230516042349/https://www.paperspace.com/pricing
+2023-05-16,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20230516042349/https://www.paperspace.com/pricing
+2023-05-16,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20230516042349/https://www.paperspace.com/pricing
+2023-07-06,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20230706175806/https://www.paperspace.com/pricing
+2023-07-06,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20230706175806/https://www.paperspace.com/pricing
+2023-07-06,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20230706175806/https://www.paperspace.com/pricing
+2023-08-21,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20230821061913/https://www.paperspace.com/pricing
+2023-08-21,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20230821061913/https://www.paperspace.com/pricing
+2023-08-21,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20230821061913/https://www.paperspace.com/pricing
+2023-09-18,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20230918173557/https://www.paperspace.com/pricing
+2023-09-18,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20230918173557/https://www.paperspace.com/pricing
+2023-09-18,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20230918173557/https://www.paperspace.com/pricing
+2023-10-04,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20231004094131/https://www.paperspace.com/pricing
+2023-10-04,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20231004094131/https://www.paperspace.com/pricing
+2023-10-04,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20231004094131/https://www.paperspace.com/pricing
+2023-11-16,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20231116105302/https://www.paperspace.com/pricing
+2023-11-16,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20231116105302/https://www.paperspace.com/pricing
+2023-11-16,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20231116105302/https://www.paperspace.com/pricing
+2023-12-11,A100 40GB,Paperspace,on_demand,3.09,https://web.archive.org/web/20231211153408/https://www.paperspace.com/pricing
+2023-12-11,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20231211153408/https://www.paperspace.com/pricing
+2023-12-11,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20231211153408/https://www.paperspace.com/pricing
+2024-01-15,A100 80GB,Paperspace,on_demand,3.18,https://web.archive.org/web/20240115131920/https://www.paperspace.com/pricing
+2024-01-15,H100 SXM,Paperspace,on_demand,8.96,https://web.archive.org/web/20240115131920/https://www.paperspace.com/pricing
+2024-01-15,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20240115131920/https://www.paperspace.com/pricing
+2024-01-15,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20240115131920/https://www.paperspace.com/pricing
+2024-02-03,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20240203164157/https://www.paperspace.com/pricing
+2024-02-03,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20240203164157/https://www.paperspace.com/pricing
+2024-02-03,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20240203164157/https://www.paperspace.com/pricing
+2024-03-02,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20240302230938/https://www.paperspace.com/pricing
+2024-03-02,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20240302230938/https://www.paperspace.com/pricing
+2024-03-02,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20240302230938/https://www.paperspace.com/pricing
+2024-04-04,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20240404040853/https://www.paperspace.com/pricing
+2024-04-04,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20240404040853/https://www.paperspace.com/pricing
+2024-04-04,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20240404040853/https://www.paperspace.com/pricing
+2024-05-02,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20240502181114/https://www.paperspace.com/pricing
+2024-05-02,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20240502181114/https://www.paperspace.com/pricing
+2024-05-02,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20240502181114/https://www.paperspace.com/pricing
+2024-06-06,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20240606224112/https://www.paperspace.com/pricing
+2024-06-06,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20240606224112/https://www.paperspace.com/pricing
+2024-06-06,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20240606224112/https://www.paperspace.com/pricing
+2024-07-05,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20240705234643/https://www.paperspace.com/pricing
+2024-07-05,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20240705234643/https://www.paperspace.com/pricing
+2024-07-05,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20240705234643/https://www.paperspace.com/pricing
+2024-08-03,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20240803011419/https://www.paperspace.com/pricing
+2024-08-03,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20240803011419/https://www.paperspace.com/pricing
+2024-08-03,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20240803011419/https://www.paperspace.com/pricing
+2024-09-02,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20240902033034/https://www.paperspace.com/pricing
+2024-09-02,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20240902033034/https://www.paperspace.com/pricing
+2024-09-02,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20240902033034/https://www.paperspace.com/pricing
+2024-10-05,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20241005174711/https://www.paperspace.com/pricing
+2024-10-05,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20241005174711/https://www.paperspace.com/pricing
+2024-10-05,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20241005174711/https://www.paperspace.com/pricing
+2024-11-10,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20241110175625/https://www.paperspace.com/pricing
+2024-11-10,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20241110175625/https://www.paperspace.com/pricing
+2024-11-10,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20241110175625/https://www.paperspace.com/pricing
+2024-12-02,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20241202185350/https://www.paperspace.com/pricing
+2024-12-02,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20241202185350/https://www.paperspace.com/pricing
+2024-12-02,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20241202185350/https://www.paperspace.com/pricing
+2025-01-17,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20250117134430/https://www.paperspace.com/pricing
+2025-01-17,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20250117134430/https://www.paperspace.com/pricing
+2025-01-17,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20250117134430/https://www.paperspace.com/pricing
+2025-02-02,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20250202135356/https://www.paperspace.com/pricing
+2025-02-02,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20250202135356/https://www.paperspace.com/pricing
+2025-02-02,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20250202135356/https://www.paperspace.com/pricing
+2025-03-14,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20250314094203/https://www.paperspace.com/pricing
+2025-03-14,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20250314094203/https://www.paperspace.com/pricing
+2025-03-14,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20250314094203/https://www.paperspace.com/pricing
+2025-06-03,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20250603223641/https://www.paperspace.com/pricing
+2025-06-03,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20250603223641/https://www.paperspace.com/pricing
+2025-06-03,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20250603223641/https://www.paperspace.com/pricing
+2025-07-08,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20250708111241/https://www.paperspace.com/pricing
+2025-07-08,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20250708111241/https://www.paperspace.com/pricing
+2025-07-08,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20250708111241/https://www.paperspace.com/pricing
+2025-08-05,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20250805145230/https://www.paperspace.com/pricing
+2025-08-05,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20250805145230/https://www.paperspace.com/pricing
+2025-08-05,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20250805145230/https://www.paperspace.com/pricing
+2025-09-10,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20250910154155/https://www.paperspace.com/pricing
+2025-09-10,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20250910154155/https://www.paperspace.com/pricing
+2025-09-10,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20250910154155/https://www.paperspace.com/pricing
+2025-12-17,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20251217155338/https://www.paperspace.com/pricing
+2025-12-17,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20251217155338/https://www.paperspace.com/pricing
+2025-12-17,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20251217155338/https://www.paperspace.com/pricing
+2026-01-01,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20260101000403/https://www.paperspace.com/pricing
+2026-01-01,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20260101000403/https://www.paperspace.com/pricing
+2026-01-01,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20260101000403/https://www.paperspace.com/pricing
+2026-02-11,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20260211054712/https://www.paperspace.com/pricing
+2026-02-11,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20260211054712/https://www.paperspace.com/pricing
+2026-02-11,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20260211054712/https://www.paperspace.com/pricing
+2026-03-02,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20260302134004/https://www.paperspace.com/pricing
+2026-03-02,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20260302134004/https://www.paperspace.com/pricing
+2026-03-02,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20260302134004/https://www.paperspace.com/pricing
+2026-04-09,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20260409163540/https://www.paperspace.com/pricing
+2026-04-09,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20260409163540/https://www.paperspace.com/pricing
+2026-04-09,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20260409163540/https://www.paperspace.com/pricing
+2026-05-19,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20260519012809/https://www.paperspace.com/pricing
+2026-05-19,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20260519012809/https://www.paperspace.com/pricing
+2026-05-19,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20260519012809/https://www.paperspace.com/pricing
+2026-08-21,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20260821053156/https://www.paperspace.com/pricing
+2026-08-21,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20260821053156/https://www.paperspace.com/pricing
+2026-08-21,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20260821053156/https://www.paperspace.com/pricing
+2026-09-23,H100 SXM,Paperspace,on_demand,5.95,https://web.archive.org/web/20260923191525/https://www.paperspace.com/pricing
+2026-09-23,RTX A6000,Paperspace,on_demand,1.89,https://web.archive.org/web/20260923191525/https://www.paperspace.com/pricing
+2026-09-23,V100,Paperspace,on_demand,2.3,https://web.archive.org/web/20260923191525/https://www.paperspace.com/pricing

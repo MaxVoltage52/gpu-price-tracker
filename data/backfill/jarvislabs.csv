@@ -1,0 +1,88 @@
+date,gpu,source,market,price,url
+2021-08-04,A100 40GB,Jarvislabs,on_demand,2.39,https://web.archive.org/web/20210804051626/https://jarvislabs.ai/pricing
+2021-08-04,RTX A6000,Jarvislabs,on_demand,1.79,https://web.archive.org/web/20210804051626/https://jarvislabs.ai/pricing
+2021-09-20,A100 40GB,Jarvislabs,on_demand,2.39,https://web.archive.org/web/20210920011945/https://jarvislabs.ai/pricing
+2021-09-20,RTX A6000,Jarvislabs,on_demand,1.79,https://web.archive.org/web/20210920011945/https://jarvislabs.ai/pricing
+2021-10-24,A100 40GB,Jarvislabs,on_demand,2.39,https://web.archive.org/web/20211024082850/https://jarvislabs.ai/pricing
+2021-10-24,RTX A6000,Jarvislabs,on_demand,1.79,https://web.archive.org/web/20211024082850/https://jarvislabs.ai/pricing
+2021-12-07,A100 40GB,Jarvislabs,on_demand,2.39,https://web.archive.org/web/20211207203943/https://jarvislabs.ai/pricing
+2021-12-07,RTX A6000,Jarvislabs,on_demand,1.79,https://web.archive.org/web/20211207203943/https://jarvislabs.ai/pricing
+2022-01-20,A100 40GB,Jarvislabs,on_demand,2.39,https://web.archive.org/web/20220120101847/https://jarvislabs.ai/pricing
+2022-01-20,RTX A6000,Jarvislabs,on_demand,1.79,https://web.archive.org/web/20220120101847/https://jarvislabs.ai/pricing
+2022-05-23,A100 40GB,Jarvislabs,on_demand,2.39,https://web.archive.org/web/20220523045850/https://jarvislabs.ai/pricing/
+2022-05-23,A100 40GB,Jarvislabs,spot,0.99,https://web.archive.org/web/20220523045850/https://jarvislabs.ai/pricing/
+2022-05-23,RTX A6000,Jarvislabs,on_demand,1.79,https://web.archive.org/web/20220523045850/https://jarvislabs.ai/pricing/
+2022-05-23,RTX A6000,Jarvislabs,spot,0.79,https://web.archive.org/web/20220523045850/https://jarvislabs.ai/pricing/
+2022-08-11,A100 40GB,Jarvislabs,on_demand,1.1,https://web.archive.org/web/20220811164912/https://jarvislabs.ai/pricing/
+2022-08-11,A100 40GB,Jarvislabs,spot,0.69,https://web.archive.org/web/20220811164912/https://jarvislabs.ai/pricing/
+2022-08-11,RTX A6000,Jarvislabs,on_demand,0.99,https://web.archive.org/web/20220811164912/https://jarvislabs.ai/pricing/
+2022-08-11,RTX A6000,Jarvislabs,spot,0.59,https://web.archive.org/web/20220811164912/https://jarvislabs.ai/pricing/
+2022-09-16,A100 40GB,Jarvislabs,on_demand,1.29,https://web.archive.org/web/20220916190026/https://jarvislabs.ai/pricing/
+2022-09-16,A100 40GB,Jarvislabs,spot,0.79,https://web.archive.org/web/20220916190026/https://jarvislabs.ai/pricing/
+2022-09-16,RTX A6000,Jarvislabs,on_demand,0.99,https://web.archive.org/web/20220916190026/https://jarvislabs.ai/pricing/
+2022-09-16,RTX A6000,Jarvislabs,spot,0.59,https://web.archive.org/web/20220916190026/https://jarvislabs.ai/pricing/
+2022-12-06,A100 40GB,Jarvislabs,on_demand,1.29,https://web.archive.org/web/20221206134101/https://jarvislabs.ai/pricing
+2022-12-06,A100 40GB,Jarvislabs,spot,0.79,https://web.archive.org/web/20221206134101/https://jarvislabs.ai/pricing
+2022-12-06,RTX A6000,Jarvislabs,on_demand,0.99,https://web.archive.org/web/20221206134101/https://jarvislabs.ai/pricing
+2022-12-06,RTX A6000,Jarvislabs,spot,0.59,https://web.archive.org/web/20221206134101/https://jarvislabs.ai/pricing
+2023-03-26,A100 40GB,Jarvislabs,on_demand,1.29,https://web.archive.org/web/20230326152232/https://jarvislabs.ai/pricing/
+2023-03-26,A100 40GB,Jarvislabs,spot,0.79,https://web.archive.org/web/20230326152232/https://jarvislabs.ai/pricing/
+2023-03-26,RTX A6000,Jarvislabs,on_demand,0.99,https://web.archive.org/web/20230326152232/https://jarvislabs.ai/pricing/
+2023-03-26,RTX A6000,Jarvislabs,spot,0.59,https://web.archive.org/web/20230326152232/https://jarvislabs.ai/pricing/
+2023-07-06,A100 40GB,Jarvislabs,on_demand,1.29,https://web.archive.org/web/20230706175915/https://jarvislabs.ai/pricing/
+2023-07-06,A100 40GB,Jarvislabs,spot,0.79,https://web.archive.org/web/20230706175915/https://jarvislabs.ai/pricing/
+2023-07-06,RTX A6000,Jarvislabs,on_demand,0.99,https://web.archive.org/web/20230706175915/https://jarvislabs.ai/pricing/
+2023-07-06,RTX A6000,Jarvislabs,spot,0.59,https://web.archive.org/web/20230706175915/https://jarvislabs.ai/pricing/
+2025-12-31,A100 40GB,Jarvislabs,on_demand,1.29,https://web.archive.org/web/20251231205548/https://jarvislabs.ai/pricing
+2025-12-31,H100 SXM,Jarvislabs,on_demand,2.99,https://web.archive.org/web/20251231205548/https://jarvislabs.ai/pricing
+2025-12-31,H200,Jarvislabs,on_demand,3.8,https://web.archive.org/web/20251231205548/https://jarvislabs.ai/pricing
+2025-12-31,RTX 6000 Ada,Jarvislabs,on_demand,0.99,https://web.archive.org/web/20251231205548/https://jarvislabs.ai/pricing
+2025-12-31,RTX A6000,Jarvislabs,on_demand,0.79,https://web.archive.org/web/20251231205548/https://jarvislabs.ai/pricing
+2026-01-20,A100 40GB,Jarvislabs,on_demand,1.29,https://web.archive.org/web/20260120180628/https://jarvislabs.ai/pricing
+2026-01-20,H100 SXM,Jarvislabs,on_demand,2.99,https://web.archive.org/web/20260120180628/https://jarvislabs.ai/pricing
+2026-01-20,H200,Jarvislabs,on_demand,3.8,https://web.archive.org/web/20260120180628/https://jarvislabs.ai/pricing
+2026-01-20,RTX 6000 Ada,Jarvislabs,on_demand,0.99,https://web.archive.org/web/20260120180628/https://jarvislabs.ai/pricing
+2026-01-20,RTX A6000,Jarvislabs,on_demand,0.79,https://web.archive.org/web/20260120180628/https://jarvislabs.ai/pricing
+2026-04-08,A100 40GB,Jarvislabs,on_demand,1.29,https://web.archive.org/web/20260408142538/https://jarvislabs.ai/pricing
+2026-04-08,A100 80GB,Jarvislabs,on_demand,1.49,https://web.archive.org/web/20260408142538/https://jarvislabs.ai/pricing
+2026-04-08,H100 SXM,Jarvislabs,on_demand,2.69,https://web.archive.org/web/20260408142538/https://jarvislabs.ai/pricing
+2026-04-08,H200,Jarvislabs,on_demand,3.8,https://web.archive.org/web/20260408142538/https://jarvislabs.ai/pricing
+2026-04-08,L4,Jarvislabs,on_demand,0.44,https://web.archive.org/web/20260408142538/https://jarvislabs.ai/pricing
+2026-04-08,RTX 6000 Ada,Jarvislabs,on_demand,0.99,https://web.archive.org/web/20260408142538/https://jarvislabs.ai/pricing
+2026-04-08,RTX A6000,Jarvislabs,on_demand,0.79,https://web.archive.org/web/20260408142538/https://jarvislabs.ai/pricing
+2026-05-02,A100 40GB,Jarvislabs,on_demand,0.89,https://web.archive.org/web/20260502230003/https://jarvislabs.ai/pricing
+2026-05-02,A100 80GB,Jarvislabs,on_demand,1.49,https://web.archive.org/web/20260502230003/https://jarvislabs.ai/pricing
+2026-05-02,H100 SXM,Jarvislabs,on_demand,2.69,https://web.archive.org/web/20260502230003/https://jarvislabs.ai/pricing
+2026-05-02,H200,Jarvislabs,on_demand,3.8,https://web.archive.org/web/20260502230003/https://jarvislabs.ai/pricing
+2026-05-02,L4,Jarvislabs,on_demand,0.44,https://web.archive.org/web/20260502230003/https://jarvislabs.ai/pricing
+2026-05-02,RTX 6000 Ada,Jarvislabs,on_demand,0.99,https://web.archive.org/web/20260502230003/https://jarvislabs.ai/pricing
+2026-05-02,RTX A6000,Jarvislabs,on_demand,0.79,https://web.archive.org/web/20260502230003/https://jarvislabs.ai/pricing
+2026-06-14,A100 40GB,Jarvislabs,on_demand,0.89,https://web.archive.org/web/20260614030907/https://jarvislabs.ai/pricing?utm_source=tutorials&utm_medium=referral&utm_campaign=finetuning-flux
+2026-06-14,A100 80GB,Jarvislabs,on_demand,1.49,https://web.archive.org/web/20260614030907/https://jarvislabs.ai/pricing?utm_source=tutorials&utm_medium=referral&utm_campaign=finetuning-flux
+2026-06-14,H100 SXM,Jarvislabs,on_demand,2.69,https://web.archive.org/web/20260614030907/https://jarvislabs.ai/pricing?utm_source=tutorials&utm_medium=referral&utm_campaign=finetuning-flux
+2026-06-14,L4,Jarvislabs,on_demand,0.44,https://web.archive.org/web/20260614030907/https://jarvislabs.ai/pricing?utm_source=tutorials&utm_medium=referral&utm_campaign=finetuning-flux
+2026-06-14,RTX PRO 6000,Jarvislabs,on_demand,1.89,https://web.archive.org/web/20260614030907/https://jarvislabs.ai/pricing?utm_source=tutorials&utm_medium=referral&utm_campaign=finetuning-flux
+2026-07-05,A100 40GB,Jarvislabs,on_demand,0.89,https://web.archive.org/web/20260705194013/https://jarvislabs.ai/pricing
+2026-07-05,A100 80GB,Jarvislabs,on_demand,1.49,https://web.archive.org/web/20260705194013/https://jarvislabs.ai/pricing
+2026-07-05,H100 SXM,Jarvislabs,on_demand,2.69,https://web.archive.org/web/20260705194013/https://jarvislabs.ai/pricing
+2026-07-05,H200,Jarvislabs,on_demand,3.8,https://web.archive.org/web/20260705194013/https://jarvislabs.ai/pricing
+2026-07-05,L4,Jarvislabs,on_demand,0.44,https://web.archive.org/web/20260705194013/https://jarvislabs.ai/pricing
+2026-07-05,RTX PRO 6000,Jarvislabs,on_demand,1.89,https://web.archive.org/web/20260705194013/https://jarvislabs.ai/pricing
+2026-08-05,A100 40GB,Jarvislabs,on_demand,0.89,https://web.archive.org/web/20260805023702/https://jarvislabs.ai/pricing
+2026-08-05,A100 80GB,Jarvislabs,on_demand,1.49,https://web.archive.org/web/20260805023702/https://jarvislabs.ai/pricing
+2026-08-05,H100 SXM,Jarvislabs,on_demand,2.69,https://web.archive.org/web/20260805023702/https://jarvislabs.ai/pricing
+2026-08-05,H200,Jarvislabs,on_demand,3.99,https://web.archive.org/web/20260805023702/https://jarvislabs.ai/pricing
+2026-08-05,L4,Jarvislabs,on_demand,0.44,https://web.archive.org/web/20260805023702/https://jarvislabs.ai/pricing
+2026-08-05,RTX PRO 6000,Jarvislabs,on_demand,1.89,https://web.archive.org/web/20260805023702/https://jarvislabs.ai/pricing
+2026-09-15,A100 40GB,Jarvislabs,on_demand,0.89,https://web.archive.org/web/20260915175445/https://jarvislabs.ai/pricing
+2026-09-15,A100 80GB,Jarvislabs,on_demand,1.49,https://web.archive.org/web/20260915175445/https://jarvislabs.ai/pricing
+2026-09-15,H100 SXM,Jarvislabs,on_demand,2.69,https://web.archive.org/web/20260915175445/https://jarvislabs.ai/pricing
+2026-09-15,H200,Jarvislabs,on_demand,3.99,https://web.archive.org/web/20260915175445/https://jarvislabs.ai/pricing
+2026-09-15,L4,Jarvislabs,on_demand,0.44,https://web.archive.org/web/20260915175445/https://jarvislabs.ai/pricing
+2026-09-15,RTX PRO 6000,Jarvislabs,on_demand,1.89,https://web.archive.org/web/20260915175445/https://jarvislabs.ai/pricing
+2026-10-13,A100 40GB,Jarvislabs,on_demand,0.89,https://web.archive.org/web/20261013071525/https://jarvislabs.ai/pricing
+2026-10-13,A100 80GB,Jarvislabs,on_demand,1.49,https://web.archive.org/web/20261013071525/https://jarvislabs.ai/pricing
+2026-10-13,H100 SXM,Jarvislabs,on_demand,3.49,https://web.archive.org/web/20261013071525/https://jarvislabs.ai/pricing
+2026-10-13,H200,Jarvislabs,on_demand,4.59,https://web.archive.org/web/20261013071525/https://jarvislabs.ai/pricing
+2026-10-13,L4,Jarvislabs,on_demand,0.44,https://web.archive.org/web/20261013071525/https://jarvislabs.ai/pricing
+2026-10-13,RTX PRO 6000,Jarvislabs,on_demand,2.19,https://web.archive.org/web/20261013071525/https://jarvislabs.ai/pricing
