@@ -1,0 +1,7 @@
+site/data/
+__pycache__/
+*.pyc
+# local preview config and screenshots
+.claude/
+.playwright-mcp/
+gpu-tracker-*.png

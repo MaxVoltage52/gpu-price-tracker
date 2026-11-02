@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPU Price Tracker</title>
+  <meta name="description" content="Hourly GPU rental prices and demand: how the price per GPU-hour of B300, B200, H200 and H100 is moving across marketplaces and clouds.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232a78d6'/%3E%3Cpath d='M6 22l6-7 5 4 9-10' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="masthead">
+      <div>
+        <h1>GPU Price Tracker</h1>
+        <p class="sub" id="sub">Hourly rental prices and demand for data-center GPUs.</p>
+      </div>
+      <p class="stamp"><span class="live" aria-hidden="true"></span><span id="stamp"></span></p>
+    </header>
+
+    <div class="filters" role="toolbar" aria-label="Filters">
+      <div class="seg" role="radiogroup" aria-label="Market" data-filter="market">
+        <button role="radio" data-value="spot">Spot</button>
+        <button role="radio" data-value="on_demand">On-demand</button>
+      </div>
+      <div class="seg" role="radiogroup" aria-label="Range" data-filter="range">
+        <button role="radio" data-value="1d">24H</button>
+        <button role="radio" data-value="7d">7D</button>
+        <button role="radio" data-value="30d">30D</button>
+        <button role="radio" data-value="90d">90D</button>
+        <button role="radio" data-value="1y">1Y</button>
+        <button role="radio" data-value="all">All</button>
+      </div>
+    </div>
+
+    <p class="notice" id="notice" hidden></p>
+
+    <section aria-labelledby="flag-h">
+      <h2 class="visually-hidden" id="flag-h">Flagship GPUs</h2>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <section class="panel" aria-labelledby="trend-h">
+      <div class="panel-head">
+        <div>
+          <h2 id="trend-h">Price trend</h2>
+          <p class="sec-sub" id="trend-sub"></p>
+        </div>
+        <div class="seg small" role="radiogroup" aria-label="Trend scale" data-filter="trendMode">
+          <button role="radio" data-value="pct">% change</button>
+          <button role="radio" data-value="usd">$ / hr</button>
+        </div>
+      </div>
+      <div class="legend" id="trend-legend"></div>
+      <div class="chart tall" id="trend-chart"></div>
+    </section>
+
+    <section class="panel" aria-labelledby="demand-h">
+      <div class="panel-head">
+        <div>
+          <h2 id="demand-h">Demand</h2>
+          <p class="sec-sub" id="demand-sub">Share of listed GPUs that are rented out, across open marketplaces.</p>
+        </div>
+      </div>
+      <div class="demand-grid">
+        <div>
+          <h3>Rented right now</h3>
+          <div class="bars" id="util-bars"></div>
+        </div>
+        <div>
+          <h3>Flagship utilization over time</h3>
+          <div class="legend" id="util-legend"></div>
+          <div class="chart" id="util-chart"></div>
+        </div>
+      </div>
+      <div class="heat-head">
+        <h3 id="heat-h">Utilization heatmap</h3>
+        <div class="scale" id="heat-scale"></div>
+      </div>
+      <div id="heat"></div>
+    </section>
+
+    <section class="panel" aria-labelledby="spread-h">
+      <div class="panel-head">
+        <div>
+          <h2 id="spread-h">Where it’s cheapest</h2>
+          <p class="sec-sub" id="spread-sub"></p>
+        </div>
+      </div>
+      <div class="strip-legend" id="strip-legend"></div>
+      <div id="strip"></div>
+    </section>
+
+    <section class="panel" id="detail" aria-labelledby="detail-h">
+      <div class="panel-head">
+        <div>
+          <h2 id="detail-h">By source</h2>
+          <p class="sec-sub" id="detail-sub"></p>
+        </div>
+        <label class="pick">GPU <select id="gpu-pick"></select></label>
+      </div>
+      <div class="legend chips" id="detail-legend"></div>
+      <div class="chart tall" id="detail-chart"></div>
+      <div class="table-wrap"><table class="grid compact" id="detail-table"></table></div>
+    </section>
+
+    <details class="panel all">
+      <summary>All GPUs as a table</summary>
+      <div class="table-wrap"><table class="grid" id="all-table"></table></div>
+    </details>
+
+    <footer class="foot" id="foot"></footer>
+  </main>
+  <div class="tooltip" id="tooltip" role="status" hidden></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

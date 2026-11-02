@@ -1,0 +1,60 @@
+name: Collect GPU prices
+
+on:
+  schedule:
+    - cron: "7 * * * *"   # hourly; minute 7 avoids the top-of-hour rush that delays scheduled runs
+  workflow_dispatch:       # "Run workflow" button in the Actions tab
+  push:
+    branches: [main]
+    paths: ["site/**", "collector/build.py"]   # redeploy on site changes without a new snapshot
+
+permissions:
+  contents: write   # commit the new snapshot
+  pages: write
+  id-token: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect snapshot
+        if: github.event_name != 'push'
+        run: python collector/collect.py
+        env:  # optional: sources whose docs ask for a (free) key are skipped or keyless without one
+          SHADEFORM_API_KEY: ${{ secrets.SHADEFORM_API_KEY }}
+          SPHERON_API_KEY: ${{ secrets.SPHERON_API_KEY }}
+
+      - name: Commit snapshot
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/prices data/demand
+          git diff --cached --quiet && exit 0
+          git commit -m "data: snapshot $(date -u +%Y-%m-%dT%H:00Z)"
+          git pull --rebase --quiet
+          git push
+
+      - name: Build site data
+        run: python collector/build.py
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4
