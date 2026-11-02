@@ -3,13 +3,17 @@
     python collector/build.py [--data data] [--out site/data]
 
 Outputs
-  summary.json      every GPU now: typical & cheapest price, changes, per-source prices, demand
-  gpu/<slug>.json   one GPU over time: price trend, cheapest, utilization, per-source prices
+  summary.json      every GPU now: typical & cheapest price, changes, per-source prices, demand,
+                    plus the price-move feed and announced future prices
+  gpu/<slug>.json   one GPU over time: price trend (all sources and per segment), cheapest,
+                    utilization, listed/rented, sold-out share, spot discount, tightness
+  market.json       market-wide series: listed data-center GPUs by generation
 
 Price trend = chained index. Each hour, every source's median is compared with that same
 source's previous value, and the index moves by the geometric mean of those changes. Sources
 appearing or dropping out therefore never cause jumps. "Typical" is today's median across
-sources, carried back in time along the index.
+sources, carried back in time along the index. The same is done per segment (neoclouds,
+open market, hyperscalers) to compare them.
 """
 import argparse
 import csv
@@ -45,6 +49,16 @@ CATALOG = {
     "RTX 5090": (32, "Consumer"), "RTX 4090": (24, "Consumer"), "RTX 3090": (24, "Consumer"),
     "L4": (24, "Inference"), "A10": (24, "Inference"), "V100": (16, "Legacy"), "T4": (16, "Legacy"),
 }
+# Dense BF16 PFLOPS per GPU (NVIDIA / AMD datasheets). B300's gain over B200 is FP4, not BF16.
+COMPUTE = {"B300": 2.25, "B200": 2.25, "H200": 0.989, "H100 SXM": 0.989, "A100 80GB": 0.312, "MI300X": 1.307}
+GENERATIONS = ["Blackwell", "Hopper", "Ampere"]  # NVIDIA data-center tiers in the supply-mix chart
+SEGMENT_BY_KIND = {"Marketplace": "market", "Decentralized": "market", "GPU cloud": "neocloud",
+                   "Aggregator": "neocloud", "Hyperscaler": "hyperscaler"}
+SEGMENTS = ["neocloud", "market", "hyperscaler"]
+MOVE_MIN = 0.01          # list-price moves smaller than 1% are ignored in the feed
+MOVE_WINDOW = 90 * DAY   # how far back the feed goes
+
+
 def _src(url, kind, unit, about):
     return {"url": url, "kind": kind, "unit": unit, "about": about}
 
@@ -176,6 +190,71 @@ def chained_index(per_source, stamps):
     return idx
 
 
+def segment_of(source):
+    return SEGMENT_BY_KIND.get(SOURCES.get(source, {}).get("kind"))
+
+
+def price_moves(price, stamps, now_t):
+    """List-price changes, additions and removals at neoclouds and hyperscalers (marketplaces
+    move every hour, so they are left out). Hyperscaler spot is market-driven, also left out."""
+    first_seen, last_seen = {}, {}  # per (source, market): when we started / last got data from it
+    for (_, s, market), pts in price.items():
+        first_seen[(s, market)] = min(first_seen.get((s, market), now_t), min(pts))
+        last_seen[(s, market)] = max(last_seen.get((s, market), 0), max(pts))
+    events = []
+    for (gpu, s, market), pts in price.items():
+        seg = segment_of(s)
+        if seg not in ("neocloud", "hyperscaler") or SOURCES[s]["kind"] == "Aggregator":
+            continue
+        if seg == "hyperscaler" and market == "spot":
+            continue
+        ts = sorted(pts)
+        base = {"gpu": gpu, "source": s, "market": market}
+        if ts[0] > first_seen[(s, market)] + HOUR:
+            events.append({**base, "t": ts[0], "kind": "added", "to": pts[ts[0]][1]})
+        for a, b in zip(ts, ts[1:]):
+            before, after = pts[a][1], pts[b][1]
+            if before and abs(after / before - 1) >= MOVE_MIN:
+                events.append({**base, "t": b, "kind": "change", "from": before, "to": after,
+                               "pct": round((after / before - 1) * 100, 1)})
+        if ts[-1] < last_seen[(s, market)] - CARRY:
+            events.append({**base, "t": ts[-1] + HOUR, "kind": "removed", "from": pts[ts[-1]][1]})
+    # a change undone within a few hours is a scraping blip, not a price move
+    by_key = defaultdict(list)
+    for e in events:
+        by_key[(e["gpu"], e["source"], e["market"])].append(e)
+    keep = []
+    for evs in by_key.values():
+        evs.sort(key=lambda e: e["t"])
+        drop = set()
+        for i, (e1, e2) in enumerate(zip(evs, evs[1:])):
+            if (e1["kind"] == e2["kind"] == "change" and e2["t"] - e1["t"] <= CARRY
+                    and abs(e1["from"] - e2["to"]) < 1e-9):
+                drop |= {i, i + 1}
+        keep += [e for i, e in enumerate(evs) if i not in drop]
+    keep = [e for e in keep if e["t"] > now_t - MOVE_WINDOW]
+    return sorted(keep, key=lambda e: -e["t"])[:300]
+
+
+def load_announced(data_dir, price, now_t):
+    latest_rows = {}
+    for r in read_csvs(data_dir / "announced"):
+        key = (r["gpu"], r["source"], r["market"], r["effective"])
+        if r["gpu"] in CATALOG and (key not in latest_rows or r["ts"] >= latest_rows[key]["ts"]):
+            latest_rows[key] = r
+    today = datetime.fromtimestamp(now_t, timezone.utc).strftime("%Y-%m-%d")
+    out = []
+    for (gpu, s, market, eff), r in latest_rows.items():
+        if eff < today or parse_ts(r["ts"]) < now_t - 2 * DAY:
+            continue  # already in effect, or no longer announced on the page
+        cur = latest(price.get((gpu, s, market), {}), now_t, 2 * DAY)
+        new = float(r["price"])
+        out.append({"gpu": gpu, "source": s, "market": market, "price": new, "effective": eff,
+                    "current": cur[1] if cur else None,
+                    "pct": round((new / cur[1] - 1) * 100, 1) if cur else None})
+    return sorted(out, key=lambda a: (a["effective"], a["gpu"]))
+
+
 def window_mean(points, now_t, span):
     """Average of the hourly values in the last `span` seconds (None = all history), rounded."""
     vals = [v for t, v in points.items() if span is None or t > now_t - span]
@@ -208,6 +287,7 @@ def build(data_dir, out_dir):
     (out_dir / "gpu").mkdir(parents=True, exist_ok=True)
     src_order = {s: i for i, s in enumerate(SOURCES)}
     gpus_out, heat = [], {}
+    gen_listed = {g: defaultdict(float) for g in GENERATIONS}  # listed data-center GPUs per generation, per hour
 
     for gpu, (vram, tier) in CATALOG.items():
         keys = [k for k in price if k[0] == gpu]
@@ -215,7 +295,7 @@ def build(data_dir, out_dir):
         if not keys and not dkeys:
             continue
         entry = {"gpu": gpu, "slug": slug(gpu), "vram": vram, "tier": tier, "market": {}}
-        series = {"typical": {}, "cheapest": {}, "sources": {}}
+        series = {"typical": {}, "cheapest": {}, "sources": {}, "seg": {}}
 
         for market in MARKETS:
             mk = sorted((k for k in keys if k[2] == market), key=lambda k: src_order.get(k[1], 99))
@@ -244,6 +324,31 @@ def build(data_dir, out_dir):
             series["cheapest"][market] = {t: v[0] for t, v in cheapest.items()}
             for k in mk:
                 series["sources"][f"{k[1]}|{market}"] = medians[k[1]]
+
+            # the same chained index, per segment: neoclouds vs open market vs hyperscalers
+            segs = {}
+            for seg in SEGMENTS:
+                seg_keys = [k for k in mk if segment_of(k[1]) == seg]
+                sidx = chained_index({k[1]: medians[k[1]] for k in seg_keys}, stamps)
+                cur = sane([(k[1], latest(price[k], now_t)) for k in seg_keys])
+                if not cur or now_t not in sidx:
+                    continue
+                snow = statistics.median_low(v[1] for _, v in cur)
+                series["seg"][f"{seg}|{market}"] = {t: snow * v / sidx[now_t] for t, v in sidx.items()}
+                segs[seg] = {"typical": r4(snow), "chg": changes(sidx, now_t), "n": len(cur)}
+            entry["market"][market]["segments"] = segs
+
+        # spot discount: how far below its own on-demand price each source sells spot
+        disc_src = sorted({k[1] for k in keys if k[2] == "spot"} & {k[1] for k in keys if k[2] == "on_demand"})
+        discount = {}
+        for t in stamps:
+            ds = []
+            for s in disc_src:
+                sp, od = latest(price[(gpu, s, "spot")], t), latest(price[(gpu, s, "on_demand")], t)
+                if sp and od and od[1]:
+                    ds.append(max(0.0, (1 - sp[1] / od[1]) * 100))
+            if ds:
+                discount[t] = statistics.median(ds)
 
         # demand: utilization = rented / listed GPUs, summed over marketplaces that report counts
         util_src = sorted({k[1] for k in dkeys if k[2] == "gpus_total"}, key=lambda s: src_order.get(s, 99))
@@ -309,8 +414,25 @@ def build(data_dir, out_dir):
                 "sources": {s: {w: window_mean(per_src[s], now_t, WINDOWS[w]) for w in ("1d", "7d", "30d")}
                             for s in avail_src if per_src[s]},
             }
+
+        # tightness 0-100: average of rented share, share of sources sold out, and 100 - spot discount
+        tight = {}
+        for t in stamps:
+            parts = [util[t][0] if t in util else None, ratio.get(t), 100 - discount[t] if t in discount else None]
+            parts = [p for p in parts if p is not None]
+            if parts:
+                tight[t] = sum(parts) / len(parts)
+        if now_t in tight:
+            d["tight"] = {"now": round(tight[now_t], 1), "chg": changes(tight, now_t, relative=False),
+                          "rented": d.get("util"), "soldout": r4(ratio.get(now_t)),
+                          "discount": round(discount[now_t], 1) if now_t in discount else None}
         entry["demand"] = d
+        if gpu in COMPUTE:
+            entry["pflops"] = COMPUTE[gpu]
         gpus_out.append(entry)
+        if tier in GENERATIONS:
+            for t, v in util.items():
+                gen_listed[tier][t] += v[2]
 
         util_pct = {t: v[0] for t, v in util.items()}
         listed, rented = {t: v[2] for t, v in util.items()}, {t: v[1] for t, v in util.items()}
@@ -333,6 +455,9 @@ def build(data_dir, out_dir):
                 "listed": col(listed) if listed else [],
                 "rented": col(rented) if rented else [],
                 "soldout": col(ratio) if ratio else [],
+                "discount": col(discount) if discount else [],
+                "tight": col(tight) if tight else [],
+                "seg": {k: col(v) for k, v in series["seg"].items()},
                 "sources": {k: col(v) for k, v in series["sources"].items()},
             }
         all_days = sorted({t - t % DAY for t in stamps})
@@ -351,8 +476,15 @@ def build(data_dir, out_dir):
         "gpus": gpus_out,
         "heat": {"hour0": iso(now_t - (HEAT_HOURS - 1) * HOUR), "day0": iso(now_t - now_t % DAY - (HEAT_DAYS - 1) * DAY),
                  "rows": heat},
+        "moves": price_moves(price, stamps, now_t),
+        "announced": load_announced(data_dir, price, now_t),
     }
     (out_dir / "summary.json").write_text(json.dumps(summary, separators=(",", ":")))
+
+    all_days = sorted({t - t % DAY for t in stamps})
+    market = {"hourly": {"t": hourly_t, "gen": {g: [r4(gen_listed[g].get(t)) for t in hourly_t] for g in GENERATIONS}},
+              "daily": {"t": all_days, "gen": {g: [r4(daily(gen_listed[g]).get(t)) for t in all_days] for g in GENERATIONS}}}
+    (out_dir / "market.json").write_text(json.dumps(market, separators=(",", ":")))
     print(f"built {len(gpus_out)} GPUs, {len(summary['sources'])} sources, {len(stamps)} snapshots "
           f"({iso(stamps[0])} .. {iso(now_t)}) -> {out_dir}")
 

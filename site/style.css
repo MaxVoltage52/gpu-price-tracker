@@ -169,6 +169,26 @@ h3 { font-size: 12.5px; font-weight: 600; margin: 0 0 12px; color: var(--ink-2);
 .track .free { background: var(--grid); flex: 1; }
 .bar-row.featured .n { color: var(--ink); font-weight: 600; }
 .mini-sub { margin: -8px 0 12px; color: var(--muted); font-size: 12px; }
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; }
+.tight-chart { margin-bottom: 26px; }
+#seg-multiples .chart { height: 116px; }
+
+/* price moves feed */
+.moves { list-style: none; margin: 0; padding: 0; }
+.moves li { display: grid; grid-template-columns: 128px minmax(0, 1fr) auto; gap: 14px; align-items: baseline;
+  padding: 9px 0; border-top: 1px solid var(--grid); font-size: 13px; }
+.moves li:first-child { border-top: 0; }
+.moves .when { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.moves .what b { font-weight: 600; }
+.moves .what .tag { display: inline-block; font-size: 11px; font-weight: 600; color: var(--ink-2); background: var(--wash);
+  border-radius: 99px; padding: 1px 8px; margin-right: 6px; }
+.moves .what .tag.ann { color: var(--surface); background: var(--ink); }
+.moves .px { color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.moves .px span { margin-left: 10px; }
+.moves .empty-li { color: var(--muted); display: block; }
+.more { font: inherit; font-size: 12.5px; color: var(--ink-2); background: var(--wash); border: 0; border-radius: 8px;
+  padding: 6px 12px; margin-top: 10px; cursor: pointer; }
+.more:hover { color: var(--ink); }
 .bars.soldout .bar-row { grid-template-columns: 96px minmax(0, 1fr) 118px; }
 .bar-row .v small { color: var(--muted); font-size: 11.5px; }
 .multiples { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 18px; }
@@ -245,7 +265,7 @@ details.all[open] summary { margin-bottom: 12px; }
 
 @media (max-width: 980px) {
   .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .demand-grid { grid-template-columns: 1fr; gap: 22px; }
+  .demand-grid, .split { grid-template-columns: 1fr; gap: 22px; }
 }
 @media (max-width: 560px) {
   .wrap { padding-top: 22px; }
@@ -255,6 +275,7 @@ details.all[open] summary { margin-bottom: 12px; }
   .chart.tall { height: 280px; }
   .bar-row { grid-template-columns: 84px minmax(0, 1fr) 80px; gap: 8px; }
   .bars.soldout .bar-row { grid-template-columns: 84px minmax(0, 1fr) 104px; }
+  .moves li { grid-template-columns: 1fr; gap: 2px; }
   .multiples { grid-template-columns: 1fr; }
   .foot dl { grid-template-columns: max-content 1fr; }
   .foot dl .kind { display: none; }

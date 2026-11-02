@@ -4,6 +4,8 @@ Every source module exposes NAME and fetch() -> (prices, demand):
   prices: (gpu, source, market, price_per_gpu_hour)            one observation (an offer, a region, a SKU)
        or (gpu, source, market, (min, median, n))              already aggregated by the provider
   demand: (gpu, source, metric, value)                         see METRICS in build.py
+A module may return a third list, announced future prices:
+  (gpu, source, market, usd_per_gpu_hour, "YYYY-MM-DD" effective date)
 """
 import gzip
 import json

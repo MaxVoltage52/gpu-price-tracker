@@ -55,13 +55,81 @@
       <div class="chart tall" id="trend-chart"></div>
     </section>
 
+    <section class="panel" aria-labelledby="seg-h">
+      <div class="panel-head">
+        <div>
+          <h2 id="seg-h">Neoclouds vs the open market</h2>
+          <p class="sec-sub" id="seg-sub"></p>
+        </div>
+      </div>
+      <div class="split">
+        <div>
+          <h3>Typical price by segment</h3>
+          <p class="mini-sub">Bold coloured line = neoclouds. Each segment is chained separately, so its line only moves when its own sources do.</p>
+          <div class="multiples" id="seg-multiples"></div>
+        </div>
+        <div>
+          <h3>Neocloud premium over the open market</h3>
+          <p class="mini-sub">How much more neoclouds charge than marketplaces for the same GPU. Falling = commoditizing.</p>
+          <div class="legend" id="prem-legend"></div>
+          <div class="chart" id="prem-chart"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="moves-h">
+      <div class="panel-head">
+        <div>
+          <h2 id="moves-h">Price moves</h2>
+          <p class="sec-sub">List-price changes, new and withdrawn offers at neoclouds and hyperscalers, and announced future prices. Marketplaces move every hour, so they're left out.</p>
+        </div>
+      </div>
+      <ol class="moves" id="moves"></ol>
+      <button class="more" id="moves-more" type="button" hidden></button>
+    </section>
+
+    <section class="panel" aria-labelledby="gen-h">
+      <div class="panel-head">
+        <div>
+          <h2 id="gen-h">Generation shift</h2>
+          <p class="sec-sub">How fast Blackwell is replacing Hopper, and what each generation costs for the compute it delivers.</p>
+        </div>
+        <div class="seg small" role="radiogroup" aria-label="Compute price view" data-filter="genMode">
+          <button role="radio" data-value="pflop">$ / PFLOP-hr</button>
+          <button role="radio" data-value="rel">% of B200 price</button>
+        </div>
+      </div>
+      <div class="split">
+        <div>
+          <h3>Listed data-center GPUs by generation</h3>
+          <p class="mini-sub">Share of NVIDIA data-center GPUs listed on open marketplaces.</p>
+          <div class="legend" id="mix-legend"></div>
+          <div class="chart" id="mix-chart"></div>
+        </div>
+        <div>
+          <h3 id="pf-h">Price per unit of compute</h3>
+          <p class="mini-sub" id="pf-sub"></p>
+          <div class="legend" id="pf-legend"></div>
+          <div class="chart" id="pf-chart"></div>
+        </div>
+      </div>
+    </section>
+
     <section class="panel" aria-labelledby="demand-h">
       <div class="panel-head">
         <div>
           <h2 id="demand-h">Demand</h2>
-          <p class="sec-sub" id="demand-sub">Share of listed GPUs that are rented out, across open marketplaces.</p>
+          <p class="sec-sub" id="demand-sub">How hard GPUs are to get: tightness, rentals and sold-out time across open marketplaces and clouds.</p>
+        </div>
+        <div class="seg small" role="radiogroup" aria-label="Tightness view" data-filter="tightMode">
+          <button role="radio" data-value="tight">Tightness</button>
+          <button role="radio" data-value="discount">Spot discount</button>
         </div>
       </div>
+      <h3 id="tight-h">Market tightness</h3>
+      <p class="mini-sub" id="tight-sub"></p>
+      <div class="legend" id="tight-legend"></div>
+      <div class="chart tight-chart" id="tight-chart"></div>
       <div class="demand-grid">
         <div>
           <h3>Rented right now</h3>

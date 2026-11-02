@@ -18,6 +18,14 @@ GitHub Actions (hourly cron)
 
 - **Flagship cards**: typical price per GPU-hour, cheapest offer, 24h/7d/30d change, trend, demand.
 - **Price trend**: flagship GPUs on one chart, as % change since the start of the range (or $/hr).
+- **Neoclouds vs the open market**: separate price indices for neoclouds, marketplaces and
+  hyperscalers, and the neocloud premium over the open market (falling = commoditizing).
+- **Price moves**: a feed of list-price changes, new and withdrawn offers at neoclouds and
+  hyperscalers, plus announced future prices (e.g. Crusoe's next price list).
+- **Generation shift**: share of listed data-center GPUs that are Blackwell / Hopper / Ampere, and
+  price per dense BF16 PFLOP-hour (or as % of B200's price).
+- **Market tightness**: 0–100 per GPU (rented share, share of sources sold out, 100 − spot discount),
+  and the spot discount itself.
 - **Demand**: share of listed GPUs that are rented right now, utilization over time, listed vs rented
   GPU counts, "hardest to get" (share of the time sources were sold out), and a heatmap of either.
 - **Where it's cheapest**: every source's price for every GPU on one log-scale strip plot.

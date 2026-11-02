@@ -91,7 +91,8 @@ function emptyState(host, msg) {
 
 /**
  * Line / area chart with crosshair tooltip.
- * o: t (ms[]), series [{ name, color, values, key?, area?, width?, label?, noDot? }], fmt(v, step), tfmt(ms), tip,
+ * o: t (ms[]), series [{ name, color, values, key?, area?, fill?: 'solid', tipValues?, width?, label?, noDot? }],
+ *    fmt(v, step), tfmt(ms), tip,
  *    yDomain? [lo, hi], ref? (value drawn as a reference line), endLabels?, compact?, emptyText, ariaLabel
  */
 export function lineChart(host, o) {
@@ -138,7 +139,12 @@ export function lineChart(host, o) {
       if (v == null) { if (run.length) runs.push(run); run = []; } else run.push([x(o.t[i]), y(v)]);
     });
     if (run.length) runs.push(run);
-    if (s.area) {
+    if (s.fill === 'solid') {  // stacked layers: opaque fill down to the baseline, drawn top layer first
+      for (const r of runs) if (r.length > 1) {
+        const d = `M${r[0][0]},${m.t + ih}` + r.map(p => `L${p[0].toFixed(1)},${p[1].toFixed(1)}`).join('') + `L${r.at(-1)[0]},${m.t + ih}Z`;
+        svg('path', { d, fill: s.color }, g);
+      }
+    } else if (s.area) {
       const id = `grad${++uid}`;
       const grad = svg('linearGradient', { id, x1: 0, x2: 0, y1: 0, y2: 1 }, defs);
       svg('stop', { offset: '0%', 'stop-color': s.color, 'stop-opacity': 0.2 }, grad);
@@ -151,7 +157,8 @@ export function lineChart(host, o) {
     for (const r of runs) {
       if (r.length === 1) svg('circle', { cx: r[0][0], cy: r[0][1], r: 3, fill: s.color }, g);
       else svg('path', { d: r.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(''), fill: 'none',
-        stroke: s.color, 'stroke-width': s.width || 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }, g);
+        stroke: s.fill === 'solid' ? 'var(--surface)' : s.color, 'stroke-width': s.width || 2,
+        'stroke-linejoin': 'round', 'stroke-linecap': 'round' }, g);
     }
     const last = s.values.findLastIndex(v => v != null);
     if (last >= 0 && !s.noDot) {
@@ -198,7 +205,7 @@ export function lineChart(host, o) {
       if (v != null) { dots[k].setAttribute('cx', px); dots[k].setAttribute('cy', y(v)); }
     });
     hover.setAttribute('display', 'inline');
-    const rows = o.series.map(s => ({ s, v: s.values[i] })).filter(r => r.v != null).sort((a, b) => b.v - a.v)
+    const rows = o.series.map(s => ({ s, v: (s.tipValues || s.values)[i] })).filter(r => r.v != null).sort((a, b) => b.v - a.v)
       .map(({ s, v }) => ({ color: s.color, value: o.fmt(v), label: s.name }));
     const box = root.getBoundingClientRect();
     showTip(o.tip, cx ?? box.left + (px / W) * box.width, cy ?? box.top + m.t + ih / 2, o.tfmt(o.t[i]),

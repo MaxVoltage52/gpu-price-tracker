@@ -22,6 +22,7 @@ from sources import ALL
 ROOT = Path(__file__).resolve().parent.parent
 PRICE_FIELDS = ["ts", "gpu", "source", "market", "min", "median", "n"]
 DEMAND_FIELDS = ["ts", "gpu", "source", "metric", "value"]
+ANNOUNCED_FIELDS = ["ts", "gpu", "source", "market", "price", "effective"]
 
 
 def summarise_prices(ts, observations):
@@ -56,11 +57,11 @@ def append(path, fields, ts, rows):
 def run(module):
     t = time.time()
     try:
-        prices, demand = module.fetch()
-        return module.NAME, prices, demand, None, time.time() - t
+        prices, demand, *announced = module.fetch()
+        return module.NAME, prices, demand, (announced or [[]])[0], None, time.time() - t
     except Exception as e:  # one source being down must never lose the others
         traceback.print_exc()
-        return module.NAME, [], [], e, time.time() - t
+        return module.NAME, [], [], [], e, time.time() - t
 
 
 def main():
@@ -71,12 +72,13 @@ def main():
 
     now = datetime.now(timezone.utc).replace(minute=0, second=0, microsecond=0)
     ts = now.strftime("%Y-%m-%dT%H:%MZ")
-    prices, demand, failed = [], [], []
+    prices, demand, announced, failed = [], [], [], []
     with ThreadPoolExecutor(max_workers=8) as pool:  # different hosts, so run them side by side
-        for name, p, d, err, secs in pool.map(run, modules):
+        for name, p, d, a, err, secs in pool.map(run, modules):
             print(f"{name:14} {len(p):5} prices {len(d):4} demand  {secs:6.1f}s" + (f"  FAILED: {err!r}" if err else ""))
             prices += p
             demand += d
+            announced += a
             if err:
                 failed.append(name)
     if not prices and not demand:
@@ -88,6 +90,10 @@ def main():
     day = now.strftime("%Y/%m/%d.csv")
     append(ROOT / "data" / "prices" / day, PRICE_FIELDS, ts, price_rows)
     append(ROOT / "data" / "demand" / day, DEMAND_FIELDS, ts, demand_rows)
+    if announced:
+        rows = sorted({(g, s, m, round(p, 4), e) for g, s, m, p, e in announced})
+        append(ROOT / "data" / "announced" / day, ANNOUNCED_FIELDS, ts,
+               [{"ts": ts, "gpu": g, "source": s, "market": m, "price": p, "effective": e} for g, s, m, p, e in rows])
     print(f"{ts}: {len(price_rows)} price rows, {len(demand_rows)} demand rows" +
           (f"; failed: {', '.join(failed)}" if failed else ""))
     if len(failed) == len(modules):
