@@ -7,7 +7,8 @@ const PERIODS = ['24h', '7d', '30d'];
 const STOCK = ['none left', 'low', 'medium', 'high'];
 const DAY = 86400e3;
 
-const state = { market: 'spot', range: '7d', trendMode: 'pct', heatMode: 'util', genMode: 'pflop', tightMode: 'tight', outGpu: null, gpu: null };
+const state = { market: 'on_demand', srange: '1y', range: '7d', trendMode: 'pct', heatMode: 'util', genMode: 'pflop',
+  tightMode: 'tight', outGpu: null, gpu: null };
 const SEG_LABEL = { neocloud: 'Neoclouds', market: 'Open market', hyperscaler: 'Hyperscalers' };
 const GEN_COLOR = { Blackwell: 'var(--seq-7)', Hopper: 'var(--seq-5)', Ampere: 'var(--seq-3)' };  // ordinal: newest darkest
 const COMPUTE_GPUS = ['B300', 'B200', 'H200', 'H100 SXM', 'A100 80GB'];
@@ -94,105 +95,13 @@ const firstVal = arr => arr.find(v => v != null) ?? null;
 // ---------- header ----------
 function renderHeader() {
   const first = tsMs(S.first_ts), last = tsMs(S.last_ts);
-  $('#stamp').textContent = `Updated ${fmtWhen(last)} · ${plural(S.snapshots, 'hourly snapshots')}`;
-  $('#sub').textContent = `Hourly rental prices and demand for ${S.gpus.length} GPU models from ${Object.keys(S.sources).length} sources — ` +
-    'open marketplaces, decentralized networks, GPU clouds and hyperscalers.';
+  $('#stamp').textContent = `Updated ${fmtWhen(last)} · prices from ${Object.keys(S.sources).length} providers, checked every hour`;
   const days = (last - first) / DAY;
   const missing = [[1, '24-hour'], [7, '7-day'], [30, '30-day']].filter(([d]) => days < d).map(([, l]) => l);
   const n = $('#notice');
   n.hidden = !missing.length;
   if (missing.length) n.textContent = `History is still building — tracking started ${fmtDay(first)}. ` +
     `Lines grow with every hourly snapshot; ${missing.join(', ').replace(/, ([^,]*)$/, ' and $1')} changes appear once enough history exists.`;
-}
-
-// ---------- flagship cards ----------
-function demandPill(g, color) {
-  const d = g.demand || {};
-  if (d.tight) {
-    const p = el('span', 'pill');
-    const m = el('span', 'meter'); const i = el('i'); i.style.width = `${d.tight.now}%`; m.style.setProperty('--c', color); m.append(i);
-    p.append(m, `Tightness ${Math.round(d.tight.now)}`);
-    p.title = `0–100, average of: ${[d.tight.rented != null && `rented ${fmtUtil(d.tight.rented)}`,
-      d.tight.soldout != null && `sources sold out ${fmtUtil(d.tight.soldout)}`,
-      d.tight.discount != null && `100 − spot discount ${fmtUtil(d.tight.discount)}`].filter(Boolean).join(', ')}`;
-    return p;
-  }
-  if (d.util != null) {
-    const p = el('span', 'pill');
-    const m = el('span', 'meter'); const i = el('i'); i.style.width = `${d.util}%`; m.style.setProperty('--c', color); m.append(i);
-    p.append(m, `${fmtUtil(d.util)} rented`);
-    p.title = `${d.rented} of ${d.total} listed GPUs rented on open marketplaces`;
-    return p;
-  }
-  const stock = Object.values(d.stock || {});
-  if (stock.length) return el('span', 'pill', `Best stock: ${STOCK[Math.max(...stock)]}`);
-  return el('span');
-}
-
-function signals(g) {
-  const d = g.demand || {}, lines = [];
-  const by = Object.entries(d.by_source || {}).sort((a, b) => (b[1].total || 0) - (a[1].total || 0));
-  if (by.length) lines.push(['Rented', by.slice(0, 3).map(([s, v]) => `${s} ${fmtUtil(v.util)}${v.total ? ` of ${v.total}` : ''}`).join(' · ') +
-    (by.length > 3 ? ` · +${by.length - 3} more` : '')]);
-  if (d.soldout?.of) {
-    const so = d.soldout;
-    lines.push(['Sold out', so.now.length
-      ? `${so.now.length} of ${so.of} sources now (${so.now.slice(0, 3).join(', ')}${so.now.length > 3 ? '…' : ''})`
-      : `available at all ${so.of} sources now`]);
-  }
-  if (d.aws) {
-    const parts = [];
-    if (d.aws.interrupt_pct != null) parts.push(`~${Math.round(d.aws.interrupt_pct)}% interruptions`);
-    if (d.aws.spot_discount_pct != null) parts.push(`${Math.round(d.aws.spot_discount_pct)}% below on-demand`);
-    lines.push(['AWS spot', parts.join(', ')]);
-  }
-  const stock = Object.entries(d.stock || {}).filter(([, v]) => v > 0);
-  if (stock.length) lines.push(['Stock', stock.map(([s, v]) => `${s} ${STOCK[v]}`).join(' · ')]);
-  const inStock = Object.entries(d.in_stock || {});
-  if (inStock.length) lines.push(['In stock', inStock.map(([s, v]) => `${Math.round(v)}% of ${s} listings`).join(' · ')]);
-  const box = el('div', 'card-signals');
-  for (const [k, v] of lines) { const row = el('div'); row.append(el('b', null, `${k}: `), v); box.append(row); }
-  return box;
-}
-
-async function renderCards() {
-  const box = $('#cards');
-  const draws = [];
-  box.replaceChildren(...S.featured.map(name => {
-    const g = byName(name), m = g.market[state.market], c = colorOf(name);
-    const card = el('div', 'card');
-    card.tabIndex = 0;
-    card.setAttribute('role', 'button');
-    card.setAttribute('aria-pressed', String(state.gpu === g.slug));
-    card.style.setProperty('--c', c);
-    const top = el('div', 'card-top');
-    const id = el('div'); id.append(el('div', 'card-name', g.gpu), el('div', 'card-meta', `${g.vram} GB · ${g.tier}`));
-    top.append(id, demandPill(g, c));
-    card.append(top);
-    if (m) {
-      const price = el('div', 'card-price', fmtPrice(m.typical)); price.append(el('small', null, '/ GPU-hr'));
-      const chart = el('div', 'card-chart');
-      const ds = el('div', 'card-deltas');
-      for (const p of PERIODS) { const s = el('span'); s.append(el('span', 'k', p), delta(m.chg[p], p)); ds.append(s); }
-      card.append(price, el('div', 'card-from', `typical ${MARKET_LABEL[state.market]} · from ${fmtPrice(m.cheapest)} at ${m.cheapest_src}`), chart, ds);
-      draws.push([g, chart, c]);
-    } else {
-      card.append(el('div', 'card-empty', `No ${MARKET_LABEL[state.market]} prices tracked for ${g.gpu} yet.`));
-    }
-    card.append(signals(g));
-    const go = () => selectGpu(g.slug, true);
-    card.addEventListener('click', go);
-    card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
-    return card;
-  }));
-  for (const [g, host, color] of draws) {
-    const h = await loadHist(g.slug);
-    const r = slice(h);
-    const { t, cols: [typ] } = thin(r.t, [r.pick(r.block.typical[state.market])], Math.round(host.clientWidth / 3));
-    lineChart(host, { t, series: [{ name: `${g.gpu} typical`, color, values: typ, area: true }], compact: true,
-      fmt: fmtPrice, tfmt: r.daily ? fmtDay : fmtWhen, tip: tip(), ariaLabel: `${g.gpu} typical price trend`,
-      emptyText: 'Collecting…' });
-  }
 }
 
 // ---------- price trend ----------
@@ -219,6 +128,159 @@ async function renderTrend() {
   lineChart(host, { t, series, endLabels: true, ref: pct ? 0 : null, fmt: pct ? fmtPct : fmtPrice,
     tfmt: r.daily ? fmtDay : fmtWhen, tip: tip(), ariaLabel: 'Flagship GPU price trend',
     emptyText: 'Waiting for the first snapshots.' });
+}
+
+// ---------- simple view: one plain card per flagship GPU ----------
+const SRANGE = { '1w': 7, '1m': 30, '1y': 365, '3y': 1095 };
+const SRANGE_TEXT = { '1w': 'last week', '1m': 'last month', '1y': 'last 12 months', '3y': 'last 3 years' };
+const DISPLAY_NAME = { 'H100 SXM': 'H100' };
+const BLURB = {
+  B300: 'Newest generation (Blackwell Ultra)',
+  B200: 'Current generation (Blackwell)',
+  H200: 'Previous generation with more memory (Hopper)',
+  'H100 SXM': 'Previous generation (Hopper) — the workhorse of the AI boom',
+};
+const monthMsOf = (ym, nowMs) => (ym === S.last_ts.slice(0, 7) ? nowMs : Date.parse(`${ym}-15T00:00:00Z`));
+
+function availability(util) {
+  if (util == null) return null;
+  if (util >= 90) return 'Very hard to get';
+  if (util >= 75) return 'Hard to get';
+  if (util >= 50) return 'Some available';
+  return 'Easy to get';
+}
+
+/** % change between the newest monthly price and the one about `months` earlier, or null. */
+function monthlyChange(hist, months) {
+  if (!hist?.length) return null;
+  const idx = ym => Number(ym.slice(0, 4)) * 12 + Number(ym.slice(5, 7));
+  const last = hist.at(-1);
+  const then = [...hist].reverse().find(([ym]) => idx(last[0]) - idx(ym) >= months);
+  return then && idx(last[0]) - idx(then[0]) <= months + 1 ? (last[1] / then[1] - 1) * 100 : null;
+}
+
+function fact(k, v, muted) {
+  const li = el('li');
+  li.append(el('span', 'k', k), el('span', muted ? 'muted' : null, v));
+  return li;
+}
+
+async function renderSimple() {
+  const od = state.market === 'on_demand';
+  const draws = [];
+  $('#gpus').replaceChildren(...S.featured.map(name => {
+    const g = byName(name), m = g.market[state.market], color = colorOf(name);
+    const seg = m?.segments?.neocloud, out = S.outlook?.[name];
+    const hist = od ? out?.history : null;
+    const card = el('article', 'gpu');
+    card.style.setProperty('--c', color);
+
+    const info = el('div', 'gpu-info');
+    const h = el('h2', 'gpu-name', DISPLAY_NAME[name] || name);
+    h.append(el('small', null, `${g.vram} GB`));
+    info.append(h, el('p', 'gpu-blurb', BLURB[name] || ''));
+    if (!m) {
+      info.append(el('p', 'gpu-price-sub', `No ${od ? 'normal' : 'interruptible'} prices for this GPU right now.`));
+      card.append(info);
+      return card;
+    }
+    const price = seg?.typical ?? m.typical;
+    const p = el('div', 'gpu-price', fmtPrice(price)); p.append(el('small', null, '/ hour'));
+    info.append(p, el('div', 'gpu-price-sub', seg ? 'typical price at GPU clouds' : 'typical price across providers'));
+
+    // the one-line answer: rising, falling or stable, over 3 months (or a week while history is short)
+    const c3 = monthlyChange(hist, 3), c7 = (seg?.chg ?? m.chg)['7d'];
+    const [chg, over] = c3 != null ? [c3, 'in 3 months'] : c7 != null ? [c7, 'this week'] : [null, null];
+    const v = el('div', `verdict ${chg == null ? '' : chg > 3 ? 'up' : chg < -3 ? 'down' : ''}`);
+    if (chg == null) v.append('Not enough history yet');
+    else {
+      v.append(chg > 3 ? '▲ Rising' : chg < -3 ? '▼ Falling' : '▬ Stable');
+      v.append(el('span', null, `${fmtPct(chg)} ${over}`));
+    }
+    info.append(v);
+
+    const facts = el('ul', 'facts');
+    const c12 = monthlyChange(hist, 12);
+    if (c12 != null) facts.append(fact('Last 12 months', `${fmtPct(c12)}`));
+    const avail = availability(g.demand?.util);
+    facts.append(avail ? fact('Availability', `${avail} — ${fmtUtil(g.demand.util)} of listed GPUs are rented`)
+      : fact('Availability', 'not measured for this GPU', true));
+    if (out?.analog && od) facts.append(fact('In a year', `${fmtPrice(out.analog.lo.at(-1))}–${fmtPrice(out.analog.hi.at(-1))} if it follows older GPUs`));
+    const ann = S.announced.find(a => a.gpu === name && a.market === state.market);
+    if (ann) facts.append(fact('Announced', `${ann.source} raises to ${fmtPrice(ann.price)} on ${fmtDay(Date.parse(`${ann.effective}T00:00:00Z`))}`));
+    info.append(facts);
+
+    const chartBox = el('div', 'gpu-chart');
+    const head = el('div', 'gpu-chart-head');
+    head.append(el('h3', null, `Price per hour, ${SRANGE_TEXT[state.srange]}`));
+    const legend = el('div', 'legend');
+    head.append(legend);
+    const host = el('div', 'chart');
+    const note = el('div', 'gpu-note');
+    chartBox.append(head, host, note);
+
+    const cheap = el('div', 'cheap');
+    cheap.append(el('h3', null, 'Cheapest places to rent it right now'));
+    const list = el('ol', 'cheap-list');
+    for (const q of [...m.prices].sort((a, b) => a.min - b.min).slice(0, 5)) {
+      const li = el('li');
+      const pp = el('div', 'p', fmtPrice(q.min)); pp.append(el('small', null, ' /hr'));
+      li.append(pp, el('div', 's', q.source), el('div', 't', (S.sources[q.source]?.kind || '').toLowerCase()));
+      list.append(li);
+    }
+    cheap.append(list);
+
+    card.append(info, chartBox, cheap);
+    draws.push({ g, host, legend, note, color, hist, out, od });
+    return card;
+  }));
+
+  for (const d of draws) await drawSimpleChart(d);
+}
+
+async function drawSimpleChart({ g, host, legend, note, color, hist, out, od }) {
+  const nowMs = tsMs(S.last_ts), days = SRANGE[state.srange];
+  const from = nowMs - days * DAY;
+  const keyItem = (c, label, band) => { const s = el('span'); const k = el('span', band ? 'sw' : 'key'); k.style.background = c; if (band) k.style.opacity = 0.35; s.append(k, label); return s; };
+  let t, series;
+  if (days >= 365 && hist?.length > 1) {
+    // long view: monthly history from archived price lists, plus the likely range for the next year
+    const pts = hist.map(([ym, v]) => [monthMsOf(ym, nowMs), v]).filter(([ms]) => ms >= from);
+    const fut = out?.analog ? out.analog.months.map((ym, i) => [Date.parse(`${ym}-15T00:00:00Z`), out.analog.lo[i], out.analog.hi[i]]) : [];
+    t = [...new Set([...pts.map(p => p[0]), ...fut.map(f => f[0])])].sort((a, b) => a - b);
+    const at = (list, i) => { const m = new Map(list.map(p => [p[0], p[i]])); return t.map(ms => m.get(ms) ?? null); };
+    const now = pts.at(-1)?.[1];
+    series = [{ name: 'Price', color, values: at(pts, 1), area: true, connect: true, width: 2.5 }];
+    if (fut.length) {
+      const lo = at(fut, 1), hi = at(fut, 2), i0 = t.indexOf(nowMs);
+      if (i0 >= 0) { lo[i0] = now; hi[i0] = now; }
+      series.push({ name: 'Likely range', color, values: hi, band: { lo }, connect: true });
+    }
+    legend.replaceChildren(keyItem(color, 'price'), ...(fut.length ? [keyItem(color, 'likely range if it ages like older GPUs', true)] : []));
+    note.textContent = `Monthly, from GPU clouds' published price lists (archived since ${fmtDay(monthMsOf(hist[0][0], nowMs))}).`;
+  } else {
+    // short view: the hourly prices we have collected
+    const h = await loadHist(g.slug);
+    const b = h.hourly;
+    const vals = b.seg?.[`neocloud|${state.market}`]?.some(v => v != null) ? b.seg[`neocloud|${state.market}`] : b.typical[state.market] || [];
+    const idx = b.t.map((x, i) => i).filter(i => b.t[i] * 1000 > from);
+    t = idx.map(i => b.t[i] * 1000);
+    series = [{ name: 'Price', color, values: idx.map(i => vals[i] ?? null), area: true, width: 2.5 }];
+    legend.replaceChildren(keyItem(color, 'price'));
+    const first = tsMs(S.first_ts);
+    note.textContent = first > from ? `Hourly prices — tracking started ${fmtDay(first)}, so this fills in over time.`
+      : 'Hourly prices from GPU clouds.';
+    if (!od && days >= 365) note.textContent = 'Interruptible prices have only been tracked since ' + fmtDay(first) + '; the archive covers normal prices.';
+  }
+  if (series.length === 1) {  // hourly data can be dense: average it down to the chart's width
+    const th = thin(t, [series[0].values], Math.round(host.clientWidth / 3));
+    t = th.t;
+    series[0].values = th.cols[0];
+  }
+  lineChart(host, { t, series, fmt: fmtPrice, tip: tip(),
+    tfmt: ms => (days >= 365 ? (ms > nowMs ? `${new Date(ms).toLocaleDateString(undefined, { month: 'short', year: 'numeric' })} (projected)` : new Date(ms).toLocaleDateString(undefined, { month: 'long', year: 'numeric' })) : fmtWhen(ms)),
+    marker: days >= 365 ? nowMs : null, markerLabel: 'today', ariaLabel: `${g.gpu} price per hour`,
+    emptyText: 'No price history for this view yet.' });
 }
 
 // ---------- outlook ----------
@@ -793,6 +855,7 @@ function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
   if (p.get('market') in MARKET_LABEL) state.market = p.get('market');
   if (p.get('range') in RANGES) state.range = p.get('range');
+  if (p.get('period') in SRANGE) state.srange = p.get('period');
   if (['pct', 'usd'].includes(p.get('trend'))) state.trendMode = p.get('trend');
   if (['util', 'soldout'].includes(p.get('heat'))) state.heatMode = p.get('heat');
   if (['pflop', 'rel'].includes(p.get('gen'))) state.genMode = p.get('gen');
@@ -801,7 +864,7 @@ function readHash() {
   if (p.get('gpu')) state.gpu = p.get('gpu');
 }
 function writeHash() {
-  history.replaceState(null, '', '#' + new URLSearchParams({ market: state.market, range: state.range, trend: state.trendMode,
+  history.replaceState(null, '', '#' + new URLSearchParams({ market: state.market, period: state.srange, range: state.range, trend: state.trendMode,
     heat: state.heatMode, gen: state.genMode, tight: state.tightMode, out: state.outGpu || '', gpu: state.gpu }));
 }
 function renderSegs() {
@@ -812,11 +875,16 @@ function renderSegs() {
 function renderAll() {
   renderSegs();
   writeHash();
-  renderCards();
+  renderSimple();
+  renderMoves();
+  if ($('#advanced').open) renderAdvanced();
+}
+
+// the advanced charts only render while their section is open (closed, they have no size to draw into)
+function renderAdvanced() {
   renderOutlook();
   renderTrend();
   renderSegments();
-  renderMoves();
   renderGeneration();
   renderTightness();
   renderBars();
@@ -841,10 +909,11 @@ document.querySelectorAll('.seg').forEach(seg => seg.addEventListener('click', e
   const b = e.target.closest('button');
   if (!b) return;
   state[seg.dataset.filter] = b.dataset.value;
-  const only = { trendMode: renderTrend, heatMode: renderHeat, genMode: renderGeneration, tightMode: renderTightness,
-    outGpu: renderOutlook }[seg.dataset.filter];
+  const only = { srange: renderSimple, range: renderAdvanced, trendMode: renderTrend, heatMode: renderHeat,
+    genMode: renderGeneration, tightMode: renderTightness, outGpu: renderOutlook }[seg.dataset.filter];
   if (only) { renderSegs(); writeHash(); only(); } else renderAll();
 }));
+$('#advanced').addEventListener('toggle', () => { if ($('#advanced').open) renderAdvanced(); });
 $('#gpu-pick').addEventListener('change', e => selectGpu(e.target.value, false));
 $('#moves-more').addEventListener('click', () => { movesAll = !movesAll; renderMoves(); });
 let resizeTimer, lastW = window.innerWidth;

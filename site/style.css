@@ -107,6 +107,58 @@ h3 { font-size: 12.5px; font-weight: 600; margin: 0 0 12px; color: var(--ink-2);
 
 .notice { margin: 0 0 18px; padding: 10px 14px; border-radius: 10px; background: var(--surface); border: 1px solid var(--ring); color: var(--ink-2); font-size: 13px; }
 
+/* simple GPU cards (the main view) */
+.gpus { display: grid; gap: 16px; margin-bottom: 16px; }
+.gpu {
+  background: var(--surface); border: 1px solid var(--ring); border-radius: 16px; box-shadow: var(--shadow);
+  padding: 24px 26px 20px; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 4px 36px;
+}
+.gpu-name { font-size: 24px; font-weight: 700; margin: 0; display: flex; align-items: center; gap: 10px; letter-spacing: -0.01em; }
+.gpu-name::before { content: ""; width: 12px; height: 12px; border-radius: 3px; background: var(--c); flex: none; }
+.gpu-name small { font-size: 13px; font-weight: 400; color: var(--muted); letter-spacing: 0; }
+.gpu-blurb { color: var(--muted); font-size: 13px; margin: 3px 0 0 22px; }
+.gpu-price { font-size: 46px; font-weight: 700; letter-spacing: -0.03em; line-height: 1; margin-top: 22px; }
+.gpu-price small { font-size: 16px; font-weight: 400; color: var(--muted); letter-spacing: 0; margin-left: 4px; }
+.gpu-price-sub { color: var(--muted); font-size: 13px; margin-top: 6px; }
+.verdict { display: inline-flex; align-items: baseline; gap: 8px; margin-top: 16px; padding: 7px 14px; border-radius: 99px;
+  font-weight: 650; font-size: 15px; background: var(--wash); color: var(--ink-2); }
+.verdict.up { color: var(--up); background: color-mix(in srgb, var(--up) 11%, transparent); }
+.verdict.down { color: var(--down); background: color-mix(in srgb, var(--down) 11%, transparent); }
+.verdict span { font-weight: 400; color: var(--ink-2); font-size: 13.5px; }
+.facts { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 9px; font-size: 14px; }
+.facts li { display: grid; grid-template-columns: 124px minmax(0, 1fr); gap: 12px; }
+.facts .k { color: var(--muted); }
+.facts .muted { color: var(--muted); }
+.gpu-chart { min-width: 0; }
+.gpu-chart-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.gpu-chart-head h3 { margin: 0; color: var(--ink); font-size: 14px; }
+.gpu-chart-head .legend { margin: 0; font-size: 12px; color: var(--muted); }
+.gpu-chart .chart { height: 250px; margin-top: 10px; }
+.gpu-note { color: var(--muted); font-size: 12px; margin-top: 4px; }
+.cheap { grid-column: 1 / -1; border-top: 1px solid var(--grid); padding-top: 14px; margin-top: 14px; }
+.cheap h3 { margin: 0 0 10px; color: var(--ink); font-size: 14px; }
+.cheap-list { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; list-style: none; margin: 0; padding: 0; }
+.cheap-list li { border: 1px solid var(--ring); border-radius: 10px; padding: 9px 12px; min-width: 0; }
+.cheap-list .p { font-size: 18px; font-weight: 650; }
+.cheap-list .p small { font-size: 12px; font-weight: 400; color: var(--muted); }
+.cheap-list .s { font-size: 13px; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cheap-list .t { font-size: 11.5px; color: var(--muted); }
+.cheap-list li:first-child { border-color: color-mix(in srgb, var(--down) 45%, var(--ring)); }
+
+/* everything else lives in a closed "Advanced analysis" section */
+details.advanced { margin-top: 26px; }
+details.advanced > summary {
+  list-style: none; cursor: pointer; background: var(--surface); border: 1px solid var(--ring); border-radius: 14px;
+  padding: 16px 20px; display: flex; flex-direction: column; gap: 2px; box-shadow: var(--shadow);
+}
+details.advanced > summary::-webkit-details-marker { display: none; }
+details.advanced > summary:hover { border-color: color-mix(in srgb, var(--ink) 25%, var(--ring)); }
+.adv-title { font-weight: 650; font-size: 15px; }
+.adv-title::before { content: "▸  "; color: var(--muted); }
+details.advanced[open] .adv-title::before { content: "▾  "; }
+.adv-sub { color: var(--muted); font-size: 13px; }
+details.advanced[open] > summary { margin-bottom: 18px; }
+
 /* flagship cards */
 .cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 16px; }
 .card {
@@ -276,6 +328,8 @@ details.all[open] summary { margin-bottom: 12px; }
 .foot p { max-width: 90ch; }
 
 @media (max-width: 980px) {
+  .gpu { grid-template-columns: 1fr; gap: 18px; }
+  .cheap-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .cards, .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .demand-grid, .split { grid-template-columns: 1fr; gap: 22px; }
 }
@@ -288,6 +342,11 @@ details.all[open] summary { margin-bottom: 12px; }
   .bar-row { grid-template-columns: 84px minmax(0, 1fr) 80px; gap: 8px; }
   .bars.soldout .bar-row { grid-template-columns: 84px minmax(0, 1fr) 104px; }
   .moves li { grid-template-columns: 1fr; gap: 2px; }
+  .gpu { padding: 18px 16px 16px; }
+  .gpu-price { font-size: 38px; }
+  .facts li { grid-template-columns: 104px minmax(0, 1fr); }
+  .cheap-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cheap-list li:nth-child(n+5) { display: none; }
   .multiples { grid-template-columns: 1fr; }
   .foot dl { grid-template-columns: max-content 1fr; }
   .foot dl .kind { display: none; }

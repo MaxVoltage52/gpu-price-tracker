@@ -13,16 +13,40 @@
     <header class="masthead">
       <div>
         <h1>GPU Price Tracker</h1>
-        <p class="sub" id="sub">Hourly rental prices and demand for data-center GPUs.</p>
+        <p class="sub">What it costs to rent the most powerful AI chips, per hour — and whether that's going up or down.</p>
       </div>
       <p class="stamp"><span class="live" aria-hidden="true"></span><span id="stamp"></span></p>
     </header>
 
     <div class="filters" role="toolbar" aria-label="Filters">
-      <div class="seg" role="radiogroup" aria-label="Market" data-filter="market">
-        <button role="radio" data-value="spot">Spot</button>
-        <button role="radio" data-value="on_demand">On-demand</button>
+      <div class="seg" role="radiogroup" aria-label="Price type" data-filter="market">
+        <button role="radio" data-value="on_demand">Normal price</button>
+        <button role="radio" data-value="spot">Interruptible (cheaper)</button>
       </div>
+      <div class="seg" role="radiogroup" aria-label="Chart period" data-filter="srange">
+        <button role="radio" data-value="1w">1 week</button>
+        <button role="radio" data-value="1m">1 month</button>
+        <button role="radio" data-value="1y">1 year</button>
+        <button role="radio" data-value="3y">3 years</button>
+      </div>
+    </div>
+
+    <section class="gpus" id="gpus" aria-label="GPU prices"></section>
+
+    <section class="panel" aria-labelledby="moves-h">
+      <h2 id="moves-h">Recent price changes</h2>
+      <p class="sec-sub">When a GPU cloud changes its price list, it shows up here — including price rises they've announced in advance.</p>
+      <ol class="moves" id="moves"></ol>
+      <button class="more" id="moves-more" type="button" hidden></button>
+    </section>
+
+    <details class="advanced" id="advanced">
+      <summary>
+        <span class="adv-title">Advanced analysis</span>
+        <span class="adv-sub">Price models, market segments, demand heatmaps, every source — for digging deeper</span>
+      </summary>
+
+    <div class="filters" role="toolbar" aria-label="Advanced filters">
       <div class="seg" role="radiogroup" aria-label="Range" data-filter="range">
         <button role="radio" data-value="1d">24H</button>
         <button role="radio" data-value="7d">7D</button>
@@ -34,11 +58,6 @@
     </div>
 
     <p class="notice" id="notice" hidden></p>
-
-    <section aria-labelledby="flag-h">
-      <h2 class="visually-hidden" id="flag-h">Flagship GPUs</h2>
-      <div class="cards" id="cards"></div>
-    </section>
 
     <section class="panel" aria-labelledby="out-h">
       <div class="panel-head">
@@ -104,16 +123,6 @@
       </div>
     </section>
 
-    <section class="panel" aria-labelledby="moves-h">
-      <div class="panel-head">
-        <div>
-          <h2 id="moves-h">Price moves</h2>
-          <p class="sec-sub">List-price changes, new and withdrawn offers at neoclouds and hyperscalers, and announced future prices. Marketplaces move every hour, so they're left out.</p>
-        </div>
-      </div>
-      <ol class="moves" id="moves"></ol>
-      <button class="more" id="moves-more" type="button" hidden></button>
-    </section>
 
     <section class="panel" aria-labelledby="gen-h">
       <div class="panel-head">
@@ -225,6 +234,8 @@
     <details class="panel all">
       <summary>All GPUs as a table</summary>
       <div class="table-wrap"><table class="grid" id="all-table"></table></div>
+    </details>
+
     </details>
 
     <footer class="foot" id="foot"></footer>
