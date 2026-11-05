@@ -98,8 +98,11 @@ python -m http.server 8000 -d site
 4. In **Actions**, open **Collect GPU prices** and click **Run workflow** once. After that it runs
    every hour, and the site is at `https://<user>.github.io/<repo>/`.
 
-GitHub's scheduled runs can be late or skipped when GitHub is busy; gaps show as breaks in the
-charts. On a public repo GitHub may pause schedules after 60 days without activity — re-enable
+GitHub's scheduled runs can be late or skipped when GitHub is busy, so the workflow is scheduled
+four times an hour: the first run each hour collects, the others see the snapshot and stop
+(`collect.py --skip-if-fresh`). Remaining gaps show as breaks in the charts. Collecting and
+publishing are separate jobs, so a GitHub Pages hiccup never loses a snapshot; the next run
+publishes it. On a public repo GitHub may pause schedules after 60 days without activity — re-enable
 the workflow in the Actions tab if that happens.
 
 ## Price history from the Internet Archive

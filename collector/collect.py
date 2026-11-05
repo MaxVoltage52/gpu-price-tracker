@@ -54,6 +54,13 @@ def append(path, fields, ts, rows):
         w.writerows(keep + rows)
 
 
+def has_snapshot(path, ts):
+    if not path.exists():
+        return False
+    with path.open(newline="") as f:
+        return any(r["ts"] == ts for r in csv.DictReader(f))
+
+
 def run(module):
     t = time.time()
     try:
@@ -67,11 +74,16 @@ def run(module):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", help="comma-separated source module names, e.g. vast,aws")
+    ap.add_argument("--skip-if-fresh", action="store_true",
+                    help="do nothing if this hour already has a snapshot (for redundant schedules)")
     args = ap.parse_args()
     modules = [m for m in ALL if not args.only or m.__name__.split(".")[-1] in args.only.split(",")]
 
     now = datetime.now(timezone.utc).replace(minute=0, second=0, microsecond=0)
     ts = now.strftime("%Y-%m-%dT%H:%MZ")
+    if args.skip_if_fresh and has_snapshot(ROOT / "data" / "prices" / now.strftime("%Y/%m/%d.csv"), ts):
+        print(f"{ts} already has a snapshot; nothing to do")
+        return
     prices, demand, announced, failed = [], [], [], []
     with ThreadPoolExecutor(max_workers=8) as pool:  # different hosts, so run them side by side
         for name, p, d, a, err, secs in pool.map(run, modules):

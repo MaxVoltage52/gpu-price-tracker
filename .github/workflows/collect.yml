@@ -2,7 +2,9 @@ name: Collect GPU prices
 
 on:
   schedule:
-    - cron: "7 * * * *"   # hourly; minute 7 avoids the top-of-hour rush that delays scheduled runs
+    # GitHub drops many scheduled runs when it is busy, so there are four chances an hour. The first
+    # one to run collects; the others find this hour's snapshot already there and stop (--skip-if-fresh).
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:       # "Run workflow" button in the Actions tab
   push:
     branches: [main]
@@ -12,6 +14,7 @@ permissions:
   contents: write   # commit the new snapshot
   pages: write
   id-token: write
+  actions: read
 
 concurrency:
   group: collect
@@ -19,27 +22,26 @@ concurrency:
 
 jobs:
   collect:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
       - name: Collect snapshot
-        if: github.event_name != 'push'
-        run: python collector/collect.py
+        run: python collector/collect.py ${{ github.event_name == 'schedule' && '--skip-if-fresh' || '' }}
         env:  # optional: sources whose docs ask for a (free) key are skipped or keyless without one
           SHADEFORM_API_KEY: ${{ secrets.SHADEFORM_API_KEY }}
           SPHERON_API_KEY: ${{ secrets.SPHERON_API_KEY }}
 
       - name: Commit snapshot
-        if: github.event_name != 'push'
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -48,13 +50,33 @@ jobs:
           git commit -m "data: snapshot $(date -u +%Y-%m-%dT%H:00Z)"
           git pull --rebase --quiet
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  # Publishing is its own job: if GitHub Pages stalls, only this job fails and the snapshot is already
+  # saved; the next run publishes it.
+  deploy:
+    needs: collect
+    if: always() && (needs.collect.outputs.changed == 'true' || github.event_name == 'push')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref_name }}   # the branch head, including the snapshot just committed
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
 
       - name: Build site data
         run: python collector/build.py
 
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: site
       - id: deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
