@@ -391,3 +391,25 @@ ts,gpu,source,metric,value
 2026-11-13T06:00Z,V100,RunPod Community,stock,1
 2026-11-13T06:00Z,V100,Vast.ai,gpus_rented,249
 2026-11-13T06:00Z,V100,Vast.ai,gpus_total,340
+2026-11-13T07:00Z,A10,AWS,interrupt_pct,21.03
+2026-11-13T07:00Z,A10,AWS,spot_discount_pct,58.53
+2026-11-13T07:00Z,A100 40GB,AWS,interrupt_pct,11.73
+2026-11-13T07:00Z,A100 40GB,AWS,spot_discount_pct,49.75
+2026-11-13T07:00Z,A100 80GB,AWS,interrupt_pct,14.17
+2026-11-13T07:00Z,A100 80GB,AWS,spot_discount_pct,57.33
+2026-11-13T07:00Z,B200,AWS,interrupt_pct,10.83
+2026-11-13T07:00Z,B200,AWS,spot_discount_pct,81
+2026-11-13T07:00Z,B300,AWS,interrupt_pct,2.5
+2026-11-13T07:00Z,B300,AWS,spot_discount_pct,86
+2026-11-13T07:00Z,H100 SXM,AWS,interrupt_pct,3.75
+2026-11-13T07:00Z,H100 SXM,AWS,spot_discount_pct,63.2
+2026-11-13T07:00Z,H200,AWS,interrupt_pct,3.5
+2026-11-13T07:00Z,H200,AWS,spot_discount_pct,67.5
+2026-11-13T07:00Z,L4,AWS,interrupt_pct,17.5
+2026-11-13T07:00Z,L4,AWS,spot_discount_pct,55.53
+2026-11-13T07:00Z,L40S,AWS,interrupt_pct,22.78
+2026-11-13T07:00Z,L40S,AWS,spot_discount_pct,58.44
+2026-11-13T07:00Z,T4,AWS,interrupt_pct,13.93
+2026-11-13T07:00Z,T4,AWS,spot_discount_pct,65.52
+2026-11-13T07:00Z,V100,AWS,interrupt_pct,25
+2026-11-13T07:00Z,V100,AWS,spot_discount_pct,72.73
