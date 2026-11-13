@@ -19,6 +19,7 @@ GPU_NAMES = [
     "A100 SXM4", "A100 PCIE", "A100X", "L40S", "L40", "L4", "A10",
     "RTX PRO 6000 WS", "RTX PRO 6000 S", "RTX PRO 6000 Max-Q", "RTX 6000Ada",
     "RTX A6000", "A40", "RTX 5090", "RTX 4090", "RTX 3090", "Tesla V100", "Tesla T4",
+    "RTX 5080", "RTX 5060 Ti", "RTX PRO 5000", "RTX PRO 4500", "RTX PRO 4000",
 ]
 DELAY = 1.0  # seconds between requests; the anonymous API rate-limits bursts
 PASSES = {  # name -> (extra filters, vast "type", price field)
