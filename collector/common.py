@@ -98,7 +98,12 @@ def canon(name, mem_gb=None):
         return "RTX 6000 Ada"
     if re.fullmatch(r"(RTX )?A6000", n):
         return "RTX A6000"
-    if re.fullmatch(r"RTX (5090|4090|3090)", n):
+        m = re.fullmatch(r"RTX PRO (5000|4500|4000)( BLACKWELL)?", n)
+    if m:
+        return "RTX PRO " + m.group(1)
+    if re.fullmatch(r"RTX 5060 ?TI", n):
+        return "RTX 5060 Ti"
+    if re.fullmatch(r"RTX (5090|5080|4090|3090)", n):
         return n
     simple = {"L40S": "L40S", "L40": "L40", "L4": "L4", "A40": "A40",
               "A10": "A10", "A10G": "A10", "T4": "T4"}
