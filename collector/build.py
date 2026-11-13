@@ -49,7 +49,7 @@ CATALOG = {
     "RTX 6000 Ada": (48, "Workstation"), "RTX A6000": (48, "Workstation"), "A40": (48, "Workstation"),
     "RTX 5090": (32, "Consumer"), "RTX 4090": (24, "Consumer"), "RTX 3090": (24, "Consumer"),
     "RTX 5080": (16, "Consumer"), "RTX 5060 Ti": (16, "Consumer"),
-    "RTX PRO 5000": (48, "Workstation"), "RTX PRO 4500": (32, "Workstation"), "RTX PRO 4000": (24, "Workstation")
+    "RTX PRO 5000": (48, "Workstation"), "RTX PRO 4500": (32, "Workstation"), "RTX PRO 4000": (24, "Workstation"),
     "L4": (24, "Inference"), "A10": (24, "Inference"), "V100": (16, "Legacy"), "T4": (16, "Legacy"),
 }
 # Dense BF16 PFLOPS per GPU (NVIDIA / AMD datasheets). B300's gain over B200 is FP4, not BF16.
