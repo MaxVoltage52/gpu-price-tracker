@@ -54,7 +54,7 @@ const keyEl = color => { const k = el('span', 'key'); k.style.background = color
 
 const byName = name => S.gpus.find(g => g.gpu === name);
 const bySlug = slug => S.gpus.find(g => g.slug === slug);
-const colorOf = name => { const i = S.featured.indexOf(name); return i >= 0 ? GPU_COLORS[i] : 'var(--ink-2)'; };
+const colorOf = name => { const i = S.featured.indexOf(name); return i >= 0 ? GPU_COLORS[i % GPU_COLORS.length] : 'var(--ink-2)'; };
 
 // ---------- history ----------
 function loadHist(slug) {
