@@ -36,7 +36,8 @@ PERIODS = {"24h": DAY, "7d": 7 * DAY, "30d": 30 * DAY}
 WINDOWS = {"1d": DAY, "7d": 7 * DAY, "30d": 30 * DAY, "90d": 90 * DAY, "1y": 365 * DAY, "all": None}  # site ranges
 MARKETS = ["spot", "on_demand"]
 
-FEATURED = ["B300", "B200", "H200", "H100 SXM"]
+FEATURED = ["RTX 5090", "RTX 4090", "RTX 3090", "RTX 5060 Ti", "RTX 5080",
+            "RTX PRO 6000", "RTX PRO 5000", "RTX PRO 4500", "RTX PRO 4000"]
 # name: (VRAM GB, tier). Order = display order. GPUs not listed are ignored.
 CATALOG = {
     "B300": (288, "Blackwell"), "B200": (180, "Blackwell"),
@@ -47,6 +48,8 @@ CATALOG = {
     "RTX PRO 6000": (96, "Workstation"), "L40S": (48, "Workstation"), "L40": (48, "Workstation"),
     "RTX 6000 Ada": (48, "Workstation"), "RTX A6000": (48, "Workstation"), "A40": (48, "Workstation"),
     "RTX 5090": (32, "Consumer"), "RTX 4090": (24, "Consumer"), "RTX 3090": (24, "Consumer"),
+    "RTX 5080": (16, "Consumer"), "RTX 5060 Ti": (16, "Consumer"),
+    "RTX PRO 5000": (48, "Workstation"), "RTX PRO 4500": (32, "Workstation"), "RTX PRO 4000": (24, "Workstation")
     "L4": (24, "Inference"), "A10": (24, "Inference"), "V100": (16, "Legacy"), "T4": (16, "Legacy"),
 }
 # Dense BF16 PFLOPS per GPU (NVIDIA / AMD datasheets). B300's gain over B200 is FP4, not BF16.
